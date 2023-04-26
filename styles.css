@@ -10,6 +10,40 @@
     width: 100%;
     position: fixed;
     z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu li:first-child {
+    margin-left: 0;
+}
+
+.menu li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    background-color: #ccc;
 }
 /* Nav  Styles */
 
