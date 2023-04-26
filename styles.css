@@ -141,6 +141,8 @@ body {
 
 .menu li a:hover {
     background-color: #ccc;
+    color: #fff;
+    
 }
 
 /* Nav  Styles */
