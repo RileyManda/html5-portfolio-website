@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Mobile  Styles */
@@ -62,12 +63,12 @@ body {
 
 /* Headline  Style */
 .headline {
-  position: absolute;
+  position: relative;
   align-items: center;
   width: 100%;
   height: calc(100vh - 50px);
   left: 0;
-  top: 50px;
+  top: 10px;
   background-color: #fff;
   color: #000;
   font-size: 72px;
@@ -85,16 +86,23 @@ body {
 
 /* Headline  paragraph */
 .headline h3 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
+  letter-spacing: 0.37px;
 }
 
 .headline h4 {
   font-size: 32px;
   font-weight: bold;
   color: #36b37e;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
+  letter-spacing: 0.37px;
+}
+
+.headline h3,
+.headline h4 {
+  margin-top: 0;
 }
 
 .headline-content {
@@ -106,33 +114,50 @@ body {
   line-height: 32px;
   text-align: center;
   color: #172b4d;
-  flex: none;
+  flex: wrap;
   order: 1;
-  flex-grow: 0;
   margin: 10px auto 0;
 }
 
-/* .github-icon {
-  background-image: url(./assets/icons/github.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-} */
+.menu li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu li a:hover {
+  background-color: #70c572;
+  color: #fff;
+}
 
 .social-icons {
   left: 0.08%;
   right: 0%;
   top: 0%;
   bottom: 0%;
-}
-
-.social-icons a {
-  color: grey;
-  text-decoration: none;
-}
-
-.social-icons a:hover {
   color: #ccc;
 }
 
@@ -159,38 +184,4 @@ body {
 /* .medium-icon */
 .fab.fa-medium {
   color: grey;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.menu li:first-child {
-  margin-left: 0;
-}
-
-.menu li a {
-  color: #000;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.menu li a:hover {
-  background-color: #70c572;
-  color: #fff;
 }
