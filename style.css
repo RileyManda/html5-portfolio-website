@@ -7,6 +7,27 @@ body {
   overflow-x: hidden;
 }
 
+/* Text colors */
+.menu-items-color {
+  color: #3a4a42;
+}
+
+.social-icon-color {
+  color: #505f79;
+}
+
+.white-background-color {
+  color: #fff;
+}
+
+.headline-color {
+  color: headline-color;
+}
+
+.hover-color {
+  color: #70c572;
+}
+
 /* Mobile Styles */
 @media screen and (min-width: 375px) {
   .header-menu {
@@ -20,8 +41,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff;
-    color: #3a4a42;
+    background-color: main-background-color;
+    color: menu-items-color;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -118,7 +139,7 @@ body {
 }
 
 .menu-items li a {
-  color: #000;
+  color: menu-item-color;
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -147,8 +168,8 @@ body {
 }
 
 .menu li a:hover {
-  background-color: #70c572;
-  color: #fff;
+  background-color: hover-color;
+  color: white-background-color;
   text-decoration: none;
 }
 
@@ -163,7 +184,7 @@ body {
 
 /* Header  Styles */
 .header {
-  background-color: #fff;
+  background-color: white-background-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -175,7 +196,7 @@ body {
   align-items: center;
   width: 100%;
   flex-direction: column;
-  background-color: #fff;
+  background-color: white-background-color;
   color: #000;
   font-size: 40px;
   font-weight: bold;
@@ -186,7 +207,7 @@ body {
 }
 
 .headline:nth-of-type(2) {
-  color: #36b37e;
+  color: headline-color;
   font-weight: bold;
 }
 
@@ -203,7 +224,7 @@ body {
 .headline h4 {
   font-size: 20px;
   font-weight: bold;
-  color: #36b37e;
+  color: headline-color;
   margin-bottom: 20px;
   letter-spacing: 0.37px;
   text-align: center;
@@ -229,27 +250,27 @@ body {
 
 /* .github-icon */
 .fab.fa-github {
-  color: grey;
+  color: social-icon-color;
 }
 
 /* .linkedin-icon */
 .fab.fa-linkedin-in {
-  color: grey;
+  color: social-icon-color;
 }
 
 /* .angellist-icon */
 .fab .fa-angellist {
-  color: "#505F79";
+  color: social-icon-color;
 }
 
 /* .linkedin-icon */
 .fab.fa-twitter {
-  color: grey;
+  color: social-icon-color;
 }
 
 /* .medium-icon */
 .fab.fa-medium {
-  color: grey;
+  color: social-icon-color;
 }
 
 /* .spacer */
