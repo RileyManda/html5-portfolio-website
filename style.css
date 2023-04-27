@@ -21,12 +21,16 @@ body {
     top: 0;
     left: 0;
     background-color: #fff;
+    color: #3a4a42;
     width: 100%;
     height: 100%;
     text-align: center;
     display: none;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 44px;
   }
 
   .menu li {
@@ -61,6 +65,22 @@ body {
     list-style: none;
     padding-left: 0;
   }
+
+  .menu-items::after {
+    content: "\f00d";
+    font-family: 'Font Awesome 5 Free', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  /* .menu-items:hover::after {
+    display: none;
+  } */
 }
 
 /* Desktop  Styles */
