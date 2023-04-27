@@ -63,6 +63,7 @@ body {
 /* Headline  Style */
 .headline {
   position: absolute;
+  align-items: center;
   width: 100%;
   height: calc(100vh - 50px);
   left: 0;
@@ -73,7 +74,7 @@ body {
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
-  padding: 40px;
+  padding: 160px;
   background-image: url(./assets/images/Header-llustration-desktop.png);
 }
 
@@ -109,6 +110,55 @@ body {
   order: 1;
   flex-grow: 0;
   margin: 10px auto 0;
+}
+
+/* .github-icon {
+  background-image: url(./assets/icons/github.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+} */
+
+.social-icons {
+  left: 0.08%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.social-icons a {
+  color: grey;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+/* .github-icon */
+.fab.fa-github {
+  color: grey;
+}
+
+/* .linkedin-icon */
+.fab.fa-linkedin-in {
+  color: grey;
+}
+
+/* .angellist-icon */
+.fab .fa-angellist {
+  color: "#505F79";
+}
+
+/* .linkedin-icon */
+.fab.fa-twitter {
+  color: grey;
+}
+
+/* .medium-icon */
+.fab.fa-medium {
+  color: grey;
 }
 
 .menu {
