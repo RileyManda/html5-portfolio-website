@@ -6,6 +6,7 @@ body {
   min-height: 100vh;
 }
 
+/* Mobile  Styles */
 @media screen and (max-width: 767px) {
   .menu {
     display: block;
@@ -73,6 +74,7 @@ body {
   text-align: center;
   margin-top: 20px;
   padding: 40px;
+  background-image: url(./assets/images/Header-llustration-desktop.png);
 }
 
 .headline:nth-of-type(2) {
