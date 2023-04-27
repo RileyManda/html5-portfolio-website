@@ -49,6 +49,7 @@ body {
     padding: 10px;
     display: block;
     font-weight: bold;
+    text-decoration: none;
   }
 
   /* Show menu items on hover */
@@ -91,10 +92,11 @@ body {
     padding: 10px;
     display: block;
     font-weight: bold;
+    text-decoration: none;
   }
 }
 
-.menu li a {
+.menu-items li a {
   color: #000;
   text-decoration: none;
   display: block;
@@ -126,6 +128,7 @@ body {
 .menu li a:hover {
   background-color: #70c572;
   color: #fff;
+  text-decoration: none;
 }
 
 .menu-items {
