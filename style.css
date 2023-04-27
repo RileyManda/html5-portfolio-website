@@ -55,6 +55,11 @@ body {
   .header-menu:hover .menu-items {
     display: block;
   }
+
+  .menu-items ul {
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
 /* Desktop  Styles */
