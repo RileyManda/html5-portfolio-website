@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Mobile  Styles */
+@media screen and (max-width: 767px) {
+  .menu {
+    display: block;
+    text-align: center;
+  }
+
+  .menu li {
+    display: block;
+    margin: 0;
+  }
+
+  .menu li:first-child {
+    margin-top: 20px;
+  }
+
+  .menu li a {
+    padding: 10px 0;
+  }
+}
+
+/* Desktop  Styles */
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+  }
+
+  .menu li:first-child {
+    margin-left: 0;
+  }
+
+  .menu li a {
+    padding: 10px;
+  }
+}
+
+.menu li a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu li a:hover {
+  background-color: #70c572;
+  color: #fff;
+}
+
+/* Header  Styles */
+.header {
+  background-color: #fff;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Headline  Style */
+.headline {
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  padding: 160px;
+  background-image: url(./assets/images/Header-llustration-desktop.png);
+  background-size: cover;
+}
+
+.headline:nth-of-type(2) {
+  color: #36b37e;
+  font-weight: bold;
+}
+
+/* Headline  paragraph */
+.headline h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  letter-spacing: 0.37px;
+  left: 260px;
+  color: #172b4d;
+}
+
+.headline h4 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #36b37e;
+  margin-bottom: 6px;
+  letter-spacing: 0.37px;
+}
+
+.headline h3,
+.headline h4 {
+  margin-top: 0;
+}
+
+.headline-content {
+  width: 920px;
+  height: 96px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  flex: wrap;
+  order: 1;
+  margin: 10px auto 0;
+}
+
+/* .Social icons */
+.social-icons {
+  left: 0.08%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  color: #ccc;
+}
+
+/* .github-icon */
+.fab.fa-github {
+  color: grey;
+}
+
+/* .linkedin-icon */
+.fab.fa-linkedin-in {
+  color: grey;
+}
+
+/* .angellist-icon */
+.fab .fa-angellist {
+  color: "#505F79";
+}
+
+/* .linkedin-icon */
+.fab.fa-twitter {
+  color: grey;
+}
+
+/* .medium-icon */
+.fab.fa-medium {
+  color: grey;
+}
+
+/* .spacer */
+.spacer {
+  display: inline-block;
+  width: 20px;
+}
