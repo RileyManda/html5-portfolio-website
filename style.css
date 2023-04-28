@@ -10,7 +10,7 @@ body {
 /* Mobile Styles */
 @media screen and (min-width: 375px) {
   .header {
-    padding: 50px;
+    padding: 60px;
     background-image: url(./assets/images/Header-llustration-desktop.png);
     background-size: cover;
     display: flex;
@@ -69,10 +69,6 @@ body {
     margin-top: 0;
   }
 
-  .social-icons a {
-    margin: 0 10px;
-  }
-
   .menu li a {
     padding: 5%;
     display: block;
@@ -103,21 +99,25 @@ body {
   }
 
   .social-icons {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -20px;
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    top: 8.96%;
-    vertical-align: middle;
+    flex-direction: colum;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-icons li {
+    margin-right: 20px;
+  }
+
+  .social-icons li:last-child {
+    margin-right: 0;
   }
 
   .chevron-icon {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     padding: 8px;
     position: absolute;
     left: calc(50% - 40px / 2 + 0.5px);
@@ -126,7 +126,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .header {
-    padding: 100px;
+    padding: 60px;
     background-image: url(./assets/images/Header-llustration-desktop.png);
     background-size: cover;
     background-position: center;
@@ -172,6 +172,7 @@ body {
   display: none;
 }
 
+/* hambuger icon */
 .hamburger {
   position: absolute;
   align-items: center;
