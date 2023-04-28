@@ -9,6 +9,24 @@ body {
 
 /* Mobile Styles */
 @media screen and (min-width: 375px) {
+  .header {
+    padding: 50px;
+    background-image: url(./assets/images/Header-llustration-desktop.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-content {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    z-index: 1;
+  }
+
   .toolbar-menu {
     display: flex;
     justify-content: space-between;
@@ -92,19 +110,17 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    top: 8.96%;
+    vertical-align: middle;
   }
 
   .chevron-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -90px;
-  }
-
-  .header {
-    padding: 100px;
-    background-image: url(./assets/images/Header-llustration-desktop.png);
-    background-size: cover;
+    left: calc(50% - 40px / 2 + 0.5px);
   }
 }
 
@@ -157,9 +173,13 @@ body {
 }
 
 .hamburger {
+  position: absolute;
+  align-items: center;
   justify-content: flex-end;
   width: 40px;
   height: 40px;
+  top: 20px;
+  right: 20px;
 }
 
 /* toolbar  Styles */
@@ -171,35 +191,18 @@ body {
   padding: 1rem;
 }
 
-/* header  paragraph */
-.header h1 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #172b4d;
-  text-align: center;
-  line-height: 1.2;
-}
-
-.header h1:nth-of-type(2) {
+.header-content h1:nth-of-type(2) {
   color: #36b37e;
-  font-size: 24px;
 }
 
-.header p {
-  font-size: 12px;
+.header-content p {
+  font-size: 8px;
   margin-bottom: 6px;
   letter-spacing: 0.37px;
   color: #172b4d;
+  line-height: 2;
+  font-weight: 400;
   text-align: center;
-}
-
-.header-content {
-  position: absolute;
-  width: 327px;
-  left: 27px;
-  top: 156px;
-  text-align: center;
-  top: 8px;
 }
 
 /* .github-icon */
