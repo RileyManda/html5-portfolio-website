@@ -7,30 +7,9 @@ body {
   overflow-x: hidden;
 }
 
-/* Text colors */
-.menu-items-color {
-  color: #3a4a42;
-}
-
-.social-icon-color {
-  color: #505f79;
-}
-
-.white-background-color {
-  color: #fff;
-}
-
-.headline-color {
-  color: headline-color;
-}
-
-.hover-color {
-  color: #70c572;
-}
-
 /* Mobile Styles */
 @media screen and (min-width: 375px) {
-  .header-menu {
+  .toolbar-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,8 +20,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: main-background-color;
-    color: menu-items-color;
+    background-color: #fff;
+    color: #3a4a42;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -84,7 +63,7 @@ body {
   }
 
   /* Show menu items on hover */
-  .header-menu:hover .menu-items {
+  .toolbar-menu:hover .menu-items {
     display: block;
   }
 
@@ -105,12 +84,6 @@ body {
     z-index: 2;
   }
 
-  .headline {
-    font-size: 32px;
-    padding: 40px;
-    position: relative;
-  }
-
   .social-icons {
     position: absolute;
     left: 50%;
@@ -127,19 +100,24 @@ body {
     transform: translateX(-50%);
     bottom: -90px;
   }
+
+  .header {
+    top: 92.8px;
+    background-image: url(./assets/images/Header-llustration-desktop.png);
+    background-size: cover;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .headline {
-    font-size: 40px;
-    padding: 100px;
+@media screen and (max-width: 768px) {
+  .header {
+    top: 92.8px;
     background-image: url(./assets/images/Header-llustration-desktop.png);
     background-size: cover;
   }
 }
 
 .menu-items li a {
-  color: menu-item-color;
+  color: #000;
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -168,8 +146,8 @@ body {
 }
 
 .menu li a:hover {
-  background-color: hover-color;
-  color: white-background-color;
+  background-color: #70c572;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -178,41 +156,34 @@ body {
 }
 
 .hamburger {
-  order: 2;
-  margin-right: 0;
+  justify-content: flex-end;
+  width: 40px;
+  height: 40px;
 }
 
-/* Header  Styles */
-.header {
-  background-color: white-background-color;
+/* toolbar  Styles */
+.toolbar {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
 
-/* Headline  Style */
-.headline {
-  align-items: center;
-  width: 100%;
-  flex-direction: column;
-  background-color: white-background-color;
-  color: #000;
+.header {
   font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  padding: 80px;
+  padding: 100px;
   background-image: url(./assets/images/Header-llustration-desktop.png);
   background-size: cover;
 }
 
-.headline:nth-of-type(2) {
-  color: headline-color;
+.header:nth-of-type(2) {
+  color: #36b37e;
   font-weight: bold;
 }
 
-/* Headline  paragraph */
-.headline h3 {
+/* header  paragraph */
+.header h1 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 6px;
@@ -221,56 +192,54 @@ body {
   text-align: center;
 }
 
-.headline h4 {
+.header h4 {
   font-size: 20px;
   font-weight: bold;
-  color: headline-color;
+  color: #36b37e;
   margin-bottom: 20px;
   letter-spacing: 0.37px;
   text-align: center;
 }
 
-.headline h3,
-.headline h4 {
-  margin-top: 0;
+.header p {
+  font-size: 12px;
+  margin-bottom: 6px;
+  letter-spacing: 0.37px;
+  color: #172b4d;
+  text-align: center;
 }
 
-.headline-content {
-  width: 100%;
-  max-width: 920px;
-  height: auto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-  margin: 20px auto 0;
-  align-items: center;
+.header-content {
+  position: absolute;
+  width: 327px;
+  height: 211px;
+  left: 27px;
+  top: 156px;
 }
 
 /* .github-icon */
 .fab.fa-github {
-  color: social-icon-color;
+  color: grey;
 }
 
 /* .linkedin-icon */
 .fab.fa-linkedin-in {
-  color: social-icon-color;
+  color: grey;
 }
 
 /* .angellist-icon */
 .fab .fa-angellist {
-  color: social-icon-color;
+  color: "#505F79";
 }
 
 /* .linkedin-icon */
 .fab.fa-twitter {
-  color: social-icon-color;
+  color: grey;
 }
 
 /* .medium-icon */
 .fab.fa-medium {
-  color: social-icon-color;
+  color: grey;
 }
 
 /* .spacer */
