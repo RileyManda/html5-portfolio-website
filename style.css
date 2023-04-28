@@ -40,7 +40,6 @@ body {
     display: flex;
     align-items: center;
     margin-top: 20px;
-   
   }
 }
 
@@ -190,11 +189,10 @@ body {
   color: #70c572;
   font-weight: 700;
   font-style: normal;
-  font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  }
+}
 
 .supporting-text {
   text-align: center;
@@ -251,6 +249,4 @@ body {
 .spacer {
   display: inline-block;
   width: 20px;
-}
-}
 }
