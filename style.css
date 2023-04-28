@@ -102,7 +102,7 @@ body {
   }
 
   .header {
-    top: 92.8px;
+    padding: 100px;
     background-image: url(./assets/images/Header-llustration-desktop.png);
     background-size: cover;
   }
@@ -110,9 +110,10 @@ body {
 
 @media screen and (max-width: 768px) {
   .header {
-    top: 92.8px;
+    padding: 100px;
     background-image: url(./assets/images/Header-llustration-desktop.png);
     background-size: cover;
+    background-position: center;
   }
 }
 
@@ -170,21 +171,13 @@ body {
   padding: 1rem;
 }
 
-.header {
-  padding: 100px;
-  background-image: url(./assets/images/Header-llustration-desktop.png);
-  background-size: cover;
-}
-
 /* header  paragraph */
 .header h1 {
   font-size: 24px;
   font-weight: bold;
-  letter-spacing: 0.37px;
   color: #172b4d;
   text-align: center;
   line-height: 1.2;
-  margin-top: 0;
 }
 
 .header h1:nth-of-type(2) {
@@ -203,9 +196,10 @@ body {
 .header-content {
   position: absolute;
   width: 327px;
-  height: 211px;
   left: 27px;
   top: 156px;
+  text-align: center;
+  top: 8px;
 }
 
 /* .github-icon */
