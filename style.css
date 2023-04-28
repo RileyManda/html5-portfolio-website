@@ -6,8 +6,16 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
 /* color classes */
-.menu-items-color {
+.nav-bar-color {
   color: #3a4a42;
 }
 
@@ -27,23 +35,16 @@
   color: #70c572;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-}
-
 /* Mobile Styles */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 368px) {
   .header {
     background-image: url(./assets/images/Header-llustration-desktop.png);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    position: relative;
+    position: absolute;
+    top: 92.8px;
   }
 
   .header-content {
@@ -60,10 +61,11 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
   }
 
-  .menu-items {
-    position: fixed;
+  .nav-bar {
+    position: absolute;
     top: 0;
     left: 0;
     background-color: #fff;
@@ -71,9 +73,7 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    display: none;
     padding: 5%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-size: 8vw;
     font-weight: 600;
     line-height: 14vw;
@@ -86,14 +86,12 @@ body {
   }
 
   .hamburger {
-    order: 2;
-    margin-left: auto;
     cursor: pointer;
     font-size: 10vw;
-    margin-right: 5%;
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 9999;
   }
 
   .menu li a {
@@ -104,16 +102,16 @@ body {
   }
 
   /* Show menu items on hover */
-  .toolbar-menu:hover .menu-items {
+  .toolbar-menu:hover .nav-bar {
     display: block;
   }
 
-  .menu-items ul {
+  .nav-bar ul {
     list-style: none;
     padding-left: 0;
   }
 
-  .menu-items::after {
+  /* .nav-bar::after {
     content: "\f00d";
     font-family: 'Font Awesome 5 Free', sans-serif;
     font-weight: 900;
@@ -123,7 +121,7 @@ body {
     right: 10%;
     cursor: pointer;
     z-index: 2;
-  }
+  } */
 
   .social-icons li {
     margin-right: 10px;
@@ -153,7 +151,7 @@ body {
     margin-top: 0;
   }
 
-  .menu-items li a {
+  .nav-bar li a {
     color: #000;
     text-decoration: none;
     display: block;
@@ -202,12 +200,12 @@ body {
   }
 
   .supporting-text {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 52px;
-    letter-spacing: 0;
     text-align: center;
-    align-items: center;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #172b4d;
   }
 
   .header-content h1:nth-of-type(2) {
