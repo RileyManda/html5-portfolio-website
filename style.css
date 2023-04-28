@@ -171,34 +171,25 @@ body {
 }
 
 .header {
-  font-size: 40px;
   padding: 100px;
   background-image: url(./assets/images/Header-llustration-desktop.png);
   background-size: cover;
-}
-
-.header:nth-of-type(2) {
-  color: #36b37e;
-  font-weight: bold;
 }
 
 /* header  paragraph */
 .header h1 {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 6px;
   letter-spacing: 0.37px;
   color: #172b4d;
   text-align: center;
+  line-height: 1.2;
+  margin-top: 0;
 }
 
-.header h4 {
-  font-size: 20px;
-  font-weight: bold;
+.header h1:nth-of-type(2) {
   color: #36b37e;
-  margin-bottom: 20px;
-  letter-spacing: 0.37px;
-  text-align: center;
+  font-size: 24px;
 }
 
 .header p {
