@@ -3,7 +3,6 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   padding: 0 2px;
 }
 
@@ -76,7 +75,7 @@ body {
     padding: 8px;
     position: absolute;
     left: calc(50% - 40px / 2 + 0.5px);
-    bottom: 20px;
+    bottom: -80px;
   }
 
   .hamburger {
@@ -209,14 +208,35 @@ body {
   }
 
   /* contact section */
-  .contact-container {
+  .contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .contact-image {
-    display: none;
+  .form-group {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+
+  input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
   }
 }
 
@@ -363,11 +383,10 @@ body {
   }
 
   .card-img {
-    height: 200px;
-    background-image: url('https://via.placeholder.com/350x200');
+    background-image: url("./assets/images/img-placeholder.png");
+    width: 100%;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    border-top-left-radius: 10px;
   }
 
   /* about me section */
@@ -871,6 +890,14 @@ body {
   background-repeat: no-repeat;
   background-size: 20%;
   z-index: 2;
+}
+
+.aboutme-title img {
+  position: relative;
+  top: 0;
+  right: 20px;
+  width: 50%;
+  z-index: 3;
 }
 
 .logo {
