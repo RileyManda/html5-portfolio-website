@@ -268,11 +268,12 @@ body {
 
 .section-indicator {
   display: inline-block;
-  width: 40px;
+  width: 48px;
   height: 8px;
   background-color: #36b37e;
   border-radius: 24px;
   position: absolute;
+  margin-top: 90px;
 }
 
 .grid {
