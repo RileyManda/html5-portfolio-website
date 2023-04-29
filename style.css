@@ -173,7 +173,7 @@ body {
 }
 
 .title {
-  color: headline-color;
+  color: #172b4d;
 }
 
 .header-title {
@@ -256,14 +256,8 @@ body {
   position: relative;
 }
 
-.recent-work h1 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
-  letter-spacing: 0;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 40px;
+.title-container {
+  position: relative;
 }
 
 .section-indicator {
@@ -273,7 +267,20 @@ body {
   background-color: #36b37e;
   border-radius: 24px;
   position: absolute;
-  margin-top: 90px;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.recent-work h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 40px;
+  color: headline-color;
 }
 
 .grid {
