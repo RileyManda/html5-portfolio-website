@@ -242,10 +242,15 @@ body {
 .recent-work {
   background-color: white-background-color;
   padding: 80px 0;
+  position: relative;
+}
+
+.about-me {
+  position: relative;
+  top: 50px;
 }
 
 .recent-work-container {
-  position: absolute;
   width: 100%;
   max-width: 600px;
   text-align: center;
@@ -283,7 +288,6 @@ body {
   height: 8px;
   background-color: #36b37e;
   border-radius: 24px;
-  position: absolute;
   bottom: -3px;
   left: 50%;
   transform: translateX(-50%);
@@ -328,6 +332,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 200px;
+  object-fit: cover;
 }
 
 .card-content {
@@ -355,14 +360,16 @@ body {
   word-wrap: break-word;
 }
 
-/* .card-tags{ */
+/* .tags{ */
 
 .tags {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   margin-top: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-left: 0;
 }
 
 .tags span {
@@ -396,4 +403,14 @@ body {
 
 .header-content h1:nth-of-type(2) {
   color: #70c572;
+}
+
+/* about me */
+.aboutme-container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  z-index: 1;
+  align-items: center;
+  margin: auto;
 }
