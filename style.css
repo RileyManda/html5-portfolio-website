@@ -238,6 +238,12 @@ body {
 }
 
 /* Recent Works section */
+
+.recent-work {
+  background-color: white-background-color;
+  padding: 80px 0;
+}
+
 .recent-work-container {
   position: absolute;
   width: 100%;
@@ -256,6 +262,17 @@ body {
   position: relative;
 }
 
+.recent-work h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 40px;
+  color: headline-color;
+}
+
 .title-container {
   position: relative;
 }
@@ -272,22 +289,25 @@ body {
   transform: translateX(-50%);
 }
 
-.recent-work h1 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
-  letter-spacing: 0;
-  text-align: center;
-  align-items: center;
-  margin-bottom: 40px;
-  color: headline-color;
-}
-
 .grid {
   display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 200px;
+  background-image: url('./assets/images/img-placeholder.png');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-out;
 }
 
 .header-content h1:nth-of-type(2) {
