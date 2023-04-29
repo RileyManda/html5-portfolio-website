@@ -372,11 +372,20 @@ body {
   margin-left: 0;
 }
 
-.tags span {
-  background-color: #ebf0ee;
+.tags span.works {
+  background-color: #c6c6c6;
   border-radius: 6px;
   padding: 4px 8px;
   margin-right: 5px;
+  color: black;
+}
+
+.tags span.about {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 4px 8px;
+  margin-right: 5px;
+  color: #36b37e;
 }
 
 .tags span:first-child {
@@ -388,6 +397,7 @@ body {
 }
 
 .project-btn {
+  position: relative;
   background-color: #36b37f;
   color: #fff;
   padding: 8px 18px;
@@ -401,12 +411,27 @@ body {
   align-items: center;
 }
 
+/* about me  */
+
+.about-me .project-btn::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -150px;
+  width: 50px;
+  height: 50px;
+  background-image: url('./assets/images/about-bg-left.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .header-content h1:nth-of-type(2) {
   color: #70c572;
 }
 
 /* about me */
 .aboutme-container {
+  position: relative;
   width: 100%;
   max-width: 600px;
   text-align: center;
@@ -444,6 +469,14 @@ body {
   margin-top: 20px;
 }
 
+.aboutme-title {
+  background-image: url(./assets/images/about-bg-right.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  z-index: 2;
+}
+
 .logo {
   position: absolute;
   top: 0;
@@ -452,15 +485,6 @@ body {
 }
 
 /* contact me */
-.contact-image {
-  position: fixed;
-  bottom: 5%;
-  right: 0;
-  height: 90px;
-  width: 20%;
-  background: url(/assets/images/form-bg.svg) bottom/cover no-repeat;
-}
-
 .contact-container {
   width: 100%;
   max-width: 600px;
@@ -471,11 +495,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: url(/assets/images/form-bg.svg) no-repeat;
+  background-size: 20%;
+  background-position: bottom right;
 }
 
 .contact-form {
   margin-top: 30px;
   width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 form {
