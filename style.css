@@ -340,6 +340,20 @@ body {
   word-wrap: break-word;
 }
 
+/* .card-tags{
+
+} */
+
+.project-btn {
+  background-color: #36b37f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 .header-content h1:nth-of-type(2) {
   color: #70c572;
 }
