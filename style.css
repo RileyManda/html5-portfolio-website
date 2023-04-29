@@ -209,17 +209,6 @@ body {
   color: #70c572;
 }
 
-/* .header-content p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-} */
-
 /* .github-icon */
 .fab.fa-github {
   color: social-icon-color;
@@ -249,4 +238,14 @@ body {
 .spacer {
   display: inline-block;
   width: 20px;
+}
+
+.works-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: center;
+  align-items: center;
+  margin-top: -40px;
 }
