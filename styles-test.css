@@ -84,6 +84,18 @@
   color: var(--title-color);
 }
 
+.with-indicator::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-100%);
+}
+
 .section-title-container {
   text-align: center;
 }

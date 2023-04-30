@@ -98,10 +98,10 @@
 }
 
 .section-indicator {
-  width: 30px;
-  height: 3px;
-  background-color: var(--green-color);
-  margin-left: 5px;
+  width: 2px;
+  height: 20px;
+  background-color: black;
+  transform: rotate(90deg);
 }
 
 .works-card {
