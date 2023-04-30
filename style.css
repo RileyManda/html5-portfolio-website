@@ -34,6 +34,7 @@ html {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background-size: cover;
 }
 
 .header {
@@ -41,6 +42,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background: url(/assets/images/header-illustration-mobile.svg) top/cover no-repeat;
 }
 
 .header-title {
@@ -430,6 +432,7 @@ textarea {
 
 /* desktop */
 @media (min-width: 768px) {
+
   *,
   *::before,
   *::after {
