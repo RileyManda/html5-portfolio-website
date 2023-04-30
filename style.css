@@ -273,6 +273,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
+    border-radius: 0px;
 }
 
 .about-tags span {
@@ -280,7 +281,6 @@ html {
   background-color: var(--white-color);
   padding: 5px 10px;
   margin: 5px;
-  border-radius: 20px;
   color: var(--green-color);
 }
 
