@@ -104,8 +104,9 @@ html {
 .section-indicator {
   width: 2px;
   height: 20px;
-  background-color: black;
+  background-color: var(--green-color);
   transform: rotate(90deg);
+  margin-top: -10px;
 }
 
 .works-card {
@@ -273,7 +274,7 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
-    border-radius: 0px;
+  border-radius: 0;
 }
 
 .about-tags span {
@@ -424,5 +425,14 @@ textarea {
 
   .about-card:last-child {
     margin-right: 0;
+  }
+}
+
+/* desktop */
+@media (min-width: 768px) {
+  *,
+  *::before,
+  *::after {
+    padding: 0 10px;
   }
 }
