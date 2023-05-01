@@ -30,11 +30,12 @@ html {
 
 /* toolbar styles */
 .toolbar {
-  top: 0;
   left: 0;
   height: 50px;
   width: 100%;
   color: #fff;
+  top: 44px;
+  bottom: 0;
 }
 
 /* Header Styles */
@@ -56,13 +57,14 @@ html {
   align-items: center;
   background: url(./assets/images/header-illustration-mobile.svg) top/cover no-repeat;
   height: 100vh;
-  padding-top: 10px;
+  padding-top: 5px;
+  background-size: 100%;
 }
 
 .header-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 30px;
   line-height: 2rem;
   color: var(--title-color);
   text-align: center;
@@ -76,6 +78,7 @@ html {
 .header-title p span {
   color: var(--green-color);
   display: block;
+    font-size: 40px;
 }
 
 .header-title h1 span {
@@ -139,11 +142,11 @@ html {
 }
 
 .social-icons li {
-  margin: 0 10px;
+  margin: 1 10px;
 }
 
 .social-icons li img {
-  width: 20px;
+  width: 30px;
 }
 
 /* Media Queries */
