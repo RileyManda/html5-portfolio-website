@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 2px;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
 /* root attributes */
 :root {
   --title-color: #172b4d;
@@ -13,16 +25,13 @@
   --form-border-color: #d0d9d4;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0 2px;
-}
-
-html {
-  font-family: 'Inter', sans-serif;
+/* desktop */
+@media (min-width: 768px) {
+  *,
+  *::before,
+  *::after {
+    padding: 0 10px;
+  }
 }
 
 /* Mobile Responsive */
@@ -427,15 +436,5 @@ textarea {
 
   .about-card:last-child {
     margin-right: 0;
-  }
-}
-
-/* desktop */
-@media (min-width: 768px) {
-
-  *,
-  *::before,
-  *::after {
-    padding: 0 10px;
   }
 }
