@@ -57,10 +57,10 @@ html {
   justify-content: center;
   align-items: center;
   background: url(./assets/images/header-illustration-mobile.svg) top/cover no-repeat;
-  height: 100vh;
   width: 100%;
   padding-top: 5px;
   background-size: 100%;
+  background-position: center;
 }
 
 .header-title {
@@ -71,6 +71,7 @@ html {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 80px;
 }
 
 .header-title h1 {
