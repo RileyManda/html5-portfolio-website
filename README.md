@@ -146,8 +146,13 @@ If you think that change is necessary - open a Pull Request in this repository a
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-      This project will not have any additional features.
+- [ ] **[Works Section]**
+      Works section: This section will consist of a card gallery featuring work project.
+
+- [ ] **[About me Section]**
+      This feature will contain more details about me and the tech stack i am familiar with.
+- [ ] **[Contact Section]**
+      This feature will comprise of a contact information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
