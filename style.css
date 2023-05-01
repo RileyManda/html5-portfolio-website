@@ -68,21 +68,23 @@ html {
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
-  line-height: 2rem;
   color: var(--title-color);
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 80px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .header-title h1 {
   margin-bottom: 2rem;
+  line-height: 2rem;
 }
 
-.header-title p span {
+.header-title h2 {
   color: var(--green-color);
   display: block;
   font-size: 40px;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .header-title h1 span {
