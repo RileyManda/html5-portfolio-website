@@ -105,12 +105,6 @@ html {
   margin-top: 100vh;
 }
 
-.section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .works-card {
   flex-direction: column;
   display: flex;
@@ -119,20 +113,24 @@ html {
   width: 100%;
   margin-bottom: 20px;
   border: 1px solid var(--card-border-color);
-  border-radius: 5px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .works-card img {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   width: 100%;
-  height: auto;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  margin: 0;
 }
 
 .works-card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: var(--works-text-color);
+  align-items: center;
 }
 
 .works-card-content {
@@ -150,6 +148,12 @@ html {
 /* Works Section END */
 
 /* Global Section Styles */
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section-title {
   position: relative;
   font-style: normal;
@@ -220,11 +224,6 @@ html {
   transition: all 0.3s ease;
   font-weight: 500;
 }
-
-/* .project-btn:hover {
-  background-color: var(--white-color);
-  color: var(--green-color);
-} */
 
 /* global section-style END */
 
