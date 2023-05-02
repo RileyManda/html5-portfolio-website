@@ -210,6 +210,22 @@ html {
   flex-direction: column;
 }
 
+.project-btn {
+  background-color: var(--green-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* .project-btn:hover {
+  background-color: var(--white-color);
+  color: var(--green-color);
+} */
+
 /* global section-style END */
 
 /* CSS selectors */
