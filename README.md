@@ -17,7 +17,7 @@
 
 # 📖 [Portfolio-website] <a name="Portfolio-website"></a>
 
-**[Portfolio-website]** this was mini-projects that upkill to create a feature branch and test linters in order to have professional-looking code.
+**[Portfolio-website]** Microverse project designed to create a feature branch,test linters,use proper gitflow,undergo code reviews and replicate a figma design to build a professional portfolio website that is responsive on both mobile and web.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -146,8 +146,13 @@ If you think that change is necessary - open a Pull Request in this repository a
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-      This project will not have any additional features.
+- [ ] **[Works Section]**
+      Works section: This section will consist of a card gallery featuring work project.
+
+- [ ] **[About me Section]**
+      This feature will contain more details about me and the tech stack i am familiar with.
+- [ ] **[Contact Section]**
+      This feature will comprise of a contact information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,7 +170,7 @@ If you like this project, kindly leave a comment below and share it with someone
 
 ## 🙏 Acknowledgments <a name="Microverse Inc."></a>
 
-I'm grateful to microverse for giving me every opportunity to grow into my full potential
+I'm grateful to microverse for giving me this opportunity to grow into my full potential through continuous learning and practical challenges.
 
 <!-- FAQ (optional) -->
 
