@@ -10,6 +10,11 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* root theme attributes */
 :root {
   --title-color: #172b4d;
@@ -106,6 +111,7 @@ html {
 }
 
 .works-card {
+  position: relative;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -117,13 +123,13 @@ html {
   box-sizing: border-box;
 }
 
-.works-card img {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+.works-card-img {
   width: 100%;
-  margin: 0;
+  height: 300px;
+  background-image: url(./assets/images/img-placeholder.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .works-card-title {
@@ -136,23 +142,21 @@ html {
 .works-card-content {
   padding: 10px;
   text-align: center;
+  background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .works-tags {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   margin-bottom: 10px;
 }
 
 /* Works Section END */
 
 /* Global Section Styles */
-.section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .section-title {
   position: relative;
@@ -234,7 +238,7 @@ html {
   background-color: var(--grey-tag-color);
   padding: 5px 10px;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 4px;
   color: var(--works-text-color);
 }
 
