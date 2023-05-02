@@ -156,7 +156,7 @@ body {
 
 /* Works Section END */
 
-/* About Section END */
+/* About Section */
 .about-card {
   display: flex;
   flex-direction: column;
@@ -206,6 +206,111 @@ body {
   align-items: center;
   align-content: center;
 }
+
+
+/* contact section */
+
+#contact-section {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-container {
+  margin-bottom: 30px;
+}
+
+/* FORM COMPONENT */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group label {
+  display: none;
+}
+
+textarea {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--white-color);
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  resize: none;
+}
+
+.form-group input,
+.form-group textarea {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 1px solid var(--form-border-color);
+  border-radius: 4px;
+  background: var(main-background-color);
+  color: #3c3c3c;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--green-color);
+}
+
+.contact-form .contact-btn {
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 20px;
+  width: 50%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 4px;
+  background: var(--green-color);
+  color: var(--white-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-footer {
+  background-image: url(./assets/images/form-bg.svg);
+  background-size: 20%;
+  background-position: top right;
+  height: calc(100vh - 340px);
+  background-repeat: no-repeat;
+}
+
+.email-text {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--content-text-color);
+}
+
+/* contact section- END */
 
 /* Global Section Styles */
 
