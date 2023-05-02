@@ -71,23 +71,6 @@ html {
   margin-top: 30px;
 }
 
-.header-title h1 {
-  margin-bottom: 2rem;
-  line-height: 2rem;
-}
-
-.header-title h2 {
-  color: var(--green-color);
-  display: block;
-  font-size: 40px;
-  line-height: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.header-title h1 span {
-  display: block;
-}
-
 .supporting-text {
   justify-content: center;
   text-align: center;
@@ -164,15 +147,6 @@ html {
   margin-bottom: 10px;
 }
 
-.works-tags span {
-  font-size: 0.8rem;
-  background-color: var(--grey-tag-color);
-  padding: 5px 10px;
-  margin: 5px;
-  border-radius: 20px;
-  color: var(--works-text-color);
-}
-
 /* Works Section END */
 
 /* Global Section Styles */
@@ -237,6 +211,36 @@ html {
 }
 
 /* global section-style END */
+
+/* CSS selectors */
+
+.works-tags span {
+  font-size: 0.8rem;
+  background-color: var(--grey-tag-color);
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  color: var(--works-text-color);
+}
+
+.header-title h1 {
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+
+.header-title h2 {
+  color: var(--green-color);
+  display: block;
+  font-size: 40px;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-title h1 span {
+  display: block;
+}
+
+/* CSS selectors END */
 
 /* Media Queries */
 
