@@ -76,7 +76,7 @@ body {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 30px;
+  margin-top: 0;
 }
 
 .supporting-text {
@@ -159,6 +159,21 @@ body {
 /* Works Section END */
 
 /* About Section */
+.about-title {
+  background-image: url('./assets/images/about-bg-right.svg');
+  background-size: 20%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-style: normal;
+  font-size: 30px;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 30px;
+  padding-bottom: 2rem;
+}
+
 .about-card {
   display: flex;
   flex-direction: column;
@@ -345,7 +360,7 @@ textarea {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 3px;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-bottom: 2rem;
 }
 
