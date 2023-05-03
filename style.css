@@ -207,13 +207,6 @@ body {
   align-content: center;
 }
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-}
-
 /* contact section */
 #contact-section {
   padding: 20px;
@@ -303,13 +296,6 @@ textarea {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   text-align: center;
-}
-
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
 }
 
 .contact-image {
@@ -406,7 +392,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  flex-direction: column;
 }
 
 /* global section-style END */
@@ -448,11 +434,11 @@ textarea {
 /* Desktop */
 @media only screen and (min-width: 768px) {
   .header {
-    background: url(/assets/images/header-illustration-desktop.svg) top/cover no-repeat;
-    background-position: absolute;
+    background: url(./assets/images/header-illustration-desktop.svg) top/cover no-repeat;
+    background-size: 100%;
   }
 
-  .about-container {
+  .section-container {
     flex-wrap: nowrap;
   }
 
@@ -504,6 +490,21 @@ textarea {
     font-size: 14px;
     line-height: 20px;
   }
+
+  #contact-section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 800px;
+  }
+
+  .contact-image {
+    height: 100%;
+    width: 40%;
+  }
 }
 
 /* Mobile */
@@ -520,5 +521,19 @@ textarea {
 
   .title-container h1 {
     font-size: 2rem;
+  }
+
+  .contact-form {
+    padding: 10px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contact-form .contact-btn {
+    width: 100%;
   }
 }
