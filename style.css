@@ -50,6 +50,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 2px;
+  background-size: cover;
+  position: relative;
   top: 5px;
 }
 
@@ -86,7 +88,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.9;
+  line-height: 1.5rem;
 }
 
 .chevron-icon {
@@ -205,6 +207,7 @@ body {
   z-index: 2;
   align-items: center;
   align-content: center;
+  margin-bottom: 2px;
 }
 
 /* contact section */
@@ -221,6 +224,11 @@ body {
 }
 
 /* FORM COMPONENT */
+.email-container {
+  display: flex;
+  align-items: center;
+  height: max-content;
+}
 
 .contact-form {
   display: flex;
@@ -301,16 +309,19 @@ textarea {
 .contact-image {
   background-image: url(./assets/images/form-bg.svg);
   background-size: 30%;
-  background-position: right 0;
   background-repeat: no-repeat;
-  height: calc(100vh - 400px);
-  margin-bottom: auto;
+  background-position: right 0;
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: -100px;
 }
 
 .email-text {
   font-size: 20px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: var(--content-text-color);
 }
 
@@ -324,7 +335,7 @@ textarea {
   font-size: 30px;
   color: var(--title-color);
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   margin-top: 30px;
   padding-bottom: 2rem;
 }
@@ -395,10 +406,7 @@ textarea {
   flex-direction: column;
 }
 
-/* global section-style END */
-
 /* CSS selectors */
-
 .works-tags span {
   font-style: normal;
   font-size: 12px;
@@ -428,6 +436,8 @@ textarea {
 }
 
 /* CSS selectors END */
+
+/* global section-style END */
 
 /* Media Queries */
 
