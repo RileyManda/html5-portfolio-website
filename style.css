@@ -86,7 +86,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.5rem;
+  line-height: 1.9;
 }
 
 .chevron-icon {
@@ -106,7 +106,8 @@ body {
 /* Works Section */
 #works-section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   margin-top: 100vh;
 }
@@ -117,7 +118,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin-bottom: 20px;
   border: 1px solid var(--card-border-color);
   border-radius: 8px;
@@ -205,6 +205,13 @@ body {
   z-index: 2;
   align-items: center;
   align-content: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* contact section */
@@ -328,7 +335,6 @@ textarea {
 .section-title {
   position: relative;
   font-style: normal;
-  font-weight: 700;
   font-size: 30px;
   color: var(--title-color);
   text-align: center;
@@ -380,9 +386,7 @@ textarea {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-btn {
@@ -394,6 +398,8 @@ textarea {
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .section-container {
@@ -439,18 +445,80 @@ textarea {
 
 /* Media Queries */
 
-/* Mobile First */
-@media only screen and (min-width: 375px) {
-  .header {
-    background: url(/assets/images/header-illustration-mobile.svg) top/cover no-repeat;
-    background-position: absolute;
-  }
-}
-
 /* Desktop */
 @media only screen and (min-width: 768px) {
   .header {
     background: url(/assets/images/header-illustration-desktop.svg) top/cover no-repeat;
     background-position: absolute;
+  }
+
+  .about-container {
+    flex-wrap: nowrap;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .works-card {
+    width: 30%;
+  }
+
+  .about-card {
+    width: 30%;
+  }
+
+  .section-title {
+    padding-bottom: 0;
+    align-items: center;
+  }
+
+  .section-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+  }
+
+  .section-title-container::before {
+    content: "";
+    display: block;
+    height: 100%;
+  }
+
+  .title-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .supporting-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 2;
+  }
+
+  .project-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+/* Mobile */
+@media only screen and (min-width: 375px) {
+  .section-title {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .section-title-container {
+    padding: 0 15px;
+  }
+
+  .title-container h1 {
+    font-size: 2rem;
   }
 }
