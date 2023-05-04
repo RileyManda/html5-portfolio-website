@@ -87,12 +87,12 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.5rem;
+  line-height: 28px;
 }
 
 .chevron-icon {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 8px;
 }
 
@@ -479,10 +479,21 @@ textarea {
   display: block;
 }
 
-.supporting-text h3 {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 3;
+/* .supporting-text h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 4;
+} */
+.contact-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--title-color);
+  text-align: center;
+  margin-top: 0;
+  display: inline-block;
+  margin-bottom: 10px;
+  line-height: 52px;
 }
 
 .works-tags ul {
