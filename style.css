@@ -151,9 +151,10 @@ body {
 
 .works-tags {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  margin-bottom: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 0;
 }
 
 /* Works Section END */
@@ -225,7 +226,15 @@ body {
   border-radius: 0;
 }
 
-.about-tags span {
+.about-tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-tags li {
   font-size: 0.8rem;
   background-color: var(--white-color);
   margin: 5px;
@@ -448,15 +457,21 @@ textarea {
 }
 
 /* CSS selectors */
-.works-tags span {
-  font-style: normal;
-  font-size: 12px;
-  line-height: 16px;
+.works-tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.works-tags li {
+  font-size: 0.8rem;
   background-color: var(--grey-tag-color);
-  padding: 8px 10px;
   margin: 5px;
-  border-radius: 4px;
   color: var(--works-text-color);
+  padding: 8px 12px;
+  border-radius: 8px;
 }
 
 .header-title h1 {
