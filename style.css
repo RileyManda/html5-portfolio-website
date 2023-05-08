@@ -502,22 +502,37 @@ textarea {
   line-height: 52px;
 }
 
-.works-tags ul {
+/* .works-tags ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
+} */
+
+.works-tags ul {
+  align-items: center;
+  list-style: none;
+
 }
 
 .works-tags li {
+  padding: 8px 12px;
+  margin: 5px;
+  font-size: 0.8rem;
+  float: left;
+  color: var(--works-text-color);
+  background-color: var(--grey-tag-color);
+}
+
+/* .works-tags li {
   font-size: 0.8rem;
   background-color: var(--grey-tag-color);
   margin: 5px;
   color: var(--works-text-color);
   padding: 8px 12px;
   border-radius: 8px;
-}
+} */
 
 .about-tags ul {
   display: flex;
