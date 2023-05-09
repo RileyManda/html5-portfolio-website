@@ -144,8 +144,6 @@ If you think that change is necessary - open a Pull Request in this repository a
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **[Works Section]**
       Works section: This section will consist of a card gallery featuring work project.
 
