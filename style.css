@@ -30,6 +30,7 @@ body {
   --form-border-color: #d0d9d4;
   --about-border-color: #c1c7d0;
   --button-hover-color: #6ac49f;
+  --button-active-color: #36b37f;
 }
 
 /* toolbar styles */
@@ -355,10 +356,6 @@ textarea {
   text-align: center;
 }
 
-.contact-form .contact-btn:hover {
-  background-color: var(--green-color);
-}
-
 .contact-image {
   background-image: url(./assets/images/form-bg.svg);
   background-size: 18%;
@@ -377,6 +374,19 @@ textarea {
   margin-bottom: 20px;
   color: var(--content-text-color);
 }
+
+/* button hover effects */
+.contact-form .contact-btn:active {
+  background-color: var(--button-active-color);
+  color: var(--white-color);
+}
+
+.contact-form .contact-btn:hover {
+  background-color: var(--button-hover-color);
+  color: var(--white-color);
+}
+
+/* button hover effects END */
 
 /* contact section- END */
 
