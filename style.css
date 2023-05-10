@@ -579,11 +579,8 @@ textarea {
     font-size: 40px;
   }
 
-  /* .header-title h2 {
-    display: flex;
-    flex-direction: row;
-  } */
   .header-title h2 {
+    display: flex;
     margin-left: 16px;
     font-size: 40px;
   }
@@ -592,19 +589,6 @@ textarea {
     display: block;
     display: inline-block;
   }
-
-
-
-
-  /* .header-title h1 {
-    margin-right: 16px;
-    margin-bottom: 20px;
-  }
-
-  .header-title h2 {
-    margin-top: 2px;
-    display: block;
-  } */
 
   /* Other desktop media query elements */
 
@@ -693,7 +677,6 @@ textarea {
     text-align: center;
     align-items: center;
   }
-
 
   .header-title h1 span {
     display: block;
