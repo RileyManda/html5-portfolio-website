@@ -596,6 +596,44 @@ textarea {
     display: none;
   }
 
+  .about-title {
+    background-image: url('./assets/images/desktop/about-illustration-right.svg');
+    background-size: 20%;
+    background-position: right top -50px;
+    background-repeat: no-repeat;
+    position: relative;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 5%;
+    padding-bottom: 2rem;
+  }
+
+  .about-title h2 {
+    margin-bottom: 30px;
+  }
+
+  .about-title p {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .about-img {
+    background-image: url('./assets/images/desktop/about-illustration-left.svg');
+    background-size: 20%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 3px;
+    margin-top: -3%;
+    padding-bottom: 2rem;
+  }
+
+  .about-title br {
+    display: none;
+  }
+
   .header-title h1 {
     display: flex;
     flex-direction: row;
@@ -612,6 +650,28 @@ textarea {
   .header-title h2 span {
     display: block;
     display: inline-block;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    min-width: 768px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    line-height: 52px;
   }
 
   /* Other desktop media query elements */
