@@ -152,6 +152,9 @@ If you think that change is necessary - open a Pull Request in this repository a
 - [ ] **[Contact Section]**
       This feature will comprise of a contact information.
 
+- [ ] **[RWD]**
+      The wite will be updated to utilize media queries for responsivenes to create a Desktop version.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
