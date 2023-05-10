@@ -548,14 +548,17 @@ textarea {
 
 /* CSS selectors END */
 
-/* Media Queries */
+/* Desktop Media Queries */
 
-/* Desktop */
 @media only screen and (min-width: 768px) {
+  /* Header section desktop query elements */
+
   .header {
     background: url(./assets/images/header-illustration-desktop.svg) top/cover no-repeat;
     background-size: 100%;
   }
+
+  /* Other desktop media query elements */
 
   .section-container {
     flex-wrap: nowrap;
@@ -565,14 +568,6 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  .works-card {
-    width: 30%;
-  }
-
-  .about-card {
-    width: 30%;
   }
 
   .section-title {
@@ -610,6 +605,18 @@ textarea {
     line-height: 20px;
   }
 
+  /* Works section desktop media query elements */
+  .works-card {
+    width: 30%;
+  }
+
+  /* About section desktop media query elements */
+  .about-card {
+    width: 30%;
+  }
+
+  /* Contact section desktop media query elements */
+
   #contact-section {
     justify-content: center;
     align-items: center;
@@ -626,8 +633,11 @@ textarea {
   }
 }
 
-/* Mobile */
+/* Mobile  Media Queries */
 @media only screen and (min-width: 375px) {
+  /* Header section mobile query elements */
+
+  /* Other mobile media query elements */
   .section-title {
     font-size: 24px;
     margin-top: 20px;
@@ -641,6 +651,12 @@ textarea {
   .title-container h1 {
     font-size: 2rem;
   }
+
+  /* Works section mobile media query elements */
+
+  /* About section mobile media query elements */
+
+  /* Contact section mobile media query elements */
 
   .contact-form {
     padding: 10px;
