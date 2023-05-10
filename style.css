@@ -499,12 +499,12 @@ textarea {
 .header-title h2 {
   color: var(--green-color);
   display: block;
-  font-size: 40px;
   line-height: 3rem;
   margin-bottom: 0.5rem;
+  font-size: 24px;
 }
 
-.header-title h1 span {
+.header-title h2 span {
   display: block;
 }
 
@@ -571,18 +571,30 @@ textarea {
   .header-title {
     display: flex;
     flex-direction: column;
-    font-size: 30px;
   }
 
   .header-title h1 {
     display: flex;
     flex-direction: row;
+    font-size: 40px;
   }
 
-  .header-title h2 {
+  /* .header-title h2 {
     display: flex;
     flex-direction: row;
+  } */
+  .header-title h2 {
+    margin-left: 16px;
+    font-size: 40px;
   }
+
+  .header-title h2 span {
+    display: block;
+    display: inline-block;
+  }
+
+
+
 
   /* .header-title h1 {
     margin-right: 16px;
@@ -682,10 +694,17 @@ textarea {
     align-items: center;
   }
 
+
   .header-title h1 span {
     display: block;
     margin-left: 0;
     margin-top: 0;
+  }
+
+  .header-title h2 {
+    margin-top: 16px;
+    text-align: center;
+    display: block;
   }
 
   /* Other mobile media query elements */
