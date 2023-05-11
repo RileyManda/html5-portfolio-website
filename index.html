@@ -214,9 +214,17 @@
                         in touch.</h2>
                         <div class="form-container grid-item">
                             <form class="contact-form" action="https://formspree.io/f/mvonlebo" method="POST">
+                                <div class="form-group first-name">
+                                    <label for="firstname"></label>
+                                    <input type="text" id="first-name" name="first-name" placeholder="First Name" maxlength="30" required>
+                                </div>
+                                    <div class="form-group last-name">
+                                        <label for="lastname"></label>
+                                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" maxlength="30" required>
+                                    </div>
                                 <div class="form-group">
                                     <label for="full-name"></label>
-                                    <input type="text" id="full-name" name="full-name" placeholder="Full Name" maxlength="30" required>
+                                    <input type="text" id="full-name" name="firstname" placeholder="Full Name" maxlength="30" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email"></label>
@@ -252,7 +260,6 @@
                 <hr>
             </div>
                 <div class="social-section">
-                  
                     <ul class="social-icons">
                         <li><a href="https://twitter.com/rilecodez"><img src="./assets/icons/twitter.svg" alt="Twitter icon"></a></li>
                         <li><a href="https://www.linkedin.com/in/rileymanda/"><img src="./assets/icons/linkedin.svg"

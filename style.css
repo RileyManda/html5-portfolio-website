@@ -54,7 +54,7 @@ body {
   padding: 2px;
   background-size: cover;
   position: relative;
-  top: -50px;
+  top: -90px;
 }
 
 .header {
@@ -122,7 +122,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2%;
-  margin-top: 100vh;
+  margin-top: 90vh;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -348,6 +348,18 @@ textarea {
   border-color: var(--green-color);
 }
 
+#full-name {
+  display: block;
+}
+
+#first-name {
+  display: none;
+}
+
+#last-name {
+  display: none;
+}
+
 .contact-form .contact-btn {
   box-sizing: border-box;
   position: relative;
@@ -383,7 +395,7 @@ textarea {
 .email-text {
   font-size: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: var(--content-text-color);
 }
 
@@ -442,7 +454,7 @@ textarea {
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
   list-style: none;
   align-items: center;
 }
@@ -571,18 +583,35 @@ textarea {
   border-radius: 8px;
 }
 
+
+
 /* CSS selectors END */
 
 /* Desktop Media Queries */
 
 @media only screen and (min-width: 768px) {
   /* Header section desktop query elements */
+  #first-name {
+    display: inline-block;
+    width: 49%;
+  }
+
+  #last-name {
+    display: inline-block;
+    width: 49%;
+    margin-left: 2%;
+  }
+
+  #full-name {
+    display: none;
+  }
 
   .header {
     background: url(./assets/images/desktop/header-illustration-desktop.svg) top/cover no-repeat;
-    background-size: 100%;
+    background-size: 900px;
     background-position: center;
     height: 100vh;
+    margin-top: -90px;
   }
 
   .header-title {
