@@ -714,7 +714,10 @@ textarea {
   }
 
   /* Animation transitions */
-
+  .icon-container:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
   /* Animation transitions END */
 
   /* Other desktop media query elements */
