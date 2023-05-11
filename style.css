@@ -656,12 +656,24 @@ textarea {
     display: none;
   }
 
-  .about-text {
+  /* .about-text {
     display: flex;
     flex-wrap: wrap;
     font-size: 30px;
     line-height: 40px;
     max-width: 770px;
+  } */
+  .supporting-text .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
   }
 
   .header-title h1 {
