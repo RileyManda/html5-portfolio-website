@@ -656,13 +656,6 @@ textarea {
     display: none;
   }
 
-  /* .about-text {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 30px;
-    line-height: 40px;
-    max-width: 770px;
-  } */
   .supporting-text .about {
     display: flex;
     flex-wrap: wrap;
@@ -719,6 +712,10 @@ textarea {
   .hamburger {
     display: none;
   }
+
+  /* Animation transitions */
+
+  /* Animation transitions END */
 
   /* Other desktop media query elements */
 
