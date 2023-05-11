@@ -153,7 +153,7 @@ If you think that change is necessary - open a Pull Request in this repository a
       This feature will comprise of a contact information.
 
 - [ ] **[RWD]**
-      The wite will be updated to utilize media queries for responsivenes to create a Desktop version.
+      The site will be updated(Desktop Version) to utilize media queries for responsivenes to create a Desktop version.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
