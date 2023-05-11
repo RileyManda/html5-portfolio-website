@@ -583,28 +583,12 @@ textarea {
   border-radius: 8px;
 }
 
-
-
 /* CSS selectors END */
 
 /* Desktop Media Queries */
 
 @media only screen and (min-width: 768px) {
   /* Header section desktop query elements */
-  #first-name {
-    display: inline-block;
-    width: 49%;
-  }
-
-  #last-name {
-    display: inline-block;
-    width: 49%;
-    margin-left: 2%;
-  }
-
-  #full-name {
-    display: none;
-  }
 
   .header {
     background: url(./assets/images/desktop/header-illustration-desktop.svg) top/cover no-repeat;
@@ -724,6 +708,25 @@ textarea {
     text-align: center;
   }
 
+  #first-name {
+    display: inline-block;
+    width: 100%;
+  }
+
+  #last-name {
+    display: inline-block;
+    width: 100%;
+    margin-left: 2%;
+  }
+
+  #full-name {
+    display: none;
+  }
+
+  .desktop-fields {
+    display: flex;
+  }
+
   .grid-container {
     display: grid;
     grid-template-columns: 50% 50% minmax(0, 1fr);
@@ -782,13 +785,8 @@ textarea {
   .footer-line hr {
     border: none;
     height: 1px;
-    background-color: #c7c7c7;
+    background-color: #dfe1e6;
   }
-
-  /* .social-section {
-   grid-column: 1 / span 3;
-    grid-row: 3 / 4;
-  }  */
 
   /* contact section END */
   .hamburger {
