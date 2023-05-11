@@ -15,6 +15,7 @@ body {
   padding: 0;
 }
 
+
 /* root theme attributes */
 :root {
   --title-color: #172b4d;
@@ -397,6 +398,10 @@ textarea {
   color: var(--white-color);
 }
 
+.footer-line {
+  display: none;
+}
+
 /* button hover effects END */
 
 /* contact section- END */
@@ -744,6 +749,7 @@ textarea {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
   }
 
   /* contact section END */
