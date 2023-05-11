@@ -31,6 +31,7 @@ body {
   --about-border-color: #c1c7d0;
   --button-hover-color: #6ac49f;
   --button-active-color: #008552;
+  --menu-items-color: #344563;
 }
 
 /* toolbar styles */
@@ -67,6 +68,10 @@ body {
   background-size: 100%;
   background-position: center;
   height: 100vh;
+}
+
+.menu-list {
+  display: none;
 }
 
 .header-title {
@@ -584,6 +589,23 @@ textarea {
     flex-direction: column;
   }
 
+  .menu-list {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex-direction: row;
+  }
+
+  .menu-list li a {
+    text-decoration: none;
+    color: var(--menu-items-color);
+    font-weight: 600;
+    line-height: 20px;
+    font-style: normal;
+  }
+
   .supporting-text {
     display: flex;
     flex-wrap: wrap;
@@ -634,6 +656,14 @@ textarea {
     display: none;
   }
 
+  .about-text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 770px;
+  }
+
   .header-title h1 {
     display: flex;
     flex-direction: row;
@@ -672,6 +702,10 @@ textarea {
     font-size: 40px;
     margin: 0;
     line-height: 52px;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   /* Other desktop media query elements */
