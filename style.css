@@ -54,7 +54,7 @@ body {
   padding: 2px;
   background-size: cover;
   position: relative;
-  top: -90px;
+  top: -40px;
 }
 
 .header {
@@ -173,7 +173,22 @@ body {
 /* Works Section END */
 
 /* About Section */
+
+/* #about-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+} */
+
 #about-section {
+  background:
+    url(./assets/images/mobile/about-bg-left.svg) top right / 20% no-repeat,
+    url(./assets/images/mobile/about-bg-right.svg) bottom left / 20% no-repeat;
+  background-position: left 0% top 20%, right top;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -184,10 +199,6 @@ body {
 }
 
 .about-title {
-  background-image: url('./assets/images/mobile/about-bg-right.svg');
-  background-size: 20%;
-  background-position: right top -50px;
-  background-repeat: no-repeat;
   position: relative;
   font-style: normal;
   font-size: 30px;
@@ -202,7 +213,7 @@ body {
   margin-bottom: 30px;
 }
 
-.about-img {
+/* .about-img {
   background-image: url('./assets/images/mobile/about-bg-left.svg');
   background-size: 20%;
   background-position: left bottom;
@@ -213,7 +224,7 @@ body {
   padding-bottom: 2rem;
   width: 100%;
   height: 200px;
-}
+} */
 
 .about-card {
   position: relative;
@@ -594,8 +605,8 @@ textarea {
     background: url(./assets/images/desktop/header-illustration-desktop.svg) top/cover no-repeat;
     background-size: 900px;
     background-position: center;
-    height: 100vh;
-    margin-top: -90px;
+    height: 95vh;
+    margin-top: -100px;
   }
 
   .header-title {
@@ -632,11 +643,16 @@ textarea {
     display: none;
   }
 
+  /* about section */
+
+  #about-section {
+    background:
+      url(./assets/images/desktop/about-illustration-left.svg) top right / 20% no-repeat,
+      url(./assets/images/desktop/about-illustration-right.svg) bottom left / 20% no-repeat;
+    background-position: left 0% top 40%, right top;
+  }
+
   .about-title {
-    background-image: url('./assets/images/desktop/about-illustration-right.svg');
-    background-size: 20%;
-    background-position: right top -50px;
-    background-repeat: no-repeat;
     position: relative;
     font-style: normal;
     font-size: 30px;
@@ -656,10 +672,6 @@ textarea {
   }
 
   .about-img {
-    background-image: url('./assets/images/desktop/about-illustration-left.svg');
-    background-size: 20%;
-    background-position: left bottom;
-    background-repeat: no-repeat;
     position: relative;
     margin-bottom: 3px;
     margin-top: -3%;
@@ -701,6 +713,8 @@ textarea {
     display: inline-block;
   }
 
+  /* about section END */
+
   /* contact section grid */
   #contact-section {
     justify-content: center;
@@ -716,7 +730,7 @@ textarea {
   #last-name {
     display: inline-block;
     width: 100%;
-    margin-left: 2%;
+    margin-left: 10px;
   }
 
   #full-name {
