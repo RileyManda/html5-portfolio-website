@@ -631,7 +631,7 @@ textarea {
 
   .section-container {
     margin-bottom: 40px;
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   /* about section */
@@ -640,13 +640,13 @@ textarea {
     background:
       url(./assets/images/desktop/about-illustration-left.svg) top right / 10% no-repeat,
       url(./assets/images/desktop/about-illustration-right.svg) bottom left / 10% no-repeat;
-    background-position: left 0% top 30%, right 0% top;
+    background-position: left 10% top 20%, right 10% top;
     position: relative;
     font-style: normal;
     font-size: 30px;
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 5%;
+    margin-top: 50%;
   }
 
   .about-title h2 {
@@ -798,9 +798,9 @@ textarea {
 
   .contact-container {
     background:
-      url(./assets/images/desktop/contact-illustration-left.svg) 0% 100% / 10% no-repeat,
-      url(./assets/images/desktop/contact-illustration-bottom.svg) 20% 100% / 20% no-repeat,
-      url(./assets/images/desktop/contact-illustration-right.svg) 100% 100% / 20% no-repeat;
+      url(./assets/images/desktop/contact-illustration-left.svg) 0% 90% / 12% no-repeat,
+      url(./assets/images/desktop/contact-illustration-bottom.svg) 25% 75% / 10% no-repeat,
+      url(./assets/images/desktop/contact-illustration-right.svg) 100% 100% / 15% no-repeat;
   }
 
   .contact-image {
