@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Portfolio</title>
+    <title>Riley's Portfolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,32 +12,41 @@
 </head>
 
 <body>
+    <!-- Toolbar section -->
     <header class="toolbar">
         <div class="toolbar-menu">
             <nav class="nav-bar">
                 <div class="hamburger">
                     <i class="fa fa-bars"></i>
                 </div>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#works-section">Portfolio</a></li>
+                    <li class="menu-item"><a href="#about-section">About</a></li>
+                    <li class="menu-item"><a href="#contact-section">Contact</a></li>
+                </ul>
             </nav>
 
         </div>
     </header>
 
-    <!-- Intro section -->
+
     <main>
+        <!-- Header section -->
         <section id="header-section">
             <div class="header">
                 <div class="header-title">
-                    <h1><span>Hey there.</span><br><span>I'm Alex.</span></h1>
-                    <h2>I'm a software<br>developer</h2>
+                    <h1>Hey there.<span>I'm Alex.</span></h1>
+                    <h2>I'm a software <span></span>developer</h2>
 
                 </div>
-
-                <p class="supporting-text">I can help you build a product,<br>some of my work and
+                <p class="supporting-text">
+                    I can help you build a product,<br> feature or website. Look through some of my work and
                     experience!<br>
-                    If you like what you see and have
-                    <br>a project you need coded,<br>don’t hesitate to contact me.
+
+                    If you like what you see and have <br>a project you need coded, <span>don't hesitate to contact me.</span>
                 </p>
+
+
 
                 <ul class="social-icons">
                     <li><a href="https://twitter.com/rilecodez"><img src="./assets/icons/twitter.svg"
@@ -54,8 +63,6 @@
                     <li><a href="https://www.angellist.com/"><img src="./assets/icons/angellist.svg"
                                 alt="AngelList icon"></a>
                     </li>
-
-
                 </ul>
                 <div class="chevron-icon">
                     <a href="#"><img src="./assets/icons/chevron.svg" alt="Chevron icon"></a>
@@ -66,18 +73,18 @@
 
         </section>
 
-        <!-- Recent Work section -->
+        <!-- Works section -->
         <section id="works-section">
             <div class="section-container">
                 <div class="section-title">
-                    <h3>My Recent<br>Works</h3>
+                    <h3>My Recent<br> Works</h3>
                     <div class="section-indicator"></div>
                 </div>
                 <div class="card-container">
                     <div class="works-card">
                         <div class="works-card-img"></div>
                         <div class="works-card-content">
-                            <h3 class="works-card-title">Multi-Post Stories Gain+Glory</h3>
+                            <h3 class="works-card-title">Multi-Post Stories <span>Gain+Glory</span> </h3>
                             <div class="works-tags">
                                 <ul>
                                     <li>Ruby on Rails</li>
@@ -92,7 +99,7 @@
                     <div class="works-card">
                         <div class="works-card-img"></div>
                         <div class="works-card-content">
-                            <h3 class="works-card-title">Multi-Post Stories Gain+Glory</h3>
+                            <h3 class="works-card-title">Multi-Post Stories <span>Gain+Glory</span></h3>
                             <div class="works-tags">
                                 <ul>
                                     <li>Ruby on Rails</li>
@@ -107,7 +114,7 @@
                     <div class="works-card">
                         <div class="works-card-img"></div>
                         <div class="works-card-content">
-                            <h3 class="works-card-title">Multi-Post Stories Gain+Glory</h3>
+                            <h3 class="works-card-title">Multi-Post Stories <span>Gain+Glory</span></h3>
                             <div class="works-tags">
                                 <ul>
                                     <li>Ruby on Rails</li>
@@ -130,13 +137,13 @@
             <div class="section-container">
                 <div class="about-title">
                     <h2>About Me</h2>
-                    <p class="supporting-text">I can help you build a product,<br>
-                        feature or website Look through <br>
-                        some of my work and experience! If<br>
-                        you like what you see and have a <br>
-                        project you need coded,<br>
-                        don’t hesitate to contact me.
+                    <p class="supporting-text">
+                        I can help you build a product,<br> feature or website. Look through some of my work and
+                        experience!<br>
+                    
+                        If you like what you see and have <br>a project you need coded, <span>don't hesitate to contact me.</span>
                     </p>
+
                     <button class="project-btn">Get my resume</button>
                     <div class="about-img"></div>
                 </div>
@@ -173,7 +180,7 @@
                                     <li>Ruby on Rails</li>
                                     <li>RSpec</li>
                                     <li>Capybara</li>
-                                    <li>Selenium</li>
+                                    <li class="desktop-hide">Selenium</li>
                                 </ul>
                             </div>
                         </div>
@@ -200,58 +207,63 @@
             </div>
         </section>
 
-
         <!-- Contact me section -->
         <section id="contact-section">
-            <h2 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat
-                please get
-                in touch.</h2>
-            <div class="form-container">
-                <form class="contact-form" action="https://formspree.io/f/mvonlebo" method="POST">
-                    <div class="form-group">
-                        <label for="full-name"></label>
-                        <input type="text" id="full-name" name="full-name" placeholder="Full Name" maxlength="30"
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email" placeholder="Email address" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message"></label>
-                        <textarea id="message" name="message" placeholder="Hey, I'd like to connect with you about..."
-                            maxlength="500" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Get in touch" class="contact-btn">
-                    </div>
+            <div class="contact-container">
+                <div class="grid-container">
+                    <h2 class="contact-text grid-item">I'm always interested in hearing about new projects, so if you'dlike to chat please get in touch.</h2>
+                    <div class="form-container grid-item">
+                        <form class="contact-form" action="https://formspree.io/f/mvonlebo" method="POST">
+                            <div class="form-group">
+                                <label for="full-name"></label>
+                                <input type="text" id="full-name" name="firstname" placeholder="Full Name"
+                                    maxlength="30" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" placeholder="Email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message"></label>
+                                <textarea id="message" name="message"
+                                    placeholder="Hey, I'd like to connect with you about..." maxlength="500"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Get in touch" class="contact-btn">
+                            </div>
 
-                </form>
-                <div class="email-container">
-                    <p class="email-text">rileymanda0@gmail.com</p>
+                        </form>
+                        <div class="email-container">
+                            <p class="email-text">rileymanda0@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-image"></div>
                 </div>
 
-                <div class="social-section">
-                    <ul class="social-icons">
-                        <li><a href="https://twitter.com/rilecodez"><img src="./assets/icons/twitter.svg"
-                                    alt="Twitter icon"></a></li>
-                        <li><a href="https://www.linkedin.com/in/rileymanda/"><img src="./assets/icons/linkedin.svg"
-                                    alt="LinkedIn icon"></a></li>
-                        <li><a href="https://rileymanda.medium.com/"><img src="./assets/icons/medium.svg"
-                                    alt="Medium icon"></a>
-                        </li>
-                        <li><a href="https://github.com/RileyManda/"><img src="./assets/icons/github.svg"
-                                    alt="GitHub icon"></a>
-                        </li>
-                        <li><a href="https://www.angellist.com/"><img src="./assets/icons/angellist.svg"
-                                    alt="AngelList icon"></a></li>
-                    </ul>
 
-                </div>
-                <div class="contact-image"></div>
 
             </div>
+            <div class="footer-line">
+                <hr>
+            </div>
+            <div class="social-section">
+                <ul class="social-icons">
+                    <li><a href="https://twitter.com/rilecodez"><img src="./assets/icons/twitter.svg"
+                                alt="Twitter icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/rileymanda/"><img src="./assets/icons/linkedin.svg"
+                                alt="LinkedIn icon"></a></li>
+                    <li><a href="https://rileymanda.medium.com/"><img src="./assets/icons/medium.svg"
+                                alt="Medium icon"></a>
+                    </li>
+                    <li><a href="https://github.com/RileyManda/"><img src="./assets/icons/github.svg"
+                                alt="GitHub icon"></a>
+                    </li>
+                    <li><a href="https://www.angellist.com/"><img src="./assets/icons/angellist.svg"
+                                alt="AngelList icon"></a></li>
+                </ul>
 
+            </div>
         </section>
 
     </main>
