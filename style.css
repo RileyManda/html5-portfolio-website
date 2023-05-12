@@ -880,6 +880,8 @@ textarea {
     align-items: left;
   }
 
+  /* contact section media query END */
+
   /* social icons section desktop query */
   .social-icons {
     justify-content: flex-end;
@@ -910,9 +912,15 @@ textarea {
     order: 3;
   }
 
-  /* social icons section desktop query END */
+  /* Animation transitions */
+  .social-icons li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
 
-  /* contact section media query END */
+  /* Animation transitions END */
+
+  /* social icons section desktop query END */
 }
 
 /* Mobile  Media Queries */
