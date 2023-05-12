@@ -34,6 +34,9 @@ body {
   --menu-items-color: #344563;
   --line-color: #dfe1e6;
   --form-active-color: #60c095;
+
+  /* desktop colors */
+  --desktop-works-tag-color: #172b4d;
 }
 
 /* toolbar styles */
@@ -69,7 +72,7 @@ body {
   padding-top: 5px;
   background-size: 100%;
   background-position: center;
-  height: 100vh;
+  height: 120vh;
 }
 
 .menu-list {
@@ -159,14 +162,19 @@ body {
   margin-bottom: 1.5%;
   color: var(--works-text-color);
   align-items: center;
+  margin-top: 20px;
 }
+
+/* .works-card-title::after {
+  content: "Gain+Glory";
+} */
 
 .works-card-content {
   text-align: center;
   background-color: var(--white-color);
   border-radius: 20px;
   width: 100%;
-  height: 200px;
+  height: 210px;
   margin-top: auto;
 }
 
@@ -481,6 +489,10 @@ textarea {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+
+  /* margin-top: 10px; */
+  left: 12px;
+  top: 5px;
 }
 
 .project-btn:hover {
@@ -674,6 +686,10 @@ textarea {
     justify-content: center;
   }
 
+  .about-tags .desktop-hide {
+    display: none;
+  }
+
   .about-card {
     width: 30%;
   }
@@ -723,7 +739,7 @@ textarea {
   .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 30px;
   }
 
@@ -740,6 +756,15 @@ textarea {
 
   .works-card {
     width: 30%;
+  }
+
+  .project-btn {
+    margin-top: 10px;
+  }
+
+  .works-tags li {
+    color: var(--desktop-works-tag-color);
+    font-weight: 600;
   }
 
   /* Works section END */
@@ -812,7 +837,7 @@ textarea {
     font-size: 30px;
     justify-content: flex-start;
     margin: 0;
-    line-height: 50px;
+    line-height: 80px;
   }
 
   .footer-line {
@@ -830,7 +855,7 @@ textarea {
   }
 
   .form-group .contact-btn {
-    width: 50%;
+    width: 30%;
     margin: 0;
   }
 
@@ -855,6 +880,7 @@ textarea {
     align-items: left;
   }
 
+  /* social icons section desktop query */
   .social-icons {
     justify-content: flex-end;
   }
@@ -883,6 +909,8 @@ textarea {
   .social-icons li:nth-child(5) {
     order: 3;
   }
+
+  /* social icons section desktop query END */
 
   /* contact section media query END */
 }
@@ -924,10 +952,6 @@ textarea {
   .title-container h1 {
     font-size: 2rem;
   }
-
-  /* Works section mobile media query elements */
-
-  /* About section mobile media query elements */
 
   /* Contact section mobile media query elements */
 
