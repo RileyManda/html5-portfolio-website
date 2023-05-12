@@ -737,40 +737,7 @@ textarea {
 
   /* Other desktop media query elements */
 
-  .section-container {
-    flex-wrap: nowrap;
-  }
-
-  .section-title {
-    align-items: center;
-    font-size: 40px;
-    margin-bottom: 30px;
-  }
-
-  .section-title-container {
-    flex: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 200px;
-  }
-
-  .section-title-container::before {
-    content: "";
-    display: block;
-    height: 100%;
-  }
-
-  .title-container h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-
-  .project-btn {
-    padding: 12px 24px;
-    font-size: 14px;
-    line-height: 20px;
-  }
+  /*
 
   /* Card media query element */
   .card-container {
