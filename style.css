@@ -55,7 +55,7 @@ body {
   padding: 2px;
   background-size: cover;
   position: relative;
-  top: -40px;
+  top: -90px;
 }
 
 .header {
@@ -577,6 +577,9 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   /* Header section desktop query elements */
+  #header-section {
+    top: -20px;
+  }
 
   .header {
     background: url(./assets/images/desktop/header-illustration-desktop.svg) top/cover no-repeat;
@@ -638,7 +641,7 @@ textarea {
     font-style: normal;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     margin-top: 0%;
   }
 
@@ -647,8 +650,8 @@ textarea {
   }
 
   .about-title p {
-    display: flex;
     margin-bottom: 30px;
+    line-height: 40px;
   }
 
   .about-img {
@@ -658,18 +661,11 @@ textarea {
     padding-bottom: 2rem;
   }
 
-  .about-title br {
+  /* .about-title br {
     display: none;
-  }
+  } */
 
-  .aboutme-text {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    line-height: 50px;
-    max-width: 800px;
-    margin-top: 90px;
-  }
+
 
   .about-tags ul {
     justify-content: center;
@@ -691,6 +687,7 @@ textarea {
     font-size: 20px;
     line-height: 50px;
     margin: 0 auto;
+    max-width: 750px;
   }
 
   .header-title h1 {
@@ -732,7 +729,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2%;
-    margin-top: 100vh;
+    margin-top: 140vh;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
