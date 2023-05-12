@@ -178,7 +178,7 @@ body {
 #about-section {
   display: grid;
   background:
-    url(./assets/images/mobile/about-bg-left.svg) left 29% / 20% no-repeat,
+    url(./assets/images/mobile/about-bg-left.svg) left 28% / 20% no-repeat,
     url(assets/images/mobile/about-bg-right.svg)  right 0% / 20% no-repeat;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
