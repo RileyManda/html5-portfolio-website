@@ -212,7 +212,7 @@ body {
   width: 100%;
   height: 300px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   background-size: cover;
   border: 1px solid var(--about-border-color);
   background-image: url('./assets/images/mobile/img-placeholder.png');
@@ -336,7 +336,7 @@ textarea {
   border-color: var(--green-color);
 }
 
-#full-name {
+/* #full-name {
   display: block;
 }
 
@@ -346,7 +346,7 @@ textarea {
 
 #last-name {
   display: none;
-}
+} */
 
 .contact-form .contact-btn {
   box-sizing: border-box;
@@ -661,12 +661,6 @@ textarea {
     padding-bottom: 2rem;
   }
 
-  /* .about-title br {
-    display: none;
-  } */
-
-
-
   .about-tags ul {
     justify-content: center;
   }
@@ -678,16 +672,16 @@ textarea {
   /* About section desktop media END */
   .supporting-text {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: column;
     justify-content: center;
     text-align: center;
     align-items: center;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 50px;
+    line-height: 40px;
     margin: 0 auto;
-    max-width: 750px;
+    max-width: 795px;
   }
 
   .header-title h1 {
@@ -749,7 +743,7 @@ textarea {
     text-align: center;
   }
 
-  #first-name {
+  /* #first-name {
     display: inline-block;
     width: 100%;
   }
@@ -757,11 +751,7 @@ textarea {
   #last-name {
     display: inline-block;
     width: 100%;
-  }
-
-  #full-name {
-    display: none;
-  }
+  } */
 
   .desktop-fields {
     display: flex;
@@ -804,6 +794,7 @@ textarea {
   .contact-form {
     display: flex;
     justify-content: center;
+    padding: 0;
   }
 
   .contact-text {
@@ -812,7 +803,7 @@ textarea {
     font-size: 30px;
     justify-content: flex-start;
     margin: 0;
-    line-height: 52px;
+    line-height: 50px;
   }
 
   .footer-line {
@@ -843,6 +834,11 @@ textarea {
 
   .section-indicator {
     display: none;
+  }
+
+  .contact-form .contact-btn {
+    width: 50%;
+    align-items: left;
   }
 
   /* section media query */
@@ -902,8 +898,8 @@ textarea {
     line-height: 20px;
   }
 
-  .contact-form .contact-btn {
-    width: 50%;
-    align-items: left;
+  .form-group .contact-btn {
+    width: 30%;
+    margin: 0;
   }
 }
