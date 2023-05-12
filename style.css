@@ -594,7 +594,7 @@ textarea {
 
   .header {
     background: url(./assets/images/desktop/header-illustration-desktop.svg) top/cover no-repeat;
-    background-size: 900px;
+    background-size: cover;
     background-position: center;
     height: 95vh;
     margin-top: -100px;
@@ -624,35 +624,32 @@ textarea {
     font-style: normal;
   }
 
-  .supporting-text {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    line-height: 50px;
-    max-width: 670px;
-  }
-
   .supporting-text br {
     display: none;
   }
 
-  /* about section */
-
-  #about-section {
-    background:
-      url(./assets/images/desktop/about-illustration-left.svg) top right / 20% no-repeat,
-      url(./assets/images/desktop/about-illustration-right.svg) bottom left / 20% no-repeat;
-    background-position: left 0% top 40%, right 0% top;
+  .section-container {
+    margin-bottom: 20px;
   }
 
+  /* about section */
+
+  /* #about-section {
+
+  } */
+
   .about-title {
+    background:
+      url(./assets/images/desktop/about-illustration-left.svg) top right / 10% no-repeat,
+      url(./assets/images/desktop/about-illustration-right.svg) bottom left / 10% no-repeat;
+    background-position: left 0% top 10%, right 0% top;
     position: relative;
     font-style: normal;
     font-size: 30px;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 5%;
-    padding-bottom: 2rem;
+    padding-bottom: 20rem;
   }
 
   .works-title {
@@ -688,6 +685,10 @@ textarea {
     margin-top: 90px;
   }
 
+  .about-tags ul {
+    justify-content: center;
+  }
+
   .section-title br {
     display: none;
     margin-bottom: 130px;
@@ -697,17 +698,17 @@ textarea {
     display: none;
   }
 
-  .supporting-text .about {
+  .supporting-text {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-bottom: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 50px;
+    margin: 0 auto;
   }
 
   .header-title h1 {
