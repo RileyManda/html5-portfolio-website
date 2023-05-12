@@ -176,14 +176,13 @@ body {
 /* About Section */
 
 #about-section {
-  background:
-    url(./assets/images/mobile/about-bg-left.svg) top right / 20% no-repeat,
-    url(./assets/images/mobile/about-bg-right.svg) bottom left / 20% no-repeat;
-  background-position: left 0% top 20%, right top;
   display: grid;
+  background:
+    url(./assets/images/mobile/about-bg-left.svg) left 29% / 20% no-repeat,
+    url(assets/images/mobile/about-bg-right.svg)  right 0% / 20% no-repeat;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
-  margin-top: 50px;
+  margin-top: 10px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -196,26 +195,13 @@ body {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 3px;
-  margin-top: 3%;
+  margin-top: 30%;
   padding-bottom: 2rem;
 }
 
 .about-title h2 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-
-/* .about-img {
-  background-image: url('./assets/images/mobile/about-bg-left.svg');
-  background-size: 20%;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  position: relative;
-  margin-bottom: 3px;
-  margin-top: -18%;
-  padding-bottom: 2rem;
-  width: 100%;
-  height: 200px;
-} */
 
 .about-card {
   position: relative;
@@ -425,7 +411,7 @@ textarea {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 3px;
-  margin-top: 40px;
+  margin-top: 30px;
   padding-bottom: 2rem;
 }
 
@@ -635,18 +621,25 @@ textarea {
   }
 
   /* about section */
+  #about-section {
+    display: grid;
+    background:
+      url(./assets/images/desktop/about-illustration-left.svg) left 40% / 20% no-repeat,
+      url(assets/images/desktop/about-illustration-right.svg) top right 0% / 20% no-repeat;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
   .about-title {
-    background:
-      url(./assets/images/desktop/about-illustration-left.svg) top right / 10% no-repeat,
-      url(./assets/images/desktop/about-illustration-right.svg) bottom left / 10% no-repeat;
-    background-position: left 10% top 20%, right 10% top;
-    position: relative;
     font-style: normal;
     font-size: 30px;
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 50%;
+    margin-top: 0%;
   }
 
   .about-title h2 {
@@ -844,7 +837,11 @@ textarea {
   /* section media query */
   .section-title br {
     display: none;
-    margin-bottom: 130px;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
   }
 
   .section-indicator {
