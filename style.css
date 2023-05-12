@@ -425,7 +425,7 @@ textarea {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 3px;
-  margin-top: 20px;
+  margin-top: 40px;
   padding-bottom: 2rem;
 }
 
@@ -596,15 +596,16 @@ textarea {
     background: url(./assets/images/desktop/header-illustration-desktop.svg) top/cover no-repeat;
     background-size: cover;
     background-position: center;
-    height: 95vh;
-    margin-top: -100px;
+    height: 130vh;
+    margin-top: -30px;
+    margin-bottom: 30px;
   }
 
   .header-title {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   .menu-list {
@@ -629,14 +630,11 @@ textarea {
   }
 
   .section-container {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 100px;
   }
 
   /* about section */
-
-  /* #about-section {
-
-  } */
 
   .about-title {
     background:
@@ -650,10 +648,6 @@ textarea {
     margin-bottom: 30px;
     margin-top: 5%;
     padding-bottom: 20rem;
-  }
-
-  .works-title {
-    font-size: 40px;
   }
 
   .about-title h2 {
@@ -687,15 +681,6 @@ textarea {
 
   .about-tags ul {
     justify-content: center;
-  }
-
-  .section-title br {
-    display: none;
-    margin-bottom: 130px;
-  }
-
-  .section-indicator {
-    display: none;
   }
 
   .supporting-text {
@@ -752,7 +737,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2%;
-    margin-top: 80vh;
+    margin-top: 100vh;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -856,6 +841,16 @@ textarea {
   }
 
   /* contact section END */
+
+  /* section media query */
+  .section-title br {
+    display: none;
+    margin-bottom: 130px;
+  }
+
+  .section-indicator {
+    display: none;
+  }
 }
 
 /* Mobile  Media Queries */
