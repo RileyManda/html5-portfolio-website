@@ -820,6 +820,11 @@ textarea {
     background-color: var(--line-color);
   }
 
+  .form-group .contact-btn {
+    width: 50%;
+    margin: 0;
+  }
+
   /* contact section END */
 
   /* section media query */
@@ -899,7 +904,6 @@ textarea {
   }
 
   .form-group .contact-btn {
-    width: 30%;
-    margin: 0;
+    width: 50%;
   }
 }
