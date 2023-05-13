@@ -618,6 +618,10 @@ textarea {
     margin-top: -200px;
   }
 
+  .toolbar {
+    padding-top: 1.5rem;
+  }
+
   .menu-list {
     display: flex;
     gap: 1em;
