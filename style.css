@@ -185,7 +185,7 @@ body {
   display: grid;
   background:
     url(./assets/images/mobile/about-bg-left.svg) left 28% / 20% no-repeat,
-    url(assets/images/mobile/about-bg-right.svg)  right 0% / 20% no-repeat;
+    url(assets/images/mobile/about-bg-right.svg) right 0% / 20% no-repeat;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
   margin-top: 10px;
@@ -545,7 +545,7 @@ textarea {
   list-style: none;
   padding: 0;
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .works-tags li {
@@ -561,8 +561,8 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 8px 12px;
 }
 
 .about-tags li {
