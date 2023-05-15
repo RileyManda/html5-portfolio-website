@@ -710,17 +710,15 @@ textarea {
 
   /* Css selectors desktop */
 
-  .header-title h1 {
+  .header-title h1,
+  .header-title h2 {
     display: flex;
     flex-direction: row;
     font-size: 40px;
   }
 
   .header-title h2 {
-    display: flex;
-    flex-direction: row;
     margin-left: 16px;
-    font-size: 40px;
   }
 
   .header-title h2 span {
