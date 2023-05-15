@@ -8,6 +8,8 @@
 
 html {
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -34,10 +36,13 @@ body {
   --menu-items-color: #344563;
   --line-color: #dfe1e6;
   --form-active-color: #60c095;
+  --black-color: #000;
 
   /* desktop colors */
   --desktop-works-tag-color: #172b4d;
 }
+
+/* Header Section */
 
 /* toolbar styles */
 .toolbar {
@@ -48,8 +53,6 @@ body {
   top: 44px;
   bottom: 0;
 }
-
-/* Header Section */
 
 #header-section {
   display: flex;
@@ -72,25 +75,25 @@ body {
   padding-top: 5px;
   background-size: 100%;
   background-position: center;
-  height: 120vh;
-}
-
-.menu-list {
-  display: none;
+  height: 100vh;
 }
 
 .header-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  white-space: nowrap;
+  white-space: wrap;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   color: var(--title-color);
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 0;
+  margin-top: 30;
+}
+
+.menu-list {
+  display: none;
 }
 
 .supporting-text {
@@ -104,13 +107,15 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 25px;
 }
 
+/* Header icons */
 .chevron-icon {
   text-align: center;
   margin-top: 10px;
   padding: 8px;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -118,7 +123,7 @@ body {
   top: 20px;
   right: 30px;
   z-index: 1;
-  color: black;
+  color: var(--black-color);
 }
 
 /* Works Section */
@@ -148,26 +153,13 @@ body {
   width: 100%;
 }
 
-/* .works-card-img {
-  width: 100%;
-  height: 300px;
-  background-image: url(./assets/images/mobile/img-placeholder.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-} */
-
 .works-card-title {
-  font-size: 1.5rem;
-  margin-bottom: 1.5%;
+  font-size: 20px;
+  margin-bottom: 3%;
   color: var(--works-text-color);
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
-
-/* .works-card-title::after {
-  content: "Gain+Glory";
-} */
 
 .works-card-content {
   text-align: center;
@@ -182,10 +174,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 1.5%;
+  margin-bottom: 2px;
   border-radius: 0;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 
 /* Works Section END */
@@ -196,7 +189,7 @@ body {
   display: grid;
   background:
     url(./assets/images/mobile/about-bg-left.svg) left 28% / 20% no-repeat,
-    url(assets/images/mobile/about-bg-right.svg)  right 0% / 20% no-repeat;
+    url(assets/images/mobile/about-bg-right.svg) right 0% / 20% no-repeat;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
   margin-top: 10px;
@@ -210,7 +203,6 @@ body {
   font-style: normal;
   font-size: 30px;
   color: var(--title-color);
-  text-align: center;
   margin-bottom: 3px;
   margin-top: 30%;
   padding-bottom: 2rem;
@@ -237,15 +229,14 @@ body {
 
 .about-card-title {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: var(--about-card-title-text);
-  text-align: center;
+  margin-top: 50px;
 }
 
 .about-card-content {
   position: relative;
   z-index: 1;
-  text-align: center;
   align-items: center;
   margin-top: 18%;
 }
@@ -257,17 +248,28 @@ body {
   margin-bottom: 10px;
   border-radius: 0;
   align-items: center;
-  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .icon-container {
   position: absolute;
-  top: 0;
+  top: 20px;
   z-index: 2;
   align-items: center;
   align-content: center;
   margin-bottom: 2px;
+  cursor: pointer;
 }
+
+.about-title,
+.about-card-title,
+.about-card-content,
+.about-tags {
+  text-align: center;
+}
+
+/* contact section */
 
 /* contact section */
 #contact-section {
@@ -353,18 +355,6 @@ textarea {
   border-color: var(--green-color);
 }
 
-/* #full-name {
-  display: block;
-}
-
-#first-name {
-  display: none;
-}
-
-#last-name {
-  display: none;
-} */
-
 .contact-form .contact-btn {
   box-sizing: border-box;
   position: relative;
@@ -405,17 +395,11 @@ textarea {
 }
 
 /* button hover effects */
-.contact-form .contact-btn:active {
+.contact-form .contact-btn:active,
+.contact-form .contact-btn:hover {
   background-color: var(--button-active-color);
   color: var(--white-color);
 }
-
-.contact-form .contact-btn:hover {
-  background-color: var(--button-hover-color);
-  color: var(--white-color);
-}
-
-/* button hover effects END */
 
 /* contact section- END */
 
@@ -443,17 +427,14 @@ textarea {
   border-radius: 24px;
 }
 
-.section-title-container {
+.section-title-container,
+.title-container {
   text-align: center;
 }
 
 .title-container h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-}
-
-.title-container {
-  text-align: center;
 }
 
 .social-icons {
@@ -489,19 +470,13 @@ textarea {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-
-  /* margin-top: 10px; */
   left: 12px;
   top: 5px;
 }
 
-.project-btn:hover {
-  background-color: var(--button-hover-color);
-  color: var(--white-color);
-}
-
+.project-btn:hover,
 .project-btn:active {
-  background-color: var(--button-active-color);
+  background-color: var(--button-hover-color);
   color: var(--white-color);
 }
 
@@ -563,7 +538,8 @@ textarea {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 3px;
 }
 
 .works-tags li {
@@ -571,7 +547,7 @@ textarea {
   background-color: var(--grey-tag-color);
   margin: 5px;
   color: var(--works-text-color);
-  padding: 8px 12px;
+  padding: 8px 6px;
   border-radius: 8px;
 }
 
@@ -579,8 +555,8 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 8px 12px;
 }
 
 .about-tags li {
@@ -607,7 +583,7 @@ textarea {
     background-size: cover;
     background-position: center;
     height: 160vh;
-    margin-top: -40px;
+    margin-top: -30px;
     margin-bottom: 30px;
   }
 
@@ -616,6 +592,10 @@ textarea {
     flex-direction: column;
     margin-bottom: 20px;
     margin-top: -200px;
+  }
+
+  .toolbar {
+    padding-top: 1.5rem;
   }
 
   .menu-list {
@@ -633,6 +613,7 @@ textarea {
     font-weight: 600;
     line-height: 20px;
     font-style: normal;
+    cursor: pointer;
   }
 
   .supporting-text br {
@@ -684,6 +665,7 @@ textarea {
 
   .about-tags ul {
     justify-content: center;
+    margin-top: 20px;
   }
 
   .about-tags .desktop-hide {
@@ -691,10 +673,21 @@ textarea {
   }
 
   .about-card {
+    height: 300px;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-card-title {
+    text-align: center;
+    margin-bottom: 3px;
+    margin-top: 20%;
   }
 
   /* About section desktop media END */
+
+  /* Other desktop media query elements  */
   .supporting-text {
     display: flex;
     flex-wrap: column;
@@ -708,6 +701,14 @@ textarea {
     margin: 0 auto;
     max-width: 795px;
   }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* Other desktop media query elements END */
+
+  /* Css selectors desktop */
 
   .header-title h1 {
     display: flex;
@@ -727,21 +728,21 @@ textarea {
     display: inline-block;
   }
 
-  /* about section END */
+  /* Css selectors desktop  END */
 
-  .hamburger {
-    display: none;
-  }
-
-  /* Other desktop media query elements */
-
-  /* Card media query element */
+  /* Cards media query element */
   .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
   }
+
+  .icon-container {
+    margin-bottom: 10px;
+  }
+
+  /* Cards media query element END */
 
   /* Works section desktop media query elements */
   #works-section {
@@ -759,12 +760,13 @@ textarea {
   }
 
   .project-btn {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .works-tags li {
     color: var(--desktop-works-tag-color);
     font-weight: 600;
+    margin-top: 20px;
   }
 
   /* Works section END */
@@ -776,16 +778,6 @@ textarea {
     align-items: center;
     text-align: center;
   }
-
-  /* #first-name {
-    display: inline-block;
-    width: 100%;
-  }
-
-  #last-name {
-    display: inline-block;
-    width: 100%;
-  } */
 
   .desktop-fields {
     display: flex;
@@ -882,7 +874,7 @@ textarea {
 
   /* contact section media query END */
 
-  /* social icons section desktop query */
+  /* social icons list section desktop query */
   .social-icons {
     justify-content: flex-end;
   }
@@ -912,15 +904,25 @@ textarea {
     order: 3;
   }
 
+  /* social icons list section  END */
+
   /* Animation transitions */
   .social-icons li:hover {
     transform: scale(1.1);
     transition: 0.3s;
   }
 
-  /* Animation transitions END */
+  .chevron-icon :hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
 
-  /* social icons section desktop query END */
+  .icon-container:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+  /* Animation transitions END */
 }
 
 /* Mobile  Media Queries */
