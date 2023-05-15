@@ -32,8 +32,31 @@
   <ul>
     <li><a href="github.com">Git Hub</a></li>
   </ul>
-</details
 
+  <summary>Github Pages</summary>
+  <ul>
+    <li><a href="https://pages.github.com/">Github Pages</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[ResponsiveWebsite]**
+- **[WorksSection]**
+- **[AboutSection]**
+- **[ContactSection]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://rileymanda.github.io/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -57,6 +80,10 @@ In order to run this project you need:
 ### Setup
 
 Clone this repository to your desired folder:<br>
+```sh
+  cd my-folder
+  git clone git@github.com:RileyManda/portfolio-website.git
+```
 Advantages of Linters:<br>
 
 1: improves readability-it will be easy to read and make adjustment if required easily.<br>
