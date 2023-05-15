@@ -58,7 +58,7 @@ body {
   padding: 2px;
   background-size: cover;
   position: relative;
-  top: -100px;
+  top: -90px;
 }
 
 .header {
@@ -83,7 +83,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  white-space: nowrap;
+  white-space: wrap;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -104,7 +104,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 25px;
 }
 
 .chevron-icon {
