@@ -72,7 +72,7 @@ body {
   padding-top: 5px;
   background-size: 100%;
   background-position: center;
-  height: 110vh;
+  height: 120vh;
 }
 
 .menu-list {
@@ -90,7 +90,7 @@ body {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 0;
+  margin-top: 30;
 }
 
 .supporting-text {
@@ -150,11 +150,11 @@ body {
 }
 
 .works-card-title {
-  font-size: 1.5rem;
+  font-size: 20px;
   margin-bottom: 3%;
   color: var(--works-text-color);
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .works-card-content {
@@ -170,7 +170,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 1.5%;
+  margin-bottom: 2px;
   border-radius: 0;
   align-items: center;
   text-align: center;
@@ -553,7 +553,7 @@ textarea {
   background-color: var(--grey-tag-color);
   margin: 5px;
   color: var(--works-text-color);
-  padding: 8px 12px;
+  padding: 8px 6px;
   border-radius: 8px;
 }
 
