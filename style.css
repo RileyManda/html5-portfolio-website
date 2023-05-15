@@ -58,7 +58,7 @@ body {
   padding: 2px;
   background-size: cover;
   position: relative;
-  top: -90px;
+  top: -100px;
 }
 
 .header {
@@ -72,7 +72,7 @@ body {
   padding-top: 5px;
   background-size: 100%;
   background-position: center;
-  height: 120vh;
+  height: 100vh;
 }
 
 .menu-list {
