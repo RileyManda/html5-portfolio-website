@@ -148,15 +148,6 @@ body {
   width: 100%;
 }
 
-/* .works-card-img {
-  width: 100%;
-  height: 300px;
-  background-image: url(./assets/images/mobile/img-placeholder.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-} */
-
 .works-card-title {
   font-size: 1.5rem;
   margin-bottom: 1.5%;
@@ -164,10 +155,6 @@ body {
   align-items: center;
   margin-top: 20px;
 }
-
-/* .works-card-title::after {
-  content: "Gain+Glory";
-} */
 
 .works-card-content {
   text-align: center;
@@ -262,7 +249,7 @@ body {
 
 .icon-container {
   position: absolute;
-  top: 0;
+  top: 20px;
   z-index: 2;
   align-items: center;
   align-content: center;
@@ -352,18 +339,6 @@ textarea {
   outline: none;
   border-color: var(--green-color);
 }
-
-/* #full-name {
-  display: block;
-}
-
-#first-name {
-  display: none;
-}
-
-#last-name {
-  display: none;
-} */
 
 .contact-form .contact-btn {
   box-sizing: border-box;
@@ -688,6 +663,7 @@ textarea {
 
   .about-tags ul {
     justify-content: center;
+    margin-top: 20px;
   }
 
   .about-tags .desktop-hide {
@@ -695,7 +671,10 @@ textarea {
   }
 
   .about-card {
+    height: 300px;
     width: 30%;
+    display: flex;
+    flex-direction: column;
   }
 
   /* About section desktop media END */
@@ -747,6 +726,10 @@ textarea {
     margin-top: 30px;
   }
 
+  .icon-container {
+    margin-bottom: 10px;
+  }
+
   /* Works section desktop media query elements */
   #works-section {
     display: grid;
@@ -780,16 +763,6 @@ textarea {
     align-items: center;
     text-align: center;
   }
-
-  /* #first-name {
-    display: inline-block;
-    width: 100%;
-  }
-
-  #last-name {
-    display: inline-block;
-    width: 100%;
-  } */
 
   .desktop-fields {
     display: flex;
