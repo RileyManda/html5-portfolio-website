@@ -270,6 +270,8 @@ body {
 }
 
 /* contact section */
+
+/* contact section */
 #contact-section {
   padding: 2%;
   display: flex;
@@ -393,17 +395,11 @@ textarea {
 }
 
 /* button hover effects */
-.contact-form .contact-btn:active {
+.contact-form .contact-btn:active,
+.contact-form .contact-btn:hover {
   background-color: var(--button-active-color);
   color: var(--white-color);
 }
-
-.contact-form .contact-btn:hover {
-  background-color: var(--button-hover-color);
-  color: var(--white-color);
-}
-
-/* button hover effects END */
 
 /* contact section- END */
 
