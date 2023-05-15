@@ -427,17 +427,14 @@ textarea {
   border-radius: 24px;
 }
 
-.section-title-container {
+.section-title-container,
+.title-container {
   text-align: center;
 }
 
 .title-container h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-}
-
-.title-container {
-  text-align: center;
 }
 
 .social-icons {
@@ -473,19 +470,13 @@ textarea {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-
-  /* margin-top: 10px; */
   left: 12px;
   top: 5px;
 }
 
-.project-btn:hover {
-  background-color: var(--button-hover-color);
-  color: var(--white-color);
-}
-
+.project-btn:hover,
 .project-btn:active {
-  background-color: var(--button-active-color);
+  background-color: var(--button-hover-color);
   color: var(--white-color);
 }
 
