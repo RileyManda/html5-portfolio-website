@@ -150,7 +150,7 @@ body {
 
 .works-card-title {
   font-size: 1.5rem;
-  margin-bottom: 1.5%;
+  margin-bottom: 3%;
   color: var(--works-text-color);
   align-items: center;
   margin-top: 20px;
@@ -224,9 +224,10 @@ body {
 
 .about-card-title {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: var(--about-card-title-text);
   text-align: center;
+  margin-top: 50px;
 }
 
 .about-card-content {
@@ -245,6 +246,7 @@ body {
   border-radius: 0;
   align-items: center;
   text-align: center;
+  margin-top: 10px;
 }
 
 .icon-container {
@@ -538,7 +540,8 @@ textarea {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .works-tags li {
@@ -677,6 +680,12 @@ textarea {
     flex-direction: column;
   }
 
+  .about-card-title {
+    text-align: center;
+    margin-bottom: 3px;
+    margin-top: 20%;
+  }
+
   /* About section desktop media END */
   .supporting-text {
     display: flex;
@@ -691,6 +700,8 @@ textarea {
     margin: 0 auto;
     max-width: 795px;
   }
+
+  /* Css selectors desktop */
 
   .header-title h1 {
     display: flex;
@@ -709,8 +720,6 @@ textarea {
     display: block;
     display: inline-block;
   }
-
-  /* about section END */
 
   .hamburger {
     display: none;
@@ -746,13 +755,18 @@ textarea {
   }
 
   .project-btn {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .works-tags li {
     color: var(--desktop-works-tag-color);
     font-weight: 600;
+    margin-top: 20px;
   }
+
+  /* .works-card-title span {
+margin-top: 10px;
+    } */
 
   /* Works section END */
 
