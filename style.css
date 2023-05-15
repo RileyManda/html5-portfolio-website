@@ -72,7 +72,7 @@ body {
   padding-top: 5px;
   background-size: 100%;
   background-position: center;
-  height: 100vh;
+  height: 110vh;
 }
 
 .menu-list {
@@ -111,6 +111,7 @@ body {
   text-align: center;
   margin-top: 10px;
   padding: 8px;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -173,6 +174,7 @@ body {
   border-radius: 0;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 
 /* Works Section END */
@@ -247,6 +249,7 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .icon-container {
@@ -256,6 +259,7 @@ body {
   align-items: center;
   align-content: center;
   margin-bottom: 2px;
+  cursor: pointer;
 }
 
 /* contact section */
@@ -615,6 +619,7 @@ textarea {
     font-weight: 600;
     line-height: 20px;
     font-style: normal;
+    cursor: pointer;
   }
 
   .supporting-text br {
@@ -687,6 +692,8 @@ textarea {
   }
 
   /* About section desktop media END */
+
+  /* Other desktop media query elements  */
   .supporting-text {
     display: flex;
     flex-wrap: column;
@@ -700,6 +707,12 @@ textarea {
     margin: 0 auto;
     max-width: 795px;
   }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* Other desktop media query elements END */
 
   /* Css selectors desktop */
 
@@ -721,13 +734,9 @@ textarea {
     display: inline-block;
   }
 
-  .hamburger {
-    display: none;
-  }
+  /* Css selectors desktop  END */
 
-  /* Other desktop media query elements */
-
-  /* Card media query element */
+  /* Cards media query element */
   .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -738,6 +747,8 @@ textarea {
   .icon-container {
     margin-bottom: 10px;
   }
+
+  /* Cards media query element END */
 
   /* Works section desktop media query elements */
   #works-section {
@@ -763,10 +774,6 @@ textarea {
     font-weight: 600;
     margin-top: 20px;
   }
-
-  /* .works-card-title span {
-margin-top: 10px;
-    } */
 
   /* Works section END */
 
@@ -873,7 +880,7 @@ margin-top: 10px;
 
   /* contact section media query END */
 
-  /* social icons section desktop query */
+  /* social icons list section desktop query */
   .social-icons {
     justify-content: flex-end;
   }
@@ -903,15 +910,25 @@ margin-top: 10px;
     order: 3;
   }
 
+  /* social icons list section  END */
+
   /* Animation transitions */
   .social-icons li:hover {
     transform: scale(1.1);
     transition: 0.3s;
   }
 
-  /* Animation transitions END */
+  .chevron-icon :hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
 
-  /* social icons section desktop query END */
+  .icon-container:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+  /* Animation transitions END */
 }
 
 /* Mobile  Media Queries */
