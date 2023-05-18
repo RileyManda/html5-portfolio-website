@@ -8,6 +8,10 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+- [🔑 Key features](#key-features)
+- [🛢 Live Demo](#live-demo)
+- [🎥 Project Presentation](#project-presentation)
+
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -17,7 +21,7 @@
 
 # 📖 [Portfolio-website] <a name="Portfolio-website"></a>
 
-**[Portfolio-website]** Microverse project designed to create a feature branch,test linters,use proper gitflow,undergo code reviews and replicate a figma design to build a professional portfolio website that is responsive on both mobile and web.
+**[Portfolio-website]** Microverse project designed to equip me with the tools i required to become a successful developer by utilizing the correct html css semantics,gitflow,setup of linters and code reviews and PR,aswell as working with feature branches in a collbarotaion environment.The portfolio is a translation of a UX design provided with stipulated requirement testing my attention to detail,ability to parse figma design and the use of grid layout and flex box for responsive web design.The portfolio was deeveloped with a mobile first approach and RWD was implemented to support desktop with media queries and grid layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -48,6 +52,7 @@
 - **[AboutSection]**
 - **[ContactSection]**
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -55,6 +60,10 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://rileymanda.github.io/portfolio-website/)
+
+## 🚀 Project Presentation <a name="project-presentation"></a>
+
+- [Project Presentation](https://www.loom.com/share/e96865e13e3b4e0883dc48cd1c7e7d62)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
