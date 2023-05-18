@@ -575,7 +575,8 @@ textarea {
 @media only screen and (min-width: 768px) {
   /* Header section desktop query elements */
   #header-section {
-    top: -20px;
+    position: relative;
+    z-index: 2;
   }
 
   .header {
@@ -583,8 +584,9 @@ textarea {
     background-size: cover;
     background-position: center;
     height: 160vh;
-    margin-top: -30px;
+    margin-top: -20px;
     margin-bottom: 30px;
+    position: relative;
   }
 
   .header-title {
@@ -594,11 +596,14 @@ textarea {
     margin-top: -200px;
   }
 
-  .toolbar {
+  /* .toolbar {
     padding-top: 1.5rem;
-  }
+  } */
 
   .menu-list {
+    position: relative;
+    z-index: 3;
+    margin-top: 1.5rem;
     display: flex;
     gap: 1em;
     align-items: center;
@@ -607,13 +612,19 @@ textarea {
     flex-direction: row;
   }
 
+  .menu-list li {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
   .menu-list li a {
     text-decoration: none;
     color: var(--menu-items-color);
     font-weight: 600;
     line-height: 20px;
     font-style: normal;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
   }
 
   .supporting-text br {
@@ -747,7 +758,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2%;
-    margin-top: 140vh;
+    margin-top: -30vh;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -758,12 +769,6 @@ textarea {
   }
 
   .project-btn {
-    margin-top: 20px;
-  }
-
-  .works-tags li {
-    color: var(--desktop-works-tag-color);
-    font-weight: 600;
     margin-top: 20px;
   }
 
@@ -872,14 +877,27 @@ textarea {
 
   /* contact section media query END */
 
-  /* social icons list section desktop query */
-  .social-icons {
-    justify-content: flex-end;
-  }
-
+  /* css selectors: */
   .social-icons li {
     margin-left: 15px;
     margin-right: 0;
+  }
+
+  .works-tags li {
+    color: var(--desktop-works-tag-color);
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  .menu-list li:hover {
+    transform: scale(1.1);
+  }
+
+  /* css selectors: END */
+
+  /* social icons list section desktop query */
+  .social-icons {
+    justify-content: flex-end;
   }
 
   .social-icons li:first-child {
@@ -905,17 +923,9 @@ textarea {
   /* social icons list section  END */
 
   /* Animation transitions */
-  .social-icons li:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
-
-  .chevron-icon :hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
-
-  .icon-container:hover {
+  .icon-container:hover,
+  .social-icons li:hover,
+  .chevron-icon:hover {
     transform: scale(1.1);
     transition: 0.3s;
   }
