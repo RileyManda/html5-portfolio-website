@@ -17,7 +17,7 @@
 
 # 📖 [Portfolio-website] <a name="Portfolio-website"></a>
 
-**[Portfolio-website]** Microverse project designed to create a feature branch,test linters,use proper gitflow,undergo code reviews and replicate a figma design to build a professional portfolio website that is responsive on both mobile and web.
+**[Portfolio-website]** Microverse project designed to equip me with the tools i required to become a successful developer. a feature branch,test linters,use proper gitflow,undergo code reviews and replicate a figma design to build a professional portfolio website that is responsive on both mobile and web.
 
 ## 🛠 Built With <a name="built-with"></a>
 
