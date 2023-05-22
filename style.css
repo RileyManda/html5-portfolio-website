@@ -583,12 +583,13 @@ textarea {
   left: 0;
   background-color: var(--white-color);
   z-index: 5;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   overflow-y: hidden;
   height: calc(100vh - 50px);
   top: 0;
   padding: 40px;
+  box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
 }
 
 .mobile-menu-container {
