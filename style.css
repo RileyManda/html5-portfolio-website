@@ -82,14 +82,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  white-space: wrap;
+  white-space: nowrap;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   color: var(--title-color);
   text-align: center;
   margin-bottom: 10px;
-  margin-top: 30;
+  margin-top: 30px;
 }
 
 .menu-list {
@@ -446,7 +446,7 @@ textarea {
 }
 
 .social-icons li {
-  margin: 1 10px;
+  margin-bottom: 10px;
 }
 
 .social-icons li img {
@@ -569,6 +569,10 @@ textarea {
 }
 
 /* CSS selectors END */
+
+/* Mobile Menu */
+
+/* Mobile Menu END */
 
 /* Desktop Media Queries */
 
@@ -701,7 +705,7 @@ textarea {
   /* Other desktop media query elements  */
   .supporting-text {
     display: flex;
-    flex-wrap: column;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -872,7 +876,7 @@ textarea {
 
   .contact-form .contact-btn {
     width: 50%;
-    align-items: left;
+    align-items: start;
   }
 
   /* contact section media query END */
