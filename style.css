@@ -36,6 +36,9 @@ body {
 
   /* desktop colors */
   --desktop-works-tag-color: #172b4d;
+  --close-btn-color: #67798e;
+
+  /* mobile menu  */
 }
 
 /* Header Section */
@@ -582,8 +585,7 @@ textarea {
   overflow-y: hidden;
   height: calc(100vh - 50px);
   top: 0;
-
-  /* Add overflow-y property to hide vertical scrolling */
+  padding: 40px;
 }
 
 .mobile-menu-container {
@@ -597,18 +599,21 @@ textarea {
   height: 100px;
 }
 
-.close-btn {
+#close-btn {
+  position: absolute;
   margin: 10px;
+  top: 30px;
+  right: 40px;
   display: flex;
   justify-content: flex-end;
-  color: #67798e;
+  color: var(--close-btn-color);
 }
 
 .mobile-menu-list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 10px;
+  margin-top: 60px;
 }
 
 .mobile-menu-list-items {
