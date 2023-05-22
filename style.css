@@ -6,15 +6,12 @@
   padding: 0 2px;
 }
 
-html {
+html,
+body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
+  overflow: hidden;
 }
 
 /* root theme attributes */
@@ -585,20 +582,27 @@ textarea {
   z-index: 5;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  overflow-y: hidden;
+
+  /* Add overflow-y property to hide vertical scrolling */
 }
 
 .mobile-menu-container {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 100%;
+  height: 100px;
 }
 
-.close {
+.close-btn {
   margin: 10px;
   display: flex;
   justify-content: flex-end;
+  color: #67798e;
 }
 
 .mobile-menu-list {
@@ -616,6 +620,7 @@ textarea {
   font-size: 32px;
   line-height: 44px;
   color: #3a4a42;
+  margin-top: 30px;
 }
 
 /* Mobile Menu END */
