@@ -574,7 +574,7 @@ textarea {
 
 /* Mobile Menu END */
 
-/* Desktop Media Queries */
+/* Desktop ONLY Media Queries */
 
 @media only screen and (min-width: 768px) {
   /* Header section desktop query elements */
@@ -936,6 +936,8 @@ textarea {
 
   /* Animation transitions END */
 }
+
+/* Desktop ONLY Media Queries END */
 
 /* Mobile  Media Queries */
 @media only screen and (min-width: 375px) {
