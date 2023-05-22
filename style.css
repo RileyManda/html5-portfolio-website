@@ -40,6 +40,7 @@ body {
   /* mobile menu  */
   --close-btn-color: #67798e;
   --mobile-items-color: #3a4a42;
+  --active-menu-line-color: #1e488f;
 
   /* mobile menu  END */
 }
@@ -647,6 +648,15 @@ textarea {
     z-index: 2;
   }
 
+  .toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+  }
+
   .header {
     background: url(./assets/images/desktop/header-illustration-desktop.svg) top/cover no-repeat;
     background-size: cover;
@@ -695,23 +705,27 @@ textarea {
     align-items: center;
   }
 
+  .menu-item {
+    position: relative;
+  }
+
   /* This is optional */
 
-  /* .menu-item::after {
+  /*
+  .menu-item::after {
     content: "";
     position: absolute;
     bottom: -2px;
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: blue;
+    background-color: var(--active-menu-line-color);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
 
   .menu-item.active::after {
     opacity: 1;
-
   } */
 
   .supporting-text br {
