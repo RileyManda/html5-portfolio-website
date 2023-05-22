@@ -20,7 +20,7 @@
                     <i class="fa fa-bars"></i>
                 </div>
                 <ul class="menu-list" id="menu-lists">
-                    <li class="menu-item"><a href="#works-section">Portfolio</a></li>
+                    <li class="menu-item" ><a href="#works-section" >Portfolio</a></li>
                     <li class="menu-item"><a href="#about-section">About</a></li>
                     <li class="menu-item"><a href="#contact-section">Contact</a></li>
                 </ul>
@@ -31,18 +31,18 @@
     <!-- mobile-menu -->
     <div class="mobile-menu hidden">
         <div class="mobile-menu-container">
-            <div onclick="closeNav()" id="close-btn">
+            <div onclick="closeNav()" class="close-btn" id="close-nav">
                 <i class="fas fa-times"></i>
             </div>
              <!-- Content of the mobile menu -->
             <ul class="mobile-menu-list">
-                <li class="mobile-menu-list-items"><a href="#works-section">Portfolio</a></li>
-                <li class="mobile-menu-list-items"><a href="#about-section">About</a></li>
-                <li class="mobile-menu-list-items"><a href="#contact-section">Contact</a></li>
+                <li class="mobile-menu-list-items" onclick="closeNav()"><a href="#works-section">Portfolio</a></li>
+                <li class="mobile-menu-list-items" onclick="closeNav()"><a href="#about-section">About</a></li>
+                <li class="mobile-menu-list-items" onclick="closeNav()"><a href="#contact-section">Contact</a></li>
             </ul>
         </div>
     </div>
-
+<!-- mobile-menu END-->
     <main>
         <!-- Header section -->
         <section id="header-section">

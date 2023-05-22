@@ -36,9 +36,12 @@ body {
 
   /* desktop colors */
   --desktop-works-tag-color: #172b4d;
-  --close-btn-color: #67798e;
 
   /* mobile menu  */
+  --close-btn-color: #67798e;
+  --mobile-items-color: #3a4a42;
+
+  /* mobile menu  END */
 }
 
 /* Header Section */
@@ -599,7 +602,7 @@ textarea {
   height: 100px;
 }
 
-#close-btn {
+.close-btn {
   position: absolute;
   margin: 10px;
   top: 30px;
@@ -618,13 +621,18 @@ textarea {
 
 .mobile-menu-list-items {
   list-style: none;
-  text-decoration: none;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #3a4a42;
   margin-top: 30px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.mobile-menu-list-items a {
+  text-decoration: none;
+  color: var(--mobile-items-color);
 }
 
 /* Mobile Menu END */
