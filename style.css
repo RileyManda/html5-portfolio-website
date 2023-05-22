@@ -61,7 +61,7 @@ body {
   padding: 2px;
   background-size: cover;
   position: relative;
-  top: -190px;
+  top: -90px;
 }
 
 .header {
@@ -131,7 +131,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2%;
-  margin-top: 70vh;
+  margin-top: 90vh;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -188,11 +188,11 @@ body {
 #about-section {
   display: grid;
   background:
-    url(./assets/images/mobile/about-bg-left.svg) left 27% / 20% no-repeat,
+    url(./assets/images/mobile/about-bg-left.svg) left 28% / 20% no-repeat,
     url(assets/images/mobile/about-bg-right.svg) right 0% / 20% no-repeat;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -571,10 +571,57 @@ textarea {
 /* CSS selectors END */
 
 /* Mobile Menu */
+.hidden {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  height: 95vh;
+  top: 0;
+  left: 0;
+  background-color: var(--white-color);
+  z-index: 5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.mobile-menu-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.close {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.mobile-menu-list-items {
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3A4A42;
+}
 
 /* Mobile Menu END */
 
-/* Desktop ONLY Media Queries */
+/* Desktop Media Queries */
 
 @media only screen and (min-width: 768px) {
   /* Header section desktop query elements */
@@ -936,8 +983,6 @@ textarea {
 
   /* Animation transitions END */
 }
-
-/* Desktop ONLY Media Queries END */
 
 /* Mobile  Media Queries */
 @media only screen and (min-width: 375px) {

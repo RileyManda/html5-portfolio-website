@@ -16,19 +16,32 @@
     <header class="toolbar">
         <div class="toolbar-menu">
             <nav class="nav-bar">
-                <div class="hamburger">
+                <div class="hamburger" id="open-nav" onclick="openNav()">
                     <i class="fa fa-bars"></i>
                 </div>
-                <ul class="menu-list">
+                <ul class="menu-list" id="menu-lists">
                     <li class="menu-item"><a href="#works-section">Portfolio</a></li>
                     <li class="menu-item"><a href="#about-section">About</a></li>
                     <li class="menu-item"><a href="#contact-section">Contact</a></li>
                 </ul>
             </nav>
-
         </div>
     </header>
-
+    
+    <!-- mobile-menu -->
+    <div class="mobile-menu hidden" onclick="closeNav()" id="close-nav">
+        <div class="mobile-menu-container">
+            <div onclick="closeNav()" class="close">
+                <i class="fas fa-times"></i>
+            </div>
+             <!-- Content of the mobile menu -->
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-list-items"><a href="#works-section">Portfolio</a></li>
+                <li class="mobile-menu-list-items"><a href="#about-section">About</a></li>
+                <li class="mobile-menu-list-items"><a href="#contact-section">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
     <main>
         <!-- Header section -->
@@ -316,6 +329,8 @@
         </section>
 
     </main>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
