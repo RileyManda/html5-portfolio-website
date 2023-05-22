@@ -208,6 +208,7 @@ If you like this project, kindly leave a comment below and share it with someone
 ## 🙏 Acknowledgments <a name="Microverse Inc."></a>
 
 I'm grateful to microverse for giving me this opportunity to grow into my full potential through continuous learning and practical challenges.
+Much appreciationg to my Pair Coding partner @DanielAD10 for the javascript click events contribution during our pair programming session.
 
 <!-- FAQ (optional) -->
 
