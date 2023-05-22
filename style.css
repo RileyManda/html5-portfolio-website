@@ -611,12 +611,11 @@ textarea {
 .mobile-menu-list-items {
   list-style: none;
   text-decoration: none;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #3A4A42;
+  color: #3a4a42;
 }
 
 /* Mobile Menu END */
