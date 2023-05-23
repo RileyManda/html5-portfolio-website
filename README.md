@@ -47,10 +47,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[ResponsiveWebsite]**
-- **[WorksSection]**
-- **[AboutSection]**
-- **[ContactSection]**
+- **[Responsive Website]**
+- **[Works Section]**
+- **[About Section]**
+- **[Contact Section]**
+- **[Mobile Menu]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -185,11 +186,15 @@ If you think that change is necessary - open a Pull Request in this repository a
 
 - [ ] **[About me Section]**
       This feature will contain more details about me and the tech stack i am familiar with.
+
 - [ ] **[Contact Section]**
       This feature will comprise of a contact information.
 
 - [ ] **[RWD]**
-      The site will be updated(Desktop Version) to utilize media queries for responsivenes to create a Desktop version.
+      The site will be updated(Desktop Version) to utilize media queries for responsivenes to create a Desktop version.   
+
+- [ ] **[Mobile Menu Details]**
+      This feature will comprise of a detail view popup menu of each section of the portfolio.    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
