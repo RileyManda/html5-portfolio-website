@@ -32,7 +32,7 @@
     <!-- mobile-menu -->
     <div class="mobile-menu hidden">
         <div class="mobile-menu-container">
-            <div onclick="closeView()" class="close-btn" id="close-view">
+            <div onclick="closeView()" class="close-btn" id="close-nav">
                 <i class="fas fa-times"></i>
             </div>
             <!-- Content of the mobile menu -->
@@ -45,7 +45,7 @@
     </div>
     <!-- mobile-menu END-->
     <!-- Details view -->
-    <div class="detail-view hidden">
+    <div class="detail-view hidden" id="detail-view">
         <div class="detail-container">
             <div onclick="closeView()" class="close-btn" id="close-view">
                 <i class="fas fa-times"></i>
@@ -123,7 +123,7 @@
                             me.</span>
                     </p>
 
-                    <button class="project-btn">Get my resume</button>
+                    <button id="project-btn" class="project-btn">Get my resume</button>
                 </div>
 
 

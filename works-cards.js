@@ -22,7 +22,7 @@ const generateworkCardHTML = (workCard) => {
 
 const displayWorksCards = () => {
   const workCardsContainer = document.getElementById('works-cards-container');
-
+  // itirate through the data
   workcards.forEach((workCard) => {
     const cardHTML = generateworkCardHTML(workCard);
     workCardsContainer.insertAdjacentHTML('beforeend', cardHTML);

@@ -24,7 +24,7 @@ const generateAboutCardHTML = (aboutCard) => {
 
 const displayAboutCards = () => {
   const aboutCardsContainer = document.getElementById('about-cards-container');
-
+  // itirate through the data
   aboutcards.forEach((aboutCard) => {
     const cardHTML = generateAboutCardHTML(aboutCard);
     aboutCardsContainer.insertAdjacentHTML('beforeend', cardHTML);
