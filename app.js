@@ -1,4 +1,6 @@
 // itirate through the worksdata
+// import { workcards, aboutcards } from './data.js';
+
 const openNav = function openNavHandler() {
   document.querySelector('.mobile-menu').style.display = 'block';
 };

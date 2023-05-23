@@ -41,6 +41,7 @@ body {
   --close-btn-color: #67798e;
   --mobile-items-color: #3a4a42;
   --active-menu-line-color: #1e488f;
+  --close-btn-border: #ebecf0;
 
   /* mobile menu  END */
 }
@@ -191,11 +192,11 @@ body {
 #about-section {
   display: grid;
   background:
-    url(./assets/images/mobile/about-bg-left.svg) left 28% / 20% no-repeat,
+    url(./assets/images/mobile/about-bg-left.svg) left 26% / 20% no-repeat,
     url(assets/images/mobile/about-bg-right.svg) right 0% / 20% no-repeat;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -775,7 +776,7 @@ textarea {
   #about-section {
     display: grid;
     background:
-      url(./assets/images/desktop/about-illustration-left.svg) left 40% / 20% no-repeat,
+      url(./assets/images/desktop/about-illustration-left.svg) left 45% / 20% no-repeat,
       url(assets/images/desktop/about-illustration-right.svg) top right 0% / 20% no-repeat;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
@@ -851,6 +852,33 @@ textarea {
   .hamburger {
     display: none;
   }
+
+  /* detail view */
+  .detail-view-container {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    height: 10px;
+  }
+
+  .close-btn {
+    position: absolute;
+    margin: 10px;
+    top: 60px;
+    right: 60px;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid var(--close-btn-border);
+    cursor: pointer;
+  }
+
+  /* detail view END */
 
   /* Other desktop media query elements END */
 

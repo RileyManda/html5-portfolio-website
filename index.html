@@ -13,40 +13,25 @@
 
 <body>
     <!-- Toolbar section -->
- <header class="toolbar">
-  <div class="toolbar-menu">
-    <nav class="nav-bar">
-      <div class="hamburger" id="open-nav" onclick="openNav()">
-        <i class="fa fa-bars"></i>
-      </div>
-      <ul class="menu-list" id="menu-lists">
-        <li><a href="#works-section" class="menu-item">Portfolio</a></li>
-        <li><a href="#about-section" class="menu-item">About</a></li>
-        <li><a href="#contact-section" class="menu-item">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <header class="toolbar">
+        <div class="toolbar-menu">
+            <nav class="nav-bar">
+                <div class="hamburger" id="open-nav" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul class="menu-list" id="menu-lists">
+                    <li><a href="#works-section" class="menu-item">Portfolio</a></li>
+                    <li><a href="#about-section" class="menu-item">About</a></li>
+                    <li><a href="#contact-section" class="menu-item">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    
+
     <!-- mobile-menu -->
     <div class="mobile-menu hidden">
         <div class="mobile-menu-container">
-            <div onclick="closeView()" class="close-btn" id="close-view">
-                <i class="fas fa-times"></i>
-            </div>
-             <!-- Content of the mobile menu -->
-            <ul class="mobile-menu-list">
-                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#works-section">Portfolio</a></li>
-                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#about-section">About</a></li>
-                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#contact-section">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-<!-- mobile-menu END-->
-  <!-- Details view -->
-    <div class="detail-view hidden">
-        <div class="detail-container">
             <div onclick="closeView()" class="close-btn" id="close-view">
                 <i class="fas fa-times"></i>
             </div>
@@ -56,6 +41,17 @@
                 <li class="mobile-menu-list-items" onclick="closeView()"><a href="#about-section">About</a></li>
                 <li class="mobile-menu-list-items" onclick="closeView()"><a href="#contact-section">Contact</a></li>
             </ul>
+        </div>
+    </div>
+    <!-- mobile-menu END-->
+    <!-- Details view -->
+    <div class="detail-view hidden">
+        <div class="detail-container">
+            <div onclick="closeView()" class="close-btn" id="close-view">
+                <i class="fas fa-times"></i>
+            </div>
+            <!-- Content of detailview -->
+
         </div>
     </div>
     <!--  Details END -->
@@ -110,96 +106,9 @@
                     <h3>My Recent<br> Works</h3>
                     <div class="section-indicator"></div>
                 </div>
-                <div class="card-container">
-                    <div class="works-card">
-                        <div class="works-card-content">
-                            <h3 class="works-card-title">Multi-Post Stories <span> <br>Gain+Glory </span></h3>
-                            <div class="works-tags">
-                                <ul>
-                                    <li>Ruby on Rails</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>HTML</li>
-                                </ul>
-                            </div>
-                            <button id="project-btn" class="project-btn" onclick="openDetailView()">See Project</button>
-                        </div>
-                    </div>
-                    <div class="works-card">
-                        <div class="works-card-content">
-                            <h3 class="works-card-title">Multi-Post Stories <span><br>Gain+Glory</span></h3>
-                            <div class="works-tags">
-                                <ul>
-                                    <li>Ruby on Rails</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>HTML</li>
-                                </ul>
-                            </div>
-                            <button class="project-btn">See Project</button>
-                        </div>
-                    </div>
-                    <div class="works-card">
-                        <div class="works-card-content">
-                            <h3 class="works-card-title">Multi-Post Stories <span><br>Gain+Glory</span></h3>
-                            <div class="works-tags">
-                                <ul>
-                                    <li>Ruby on Rails</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>HTML</li>
-                                </ul>
-                            </div>
-                            <button class="project-btn">See Project</button>
-                        </div>
-                    </div>
-                    <div class="works-card">
-                        <div class="works-card-content">
-                            <h3 class="works-card-title">Multi-Post Stories <span><br>Gain+Glory</span></h3>
-                            <div class="works-tags">
-                                <ul>
-                                    <li>Ruby on Rails</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>HTML</li>
-                                </ul>
-                            </div>
-                            <button class="project-btn">See Project</button>
-                        </div>
-                    </div>
-                    <div class="works-card">
-                        <div class="works-card-content">
-                            <h3 class="works-card-title">Multi-Post Stories <span><br>Gain+Glory</span></h3>
-                            <div class="works-tags">
-                                <ul>
-                                    <li>Ruby on Rails</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>HTML</li>
-                                </ul>
-                            </div>
-                            <button class="project-btn">See Project</button>
-                        </div>
-                    </div>
-                    <div class="works-card">
-                        <div class="works-card-content">
-                            <h3 class="works-card-title">Multi-Post Stories <span><br>Gain+Glory</span></h3>
-                            <div class="works-tags">
-                                <ul>
-                                    <li>Ruby on Rails</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                    <li>HTML</li>
-                                </ul>
-                            </div>
-                            <button class="project-btn">See Project</button>
-                        </div>
-                    </div>
-                </div>
-
+                <div class="card-container" id="works-cards-container"></div>
             </div>
         </section>
-
 
         <!-- About  section -->
         <section id="about-section">
@@ -217,64 +126,8 @@
                     <button class="project-btn">Get my resume</button>
                 </div>
 
-                <div class="card-container">
-                    <div class="about-card">
-                        <div class="icon-container">
-                            <img src="./assets/icons/languages.svg" alt="languages image">
-                        </div>
 
-                        <div class="about-card-content">
-                            <h3 class="about-card-title">Languages</h3>
-                            <div class="about-tags">
-                                <ul>
-                                    <li>Javascript</li>
-                                    <li>Ruby</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="about-card">
-                        <div class="icon-container">
-                            <img src="./assets/icons/frameworks.svg" alt="frameworks image">
-                        </div>
-
-                        <div class="about-card-content">
-                            <h3 class="about-card-title">Frameworks</h3>
-                            <div class="about-tags">
-                                <ul>
-                                    <li>React.js</li>
-                                    <li>Ruby on Rails</li>
-                                    <li>RSpec</li>
-                                    <li>Capybara</li>
-                                    <li class="desktop-hide">Selenium</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="about-card">
-                        <div class="icon-container">
-                            <img src="./assets/icons/skills.svg" alt="frameworks image">
-                        </div>
-
-                        <div class="about-card-content">
-                            <h3 class="about-card-title">Skills</h3>
-                            <div class="about-tags">
-                                <ul>
-                                    <li>Database Management</li>
-                                    <li>Version Control</li>
-                                    <li>CLI</li>
-                                    <li>Web Development</li>
-                                    <li>API Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <div class="card-container" id="about-cards-container"></div>
             </div>
         </section>
 
@@ -341,6 +194,9 @@
     </main>
 
     <script src="app.js"></script>
+    <script src="data.js"></script>
+    <script type="module" src="about-cards.js"></script>
+    <script type="module" src="works-cards.js"></script>
 </body>
 
 </html>
