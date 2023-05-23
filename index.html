@@ -32,24 +32,33 @@
     <!-- mobile-menu -->
     <div class="mobile-menu hidden">
         <div class="mobile-menu-container">
-            <div onclick="closeNav()" class="close-btn" id="close-nav">
+            <div onclick="closeView()" class="close-btn" id="close-view">
                 <i class="fas fa-times"></i>
             </div>
              <!-- Content of the mobile menu -->
             <ul class="mobile-menu-list">
-                <li class="mobile-menu-list-items" onclick="closeNav()"><a href="#works-section">Portfolio</a></li>
-                <li class="mobile-menu-list-items" onclick="closeNav()"><a href="#about-section">About</a></li>
-                <li class="mobile-menu-list-items" onclick="closeNav()"><a href="#contact-section">Contact</a></li>
+                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#works-section">Portfolio</a></li>
+                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#about-section">About</a></li>
+                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#contact-section">Contact</a></li>
             </ul>
         </div>
     </div>
 <!-- mobile-menu END-->
-    <!-- mobile-menu Details -->
-    <div class="detailview-container">
-        <div class="detail-view-content">
+  <!-- Details view -->
+    <div class="detail-view hidden">
+        <div class="detail-container">
+            <div onclick="closeView()" class="close-btn" id="close-view">
+                <i class="fas fa-times"></i>
+            </div>
+            <!-- Content of the mobile menu -->
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#works-section">Portfolio</a></li>
+                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#about-section">About</a></li>
+                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#contact-section">Contact</a></li>
+            </ul>
         </div>
     </div>
-    <!-- mobile-menu Details END -->
+    <!--  Details END -->
     <main>
         <!-- Header section -->
         <section id="header-section">
@@ -113,7 +122,7 @@
                                     <li>HTML</li>
                                 </ul>
                             </div>
-                            <button class="project-btn">See Project</button>
+                            <button id="project-btn" class="project-btn" onclick="openDetailView()">See Project</button>
                         </div>
                     </div>
                     <div class="works-card">

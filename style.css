@@ -641,7 +641,35 @@ textarea {
 
 /* Mobile Detail  */
 
-/* Mobile details stying here */
+/* DetailView  */
+
+.detail-view {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background-color: var(--white-color);
+  z-index: 5;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow-y: hidden;
+  height: calc(100vh - 50px);
+  top: 0;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
+}
+
+.detail-view-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  height: 100px;
+}
+
+/* DetailView Menu END */
 
 /* Mobile Detail END */
 
