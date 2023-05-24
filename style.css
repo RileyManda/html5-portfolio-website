@@ -649,36 +649,119 @@ textarea {
 
 /* DetailView  */
 
+/* detail view mobile */
 #detail-view {
   position: fixed;
-  top: 30px;
-  width: 60%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
   background-color: var(--white-color);
   z-index: 9999;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  overflow-y: hidden;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
   padding: 40px;
   box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
+  overflow-y: auto;
+}
+
+.detail-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  background-image: url(./assets/images/detail-view-mobile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 400px;
 }
 
 .detail-container {
-  position: relative;
-  top: -30px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 20px;
   width: 100%;
-  height: 100px;
+  margin-top: 20px;
 }
 
-.detailview-img {
-  width: 10px;
-  height: 20px;
+.detail-view-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 30px;
+  color: var(--detail-title-color);
+  display: flex;
+  align-items: center;
 }
+
+.icon-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon-buttons {
+  display: flex;
+  align-items: center;
+  background-color: var(--green-color);
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80px;
+  height: 20px;
+  margin-top: -25px;
+}
+
+.button-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+.button-text {
+  margin-left: 5px;
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.detail-tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 8px 12px;
+}
+
+.detail-tags li {
+  font-size: 0.8rem;
+  background-color: var(--grey-tag-color);
+  margin: 5px;
+  color: var(--menu-items-color);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.view-description {
+  margin-top: 20px;
+}
+
+/* detail view mobile END */
 
 /* DetailView Menu END */
 
@@ -859,7 +942,7 @@ textarea {
     display: none;
   }
 
-  /* detail view */
+  /* detail view Desktop */
   #detail-view {
     position: fixed;
     top: 30px;
@@ -905,15 +988,17 @@ textarea {
   .detail-view-title {
     font-size: 30px;
     font-weight: 700;
-    display: flex;
-    margin-top: 60px;
-    line-height: 50px;
+    margin-top: 30px;
     color: var(--detail-title-color);
+    display: flex;
+    align-items: center;
   }
 
   .icon-btn-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .icon-buttons {
@@ -925,10 +1010,9 @@ textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-right: 10px;
     width: 80px;
     height: 20px;
-    margin-top: 20px;
+    margin-top: -25px;
   }
 
   .button-icon {
@@ -941,22 +1025,11 @@ textarea {
     margin-left: 5px;
   }
 
-  .close-btn {
-    position: absolute;
-    margin: 10px;
-    top: 60px;
-    right: 60px;
-    display: flex;
-    justify-content: flex-end;
-    border: 1px solid var(--close-btn-border);
-    cursor: pointer;
-  }
-
   .detail-tags {
-    margin-top: 10px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 10px;
   }
 
   .detail-tags ul {
@@ -976,7 +1049,21 @@ textarea {
     border-radius: 8px;
   }
 
-  /* detail view END */
+  .view-description {
+    margin-top: 20px;
+  }
+
+  /* detail view Desktop END */
+  .close-btn {
+    position: absolute;
+    margin: 10px;
+    top: 60px;
+    right: 60px;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid var(--close-btn-border);
+    cursor: pointer;
+  }
 
   /* Other desktop media query elements END */
 
