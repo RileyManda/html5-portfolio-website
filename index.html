@@ -46,14 +46,40 @@
     <!-- mobile-menu END-->
     <!-- Details view -->
     <div class="detail-view hidden" id="detail-view">
-        <div class="detail-container">
-            <div onclick="closeView()" class="close-btn" id="close-view">
-                <i class="fas fa-times"></i>
-            </div>
-            <!-- Content of detailview -->
+    <div class="detail-view-container">
+        <button onclick="closeView()" class="detail-close-btn" id="close-view">
+            <!-- <i class="fas fa-times desktop-close"></i> -->
+            </button>
+           
+        <div class="image-container"></div>
+        <h2 class="detail-title" id="detail-title"></h2>
+<div class="detail-tags">
+    <ul>
+        <li>Ruby on Rails</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+</div>
+<div class="detail-summary">
 
-        </div>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.</p>
+<p>
+<p>Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+    1960s.</p>
+</div>
+
+
+     <div class="detail-btn-container">
+<button class="detail-btn">See Source<a href="https://twitter.com/rilecodez"><img src="./assets/icons/live-icon.svg"
+            alt="Twitter icon"></a></button>
+<button class="detail-btn">See Source<a href="https://twitter.com/rilecodez"><img src="./assets/icons/github-light.svg" alt="Twitter icon"></a></button>
+     </div>
+        
     </div>
+    </div>
+
     <!--  Details END -->
     <main>
         <!-- Header section -->
@@ -197,6 +223,7 @@
     <script type="module" src="data.js"></script>
     <script type="module" src="about-cards.js"></script>
     <script type="module" src="works-cards.js"></script>
+    <script type="module" src="detail-view.js"></script>
 </body>
 
 </html>

@@ -44,6 +44,9 @@ body {
   --close-btn-border: #ebecf0;
 
   /* mobile menu  END */
+
+  /* detailview colors */
+  --detail-title-color: #172b4d;
 }
 
 /* Header Section */
@@ -479,7 +482,8 @@ textarea {
 }
 
 .project-btn:hover,
-.project-btn:active {
+.project-btn:active,
+.icon-btn:active {
   background-color: var(--button-hover-color);
   color: var(--white-color);
 }
@@ -494,6 +498,10 @@ textarea {
 /* global section-style END */
 
 /* CSS selectors */
+.detail-btn span {
+  margin-right: 5px;
+}
+
 .supporting-text p {
   font-size: 16px;
   line-height: 1.4;
@@ -643,18 +651,17 @@ textarea {
 
 /* Mobile Detail  */
 
-/* DetailView  */
-
-#detail-view {
+/* DetailView Mobile  */
+.detail-view {
   position: fixed;
   width: 100%;
   left: 0;
   background-color: var(--white-color);
   z-index: 5;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   overflow-y: hidden;
-  height: calc(100vh - 50px);
+  height: calc(110vh - 50px);
   top: 0;
   padding: 40px;
   box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
@@ -671,7 +678,134 @@ textarea {
   height: 100px;
 }
 
-/* DetailView Menu END */
+.detail-close-btn {
+  position: absolute;
+  top: 10px;
+  margin: 10px;
+  right: 13px;
+  z-index: 20;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: flex-end;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.image-container {
+  height: auto;
+  position: relative;
+  display: flex;
+  background-image: url(./assets/images/mobile/detail-view-mobile.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.detail-title {
+  text-align: left;
+  margin: 10px 0 0 10px;
+  margin-top: -160px;
+  line-height: 40px;
+  font-weight: 600;
+  color: var(--title-color);
+  font-size: 30px;
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+  border-radius: 0;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  justify-content: flex-start;
+  margin-left: 10px;
+  margin-top: -40px;
+}
+
+.detail-tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.detail-tags li {
+  font-size: 0.8rem;
+  background-color: var(--grey-tag-color);
+  margin: 5px;
+  margin-bottom: 1px;
+  color: var(--mobile-items-color);
+  padding: 8px 6px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.detail-content {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.detail-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -30px;
+}
+
+.detail-summary p {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 3px;
+  font-size: 13px;
+  margin-bottom: 2px;
+  color: var(--paragraph-color);
+}
+
+.detail-btn-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  margin-left: 10px;
+}
+
+.detail-btn {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 3px 3px;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.detail-btn:last-child {
+  margin-right: 0;
+}
+
+.desktop-close {
+  display: none;
+}
+
+/* detail view mobile END */
 
 /* Mobile Detail END */
 
@@ -679,6 +813,7 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   /* Header section desktop query elements */
+
   #header-section {
     position: relative;
     z-index: 2;
@@ -709,10 +844,6 @@ textarea {
     margin-bottom: 20px;
     margin-top: -200px;
   }
-
-  /* .toolbar {
-    padding-top: 1.5rem;
-  } */
 
   .menu-list {
     position: relative;
@@ -854,18 +985,154 @@ textarea {
     display: none;
   }
 
-  /* detail view */
+  /* DetailView Desktop  */
+
+  .detail-view {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: var(--white-color);
+    z-index: 9999;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: calc(100vh - 60px);
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
+    overflow-y: auto;
+  }
+
   .detail-view-container {
     position: fixed;
-    top: 90px;
+    top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 50%;
-    height: 10px;
+    width: 100%;
+    height: 100px;
+  }
+
+  .detail-close-btn {
+    position: absolute;
+    top: 10px;
+    margin: 10px;
+    right: 13px;
+    z-index: 20;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: flex-end;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: url("./assets/icons/desktop-close-icon.png");
+  }
+
+  .image-container {
+    background-image: url(./assets/images/desktop/detail-view-desktop.png);
+    margin-top: 50px;
+  }
+
+  .detail-title {
+    text-align: left;
+    margin: 10px 0 0 10px;
+    margin-top: -250px;
+    margin-left: 25px;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 30px;
+    display: inline-block;
+  }
+
+  .detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2px;
+    border-radius: 0;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-top: -40px;
+  }
+
+  .detail-tags ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 3px;
+  }
+
+  .detail-tags li {
+    font-size: 0.8rem;
+    background-color: var(--grey-tag-color);
+    margin: 5px;
+    margin-bottom: 1px;
+    color: var(--mobile-items-color);
+    padding: 8px 6px;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+
+  .detail-content {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .detail-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -30px;
+  }
+
+  .detail-summary p {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 3px;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--paragraph-color);
+  }
+
+  .detail-btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -290px;
+    margin-left: 400px;
+  }
+
+  .detail-btn {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 3px 3px;
+    margin-right: 10px;
+    margin-top: 2px;
+  }
+
+  .detail-btn span {
+    margin-right: 5px;
+  }
+
+  .detail-btn:last-child {
+    margin-right: 0;
+  }
+
+  .desktop-close {
+    display: block;
   }
 
   .close-btn {
@@ -878,8 +1145,6 @@ textarea {
     border: 1px solid var(--close-btn-border);
     cursor: pointer;
   }
-
-  /* detail view END */
 
   /* Other desktop media query elements END */
 
