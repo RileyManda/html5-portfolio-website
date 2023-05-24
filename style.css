@@ -44,6 +44,9 @@ body {
   --close-btn-border: #ebecf0;
 
   /* mobile menu  END */
+
+  /* detailview colors */
+  --detail-title-color: #172b4d;
 }
 
 /* Header Section */
@@ -870,17 +873,16 @@ textarea {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     overflow-y: hidden;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
     padding: 40px;
     box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
   }
 
-  .detail-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
+  .detail-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
   }
 
   .image-container {
@@ -894,12 +896,31 @@ textarea {
     height: 400px;
   }
 
-  .detail-close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+  .detail-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
   }
+
+  .detail-view-title {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    margin-top: 40px;
+    line-height: 50px;
+    color: var(--detail-title-color);
+  }
+
+  /*
+    .works-card-title {
+      font-size: 20px;
+      margin-bottom: 3%;
+      color: var(--works-text-color);
+      align-items: center;
+      margin-top: 10px;
+    } */
 
   /* detail view END */
   .close-btn {
