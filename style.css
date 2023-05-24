@@ -553,6 +553,7 @@ textarea {
   color: var(--works-text-color);
   padding: 8px 6px;
   border-radius: 8px;
+  font-weight: 600;
 }
 
 .about-tags ul {
