@@ -482,7 +482,8 @@ textarea {
 }
 
 .project-btn:hover,
-.project-btn:active {
+.project-btn:active,
+.icon-btn:active {
   background-color: var(--button-hover-color);
   color: var(--white-color);
 }
@@ -718,10 +719,6 @@ textarea {
     margin-top: -200px;
   }
 
-  /* .toolbar {
-    padding-top: 1.5rem;
-  } */
-
   .menu-list {
     position: relative;
     z-index: 3;
@@ -902,27 +899,48 @@ textarea {
     align-items: center;
     gap: 20px;
     width: 100%;
+    margin-top: 20px;
   }
 
   .detail-view-title {
     font-size: 30px;
     font-weight: 700;
     display: flex;
-    margin-top: 40px;
+    margin-top: 60px;
     line-height: 50px;
     color: var(--detail-title-color);
   }
 
-  /*
-    .works-card-title {
-      font-size: 20px;
-      margin-bottom: 3%;
-      color: var(--works-text-color);
-      align-items: center;
-      margin-top: 10px;
-    } */
+  .icon-btn-container {
+    display: flex;
+    align-items: center;
+  }
 
-  /* detail view END */
+  .icon-buttons {
+    display: flex;
+    align-items: center;
+    background-color: var(--green-color);
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 80px;
+    height: 20px;
+    margin-top: 20px;
+  }
+
+  .button-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+  }
+
+  .button-text {
+    margin-left: 5px;
+  }
+
   .close-btn {
     position: absolute;
     margin: 10px;
@@ -933,6 +951,14 @@ textarea {
     border: 1px solid var(--close-btn-border);
     cursor: pointer;
   }
+
+  .detail-tags li {
+    color: var(--desktop-works-tag-color);
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  /* detail view END */
 
   /* Other desktop media query elements END */
 
