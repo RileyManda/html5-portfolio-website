@@ -1081,6 +1081,7 @@ textarea {
     line-height: 50px;
     font-weight: 600;
     font-size: 30px;
+    padding-left: 0;
   }
 
   .detail-tags {
@@ -1138,17 +1139,19 @@ textarea {
   .detail-btn-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: -230px;
     gap: 2px;
-    margin-left: 65%;
+    margin-left: 50%;
+    width: 40%;
   }
 
   .detail-btn {
     margin-top: -150px;
     padding: 2px 6px;
     font-size: 12px;
+    width: 90px;
   }
 
   .detail-btn svg {
@@ -1159,8 +1162,12 @@ textarea {
     margin-right: 5px;
   }
 
+  .detail-btn:first-child {
+    margin-left: 50px;
+  }
+
   .detail-btn:last-child {
-    margin-right: 0;
+    margin-right: -5px;
   }
 
   .desktop-close {
