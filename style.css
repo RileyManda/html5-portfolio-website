@@ -727,13 +727,15 @@ textarea {
 }
 
 .detail-title {
-  text-align: left;
-  margin: 10px 0 0 10px;
-  margin-top: -200px;
+  display: block;
+  margin-bottom: 5px;
   line-height: 40px;
   font-weight: 600;
   color: var(--title-color);
   font-size: 30px;
+  margin-top: 250px;
+  text-align: left;
+  margin-left: -20px;
 }
 
 .detail-tags {
@@ -793,9 +795,13 @@ textarea {
 .detail-btn-container {
   display: flex;
   flex-direction: row;
-  margin-top: -30px;
-  margin-left: 10px;
   justify-content: space-between;
+  margin-top: -40px;
+  flex-wrap: nowrap;
+  gap: 50px;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 30px;
 }
 
 .detail-btn {
@@ -805,19 +811,22 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
+  padding: 4px 6px;
   display: flex;
   align-items: center;
-  padding: 6px 6px;
-  margin-right: 10px;
-  margin-top: 2px;
+  font-size: 14px;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.detail-btn:first-child {
-  margin-right: 10px;
+.detail-btn svg {
+  margin-right: 5px;
 }
 
-.detail-btn:last-child {
-  margin-left: 10px;
+.detail-btn + .detail-btn {
+  margin-left: 30px;
 }
 
 .desktop-close {
