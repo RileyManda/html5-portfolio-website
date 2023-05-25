@@ -42,7 +42,7 @@ const generateDetailView = (data) => {
 
   const sourceButton1 = document.createElement('button');
   sourceButton1.classList.add('detail-btn');
-  sourceButton1.textContent = 'See Live';
+  sourceButton1.textContent = 'See live';
   const sourceLink1 = document.createElement('a');
   sourceLink1.href = data.sourceLink;
   const sourceIcon1 = document.createElement('img');
@@ -53,7 +53,7 @@ const generateDetailView = (data) => {
 
   const sourceButton2 = document.createElement('button');
   sourceButton2.classList.add('detail-btn');
-  sourceButton2.textContent = 'See Source';
+  sourceButton2.textContent = 'See source';
   const sourceLink2 = document.createElement('a');
   sourceLink2.href = data.sourceLink;
   const sourceIcon2 = document.createElement('img');
