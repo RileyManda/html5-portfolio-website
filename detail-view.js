@@ -1,8 +1,10 @@
 import { detailscontent } from './data.js';
 
 const closeView = function closeNavHandler() {
+  const blurOverlay = document.querySelector('.blur-overlay');
   document.querySelector('.mobile-menu').style.display = 'none';
   document.querySelector('.detail-view').style.display = 'none';
+  blurOverlay.remove();
 };
 
 const generateDetailView = (data) => {
