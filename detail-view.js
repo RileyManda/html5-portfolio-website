@@ -23,7 +23,13 @@ const generateDetailView = (data) => {
   const title = document.createElement('h3');
   title.classList.add('detail-title');
   title.id = 'detail-title';
-  title.textContent = data.title;
+
+  if (window.innerWidth > 768) {
+    const titleText = 'Keeping track of hundreds of<br>components';
+    title.innerHTML = titleText;
+  } else {
+    title.textContent = 'Keeping track of hundreds of components';
+  }
 
   const tagList = document.createElement('ul');
   const allowedTags = [];
@@ -55,7 +61,7 @@ const generateDetailView = (data) => {
 
   const summary = document.createElement('div');
   summary.classList.add('detail-summary');
-  summary.textContent = data.summary;
+  summary.innerHTML = `${data.summary}<br>`;
 
   const sourceButton1 = document.createElement('button');
   sourceButton1.classList.add('detail-btn');

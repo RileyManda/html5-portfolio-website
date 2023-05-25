@@ -1032,11 +1032,10 @@ textarea {
     z-index: 9999;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: calc(100vh - 60px);
-    padding: 40px;
+    height: calc(100vh - 80px);
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
     overflow-y: auto;
-    max-width: 920px;
   }
 
   .detail-view-container {
@@ -1045,9 +1044,11 @@ textarea {
     left: 0;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
     height: 100px;
+    align-content: space-between;
+    max-width: 920px;
   }
 
   .detail-close-btn {
@@ -1067,33 +1068,49 @@ textarea {
     position: absolute;
     background-image: url(./assets/images/desktop/detail-view-desktop.png);
     top: 60px;
-    margin-right: 24px;
-    margin-left: 24px;
+    margin-right: -20px;
+    margin-left: -20px;
     height: 400px;
   }
 
-  .detail-title {
+  /* .detail-title {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     text-align: left;
-    margin-top: 960px;
-    margin-left: 20px;
+    margin-top: 980px;
+    margin-left: -30px;
     line-height: 50px;
     font-weight: 600;
-    font-size: 30px;
-    padding-left: 0;
+    font-size: 25px;
+    width: 90%;
+    margin-bottom: 20px;
+  } */
+
+  .detail-title {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 980px;
+    margin-left: -30px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 25px;
+    width: 90%;
+    margin-bottom: 20px;
+    white-space: pre-line;
   }
 
   .detail-tags {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
     border-radius: 0;
     align-items: center;
     text-align: center;
     cursor: pointer;
     justify-content: flex-start;
-    margin-left: -50px;
+    margin-left: -70px;
     margin-top: -50px;
   }
 
@@ -1139,19 +1156,20 @@ textarea {
   .detail-btn-container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: -230px;
-    gap: 2px;
-    margin-left: 50%;
-    width: 40%;
+    margin-top: -250px;
+    gap: 10px;
+    margin-left: 60%;
+    width: 30%;
   }
 
   .detail-btn {
     margin-top: -150px;
     padding: 2px 6px;
     font-size: 12px;
-    width: 90px;
+    width: 50%;
   }
 
   .detail-btn svg {
@@ -1163,11 +1181,11 @@ textarea {
   }
 
   .detail-btn:first-child {
-    margin-left: 50px;
+    margin-left: 0;
   }
 
   .detail-btn:last-child {
-    margin-right: -5px;
+    margin-right: -20px;
   }
 
   .desktop-close {

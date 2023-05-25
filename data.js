@@ -64,12 +64,19 @@ export const aboutcards = [
 export const detailscontent = [
   {
     title: 'Keeping track of hundreds of components',
-    tags: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen', 'Ruby on Rails', 'CSS', 'Javascript'],
-    summary: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
-      Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-      1960s.`,
+    tags: [
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+      'Ruby on Rails',
+      'CSS',
+      'Javascript',
+    ],
+    summary: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.<br><br>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.`,
     liveLink: 'https://rileymanda.github.io/portfolio-website/',
     sourceLink: 'https://github.com/RileyManda/portfolio-website',
     image: './assets/images/desktop/detail-view-desktop.png',
