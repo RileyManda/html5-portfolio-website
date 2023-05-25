@@ -1,17 +1,21 @@
-// Validation Contact Form
-const error = document.querySelector('#error-msg');
-const form = document.querySelector('.contact-form');
-const email = document.querySelector('#email');
-const errorMsg = 'Please write your email address in lower case';
+const errorMsgElement = document.querySelector('#error-msg');
+const contactForm = document.querySelector('.contact-form');
+const emailInput = document.querySelector('#email');
+const errorMsg = 'Please write your email address in lowercase';
 
-form.addEventListener('submit', (event) => {
+const validateEmail = (email) => {
+  const lowercaseEmail = email.toLowerCase();
+  return email === lowercaseEmail;
+};
+
+contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  const userInput = email.value;
-  const emailErr = userInput.toLowerCase();
-  if (userInput !== emailErr) {
-    error.innerHTML = errorMsg;
+  const userInput = emailInput.value;
+
+  if (!validateEmail(userInput)) {
+    errorMsgElement.textContent = errorMsg;
   } else {
-    error.innerHTML = '';
-    form.submit();
+    errorMsgElement.textContent = '';
+    contactForm.submit();
   }
 });
