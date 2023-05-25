@@ -19,5 +19,3 @@ const openDetailView = function openDetailHandler() {
 document.querySelector('#open-nav').addEventListener('click', openNav);
 document.querySelector('#close-view').addEventListener('click', closeView);
 document.querySelector('#project-btn').addEventListener('click', openDetailView);
-
-
