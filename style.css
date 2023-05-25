@@ -707,18 +707,21 @@ textarea {
 }
 
 .image-container {
-  height: auto;
-  position: relative;
+  position: absolute;
   display: flex;
   background-image: url(./assets/images/mobile/detail-view-mobile.png);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 90%;
-  margin: 10px auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  top: 0;
+  height: 220px;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 100%;
+  padding: 2px;
+  box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -726,7 +729,7 @@ textarea {
 .detail-title {
   text-align: left;
   margin: 10px 0 0 10px;
-  margin-top: -160px;
+  margin-top: -200px;
   line-height: 40px;
   font-weight: 600;
   color: var(--title-color);
@@ -1048,8 +1051,13 @@ textarea {
   }
 
   .image-container {
+    position: absolute;
     background-image: url(./assets/images/desktop/detail-view-desktop.png);
-    margin-top: 50px;
+    top: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10%;
+    height: 400px;
   }
 
   .detail-title {
