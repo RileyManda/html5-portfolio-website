@@ -26,10 +26,27 @@ const generateDetailView = (data) => {
   title.textContent = data.title;
 
   const tagList = document.createElement('ul');
+  const allowedTags = [];
+
+  if (window.innerWidth >= 768) {
+    allowedTags.push(
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    );
+  } else {
+    allowedTags.push('Ruby on Rails', 'CSS', 'Javascript');
+  }
+
   data.tags.forEach((tag) => {
-    const tagItem = document.createElement('li');
-    tagItem.textContent = tag;
-    tagList.appendChild(tagItem);
+    if (allowedTags.includes(tag)) {
+      const tagItem = document.createElement('li');
+      tagItem.textContent = tag;
+      tagList.appendChild(tagItem);
+    }
   });
 
   const tags = document.createElement('div');

@@ -64,7 +64,7 @@ export const aboutcards = [
 export const detailscontent = [
   {
     title: 'Keeping track of hundreds of components',
-    tags: ['Ruby on Rails', 'CSS', 'Javascript'],
+    tags: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen', 'Ruby on Rails', 'CSS', 'Javascript'],
     summary: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
       standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.
       Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
