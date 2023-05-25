@@ -68,8 +68,11 @@ const generateDetailView = (data) => {
   const sourceButton1 = document.createElement('button');
   sourceButton1.classList.add('detail-btn');
   sourceButton1.textContent = 'See live';
+  sourceButton1.addEventListener('click', () => {
+    window.open(data.liveLink, '_blank');
+  });
   const sourceLink1 = document.createElement('a');
-  sourceLink1.href = data.sourceLink;
+  sourceLink1.href = data.liveLink;
   const sourceIcon1 = document.createElement('img');
   sourceIcon1.src = './assets/icons/live-icon.svg';
   sourceIcon1.alt = 'Live icon';
@@ -79,6 +82,9 @@ const generateDetailView = (data) => {
   const sourceButton2 = document.createElement('button');
   sourceButton2.classList.add('detail-btn');
   sourceButton2.textContent = 'See source';
+  sourceButton2.addEventListener('click', () => {
+    window.open(data.sourceLink, '_blank');
+  });
   const sourceLink2 = document.createElement('a');
   sourceLink2.href = data.sourceLink;
   const sourceIcon2 = document.createElement('img');
