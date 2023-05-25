@@ -20,7 +20,7 @@ const generateDetailView = (data) => {
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('image-container');
 
-  const title = document.createElement('h2');
+  const title = document.createElement('h3');
   title.classList.add('detail-title');
   title.id = 'detail-title';
   title.textContent = data.title;
