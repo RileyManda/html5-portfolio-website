@@ -47,6 +47,9 @@ body {
 
   /* detailview colors */
   --detail-title-color: #172b4d;
+
+  /* validation colors */
+  --validation-error-color: #ff6163;
 }
 
 /* Header Section */
@@ -410,7 +413,7 @@ textarea {
 
 /* Validation contact form */
 #error-msg {
-  color: #ff6163;
+  color: var(--validation-error-color);
   font-size: 16px;
 }
 
