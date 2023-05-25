@@ -716,7 +716,7 @@ textarea {
   width: 90%;
   margin-right: 10px;
   margin-left: 10px;
-  top: 0;
+  top: -30px;
   height: 220px;
   justify-content: center;
   align-items: flex-start;
