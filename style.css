@@ -728,12 +728,12 @@ textarea {
 
 .detail-title {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 40px;
   font-weight: 600;
   color: var(--title-color);
   font-size: 30px;
-  margin-top: 200px;
+  margin-top: 230px;
   text-align: left;
   margin-left: -20px;
 }
@@ -744,13 +744,12 @@ textarea {
   flex-wrap: wrap;
   margin-bottom: 20px;
   border-radius: 0;
-  align-items: left;
   text-align: center;
   cursor: pointer;
   justify-content: flex-start;
   margin-left: 0;
   margin-right: 0;
-  margin-top: -40px;
+  margin-top: -30px;
 }
 
 .detail-tags ul {
@@ -784,8 +783,10 @@ textarea {
   flex-direction: column;
   align-items: flex-start;
   margin-top: -30px;
-   margin-left: -20px;
-   margin-bottom: 20px;
+  margin-left: -20px;
+  margin-bottom: 10px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .detail-summary p {
@@ -801,7 +802,7 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: -10px;
+  margin-top: -30px;
   flex-wrap: nowrap;
   gap: 50px;
   margin-right: 0;
