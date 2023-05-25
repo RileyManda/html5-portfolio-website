@@ -408,6 +408,12 @@ textarea {
   color: var(--white-color);
 }
 
+/* Validation contact form */
+#error-msg {
+  color: #FF6163;
+  font-size: 16px;
+}
+
 /* contact section- END */
 
 /* Global Section Styles */
