@@ -733,7 +733,7 @@ textarea {
   font-weight: 600;
   color: var(--title-color);
   font-size: 30px;
-  margin-top: 230px;
+  margin-top: 210px;
   text-align: left;
   margin-left: -20px;
 }
@@ -782,7 +782,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: -30px;
+  margin-top: -40px;
   margin-left: -20px;
   margin-bottom: 10px;
   line-height: 24px;
@@ -792,7 +792,6 @@ textarea {
 .detail-summary p {
   text-align: left;
   margin-left: 10px;
-  margin-top: 3px;
   font-size: 13px;
   margin-bottom: 2px;
   color: var(--paragraph-color);
