@@ -654,28 +654,39 @@ textarea {
 /* DetailView Mobile  */
 .detail-view {
   position: fixed;
-  width: 100%;
-  left: 0;
   background-color: var(--white-color);
-  z-index: 5;
+  z-index: 9999;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  overflow-y: hidden;
-  height: calc(110vh - 50px);
-  top: 0;
+  overflow: hidden;
+  height: calc(100vh - 50px);
+  top: 50%;
+  transform: translate(0, -50%);
   padding: 40px;
   box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
+  max-width: 920px;
+  left: 32px;
+  right: 32px;
 }
 
-.detail-view-container {
+.detail-view::after {
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.detail-view-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 100%;
-  height: 100px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .detail-close-btn {
@@ -793,7 +804,7 @@ textarea {
   font-weight: 500;
   display: flex;
   align-items: center;
-  padding: 3px 3px;
+  padding: 6px 6px;
   margin-right: 10px;
   margin-top: 2px;
 }
@@ -997,7 +1008,6 @@ textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
     background-color: var(--white-color);
     z-index: 9999;
     border-bottom-left-radius: 10px;
@@ -1006,6 +1016,7 @@ textarea {
     padding: 40px;
     box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
     overflow-y: auto;
+    max-width: 920px;
   }
 
   .detail-view-container {
