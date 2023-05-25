@@ -6,7 +6,7 @@ const generateDetailViewHTML = () => {
     .join(' ');
 
   const detailViewHTML = `
-    <div class="detail-view hidden" id="detail-view">
+    <div class="detail-view" id="detail-view">
       <div class="detail-view-container">
         <button onclick="closeView()" class="detail-close-btn" id="close-view"></button>
            
@@ -42,6 +42,6 @@ const displayDetailView = () => {
   const detailViewContainer = document.getElementById('detail-view-container');
   const detailViewHTML = generateDetailViewHTML();
   detailViewContainer.innerHTML = detailViewHTML;
+  detailViewContainer.classList.add('hidden');
 };
-
 displayDetailView();

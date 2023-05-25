@@ -1056,8 +1056,8 @@ textarea {
     text-align: center;
     cursor: pointer;
     justify-content: flex-start;
-    margin-left: 10px;
-    margin-top: -40px;
+    margin-left: 5px;
+    margin-top: 10px;
   }
 
   .detail-tags ul {
