@@ -667,6 +667,7 @@ textarea {
   max-width: 920px;
   left: 32px;
   right: 32px;
+  overflow-x: hidden;
 }
 
 .detail-view::after {
@@ -729,11 +730,11 @@ textarea {
 .detail-title {
   display: block;
   margin-bottom: 5px;
-  line-height: 40px;
+  line-height: 30px;
   font-weight: 600;
   color: var(--title-color);
-  font-size: 25px;
-  margin-top: 260px;
+  font-size: 23px;
+  margin-top: 290px;
   text-align: left;
   margin-left: -20px;
 }
@@ -783,7 +784,7 @@ textarea {
   align-items: flex-start;
   margin-top: -30px;
   margin-left: -20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   line-height: 24px;
   color: #344563;
 }
@@ -823,6 +824,7 @@ textarea {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .detail-btn svg {
@@ -846,7 +848,7 @@ textarea {
   backdrop-filter: blur(4px);
   pointer-events: none;
   z-index: 9998;
-  background-color: #c1c7d0;
+  background-color: rgba(193, 199, 208, 0.8);
 }
 
 /* detail view mobile END */
@@ -1045,6 +1047,7 @@ textarea {
     box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
     overflow-y: auto;
     backdrop-filter: blur(80px);
+    overflow-x: hidden;
   }
 
   .detail-view-container {
