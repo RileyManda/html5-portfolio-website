@@ -1,28 +1,31 @@
-// Local Storage
 const form = document.querySelector('.contact-form');
 const fullName = document.querySelector('#full-name');
 const email = document.querySelector('#email');
 const message = document.querySelector('#message');
-const contactFormDetails = {
-  name: String,
-  email: String,
-  message: String,
-};
 
-form.addEventListener('input', () => {
-  contactFormDetails.name = fullName.value;
-  contactFormDetails.email = email.value;
-  contactFormDetails.message = message.value;
+// Load form data from local storage
+window.addEventListener('DOMContentLoaded', () => {
+  const contactFormDetails = JSON.parse(
+    localStorage.getItem('contactFormDetails'),
+  );
 
-  localStorage.setItem('contactFormDetails', JSON.stringify(contactFormDetails));
+  if (contactFormDetails) {
+    fullName.value = contactFormDetails.name;
+    email.value = contactFormDetails.email;
+    message.value = contactFormDetails.message;
+  }
 });
 
-window.onload = () => {
-  const contactData = JSON.parse(localStorage.getItem('contactFormDetails'));
+// Save form data to local storage
+form.addEventListener('input', () => {
+  const contactFormDetails = {
+    name: fullName.value,
+    email: email.value,
+    message: message.value,
+  };
 
-  if (contactData) {
-    fullName.value = contactData.name;
-    email.value = contactData.email;
-    message.value = contactData.message;
-  }
-};
+  localStorage.setItem(
+    'contactFormDetails',
+    JSON.stringify(contactFormDetails),
+  );
+});
