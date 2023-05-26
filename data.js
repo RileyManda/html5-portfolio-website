@@ -58,7 +58,7 @@ export const aboutcards = [
       'Web Development',
       'API Design',
     ],
-  }
+  },
 ];
 
 export const detailscontent = [

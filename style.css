@@ -637,80 +637,104 @@ textarea {
 
 /* Mobile Menu END */
 
-/* Mobile Detail  */
+/* DetailView Mobile */
 
-/* DetailView Desktop */
 .detail-view {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--white-color);
   z-index: 9999;
+  height: calc(100vh - 50px);
+  padding: 40px;
+  overflow: hidden;
+  background-color: var(--white-color);
   border-radius: 10px;
-  height: calc(100vh - 80px);
-  padding: 20px;
   box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
-  overflow-y: scroll;
+  max-width: 920px;
+  left: 32px;
+  right: 32px;
+  top: 50%;
+  transform: translate(0, -50%);
+  overflow-x: hidden;
+}
+
+.detail-view::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .detail-view-container {
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   width: 100%;
-  max-width: 920px;
+  height: 100%;
 }
 
+/* Close Button */
 .detail-close-btn {
   position: absolute;
-  top: 0;
-  right: 13px;
   z-index: 20;
+  top: 10px;
+  right: 13px;
   display: flex;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   justify-content: flex-end;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  background: url("./assets/icons/desktop-close-icon.png");
-  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
+/* Image Container */
 .image-container {
   position: absolute;
-  background-image: url(./assets/images/desktop/detail-view-desktop.png);
-  top: 60px;
-  margin: 0 20px;
-  height: 400px;
-  width: calc(100% - 40px);
-}
-
-.detail-title {
   display: flex;
-  justify-content: flex-start;
-  text-align: left;
-  margin-top: 470px;
-  margin-left: -30px;
-  line-height: 50px;
-  font-weight: 600;
-  font-size: 25px;
+  justify-content: center;
+  align-items: flex-start;
+  top: 20px;
   width: 90%;
-  margin-bottom: 20px;
-  white-space: pre-line;
+  height: 220px;
+  margin: 0 10px;
+  padding: 2px;
+  background-image: url(./assets/images/mobile/detail-view-mobile.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
+/* Title */
+.detail-title {
+  display: block;
+  margin-top: 290px;
+  margin-bottom: 5px;
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 23px;
+  color: var(--title-color);
+  text-align: left;
+  margin-left: -20px;
+}
+
+/* Tags */
 .detail-tags {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
   justify-content: flex-start;
-  margin-left: -70px;
-  margin-top: -50px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .detail-tags ul {
@@ -720,6 +744,7 @@ textarea {
   padding: 0;
   margin-top: 10px;
   margin-bottom: 3px;
+  margin-left: -50px;
 }
 
 .detail-tags li {
@@ -733,75 +758,89 @@ textarea {
   font-weight: 600;
 }
 
+/* Content */
 .detail-content {
   font-weight: 400;
-  font-size: 12px;
 }
 
+/* Summary */
 .detail-summary {
-  text-align: left;
-  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -30px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+  line-height: 24px;
+  color: var(--detail-title-text);
 }
 
 .detail-summary p {
   text-align: left;
-  margin-left: -30px;
-  margin-top: 3px;
-  font-size: 14px;
+  margin-left: 10px;
+  font-size: 13px;
   margin-bottom: 2px;
   color: var(--paragraph-color);
 }
 
+/* Button Container */
 .detail-btn-container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  margin-top: -290px;
-  margin-left: 60%;
-  width: 30%;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  gap: 50px;
+  flex-wrap: nowrap;
+  margin-left: 0;
+  margin-right: 0;
 }
 
+/* Button */
 .detail-btn {
-  font-size: 12px;
-  width: 50%;
-  margin-top: -150px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 4px 12px;
+  display: flex;
   align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .detail-btn svg {
-  margin-right: 4px;
+  margin-right: 5px;
 }
 
-.detail-btn:first-child {
-  padding: 3px 6px;
-  margin-left: 0;
+.detail-btn + .detail-btn {
+  margin-left: 10px;
 }
 
-.detail-btn:last-child {
-  margin-right: -10px;
-  padding: 5px 3px;
-}
-
+/* Close Button for Desktop */
 .desktop-close {
-  display: block;
+  display: none;
 }
 
-.close-btn {
-  position: absolute;
-  margin: 10px;
-  top: 60px;
-  right: 60px;
-  display: flex;
-  justify-content: flex-end;
-  border: 1px solid var(--close-btn-border);
-  cursor: pointer;
+/* Blur Overlay */
+.blur-overlay {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(193, 199, 208, 0.8);
+  pointer-events: none;
 }
 
-/* DetailView Desktop END */
-
-/* Mobile Detail END */
 
 /* Desktop Media Queries */
 
