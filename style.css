@@ -47,7 +47,13 @@ body {
 
   /* detailview colors */
   --detail-title-color: #172b4d;
+
   --detail-title-text: #344563;
+
+
+  /* validation colors */
+  --validation-error-color: #ff6163;
+
 }
 
 /* Header Section */
@@ -407,6 +413,12 @@ textarea {
 .contact-form .contact-btn:hover {
   background-color: var(--button-active-color);
   color: var(--white-color);
+}
+
+/* Validation contact form */
+#error-msg {
+  color: var(--validation-error-color);
+  font-size: 16px;
 }
 
 /* contact section- END */
