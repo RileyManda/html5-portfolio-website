@@ -663,40 +663,28 @@ textarea {
 /* DetailView Mobile  */
 .detail-view {
   position: fixed;
+  width: 100%;
+  left: 0;
   background-color: var(--white-color);
-  z-index: 9999;
+  z-index: 5;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  overflow: hidden;
-  height: calc(100vh - 50px);
-  top: 50%;
-  transform: translate(0, -50%);
+  overflow-y: hidden;
+  height: calc(110vh - 50px);
+  top: 0;
   padding: 40px;
   box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
-  max-width: 920px;
-  left: 32px;
-  right: 32px;
-  overflow-x: hidden;
-}
-
-.detail-view::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
 }
 
 .detail-view-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+  height: 100px;
 }
 
 .detail-close-btn {
@@ -717,49 +705,43 @@ textarea {
 }
 
 .image-container {
-  position: absolute;
+  height: auto;
+  position: relative;
   display: flex;
   background-image: url(./assets/images/mobile/detail-view-mobile.png);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 90%;
-  margin-right: 10px;
-  margin-left: 10px;
-  top: 20px;
-  height: 220px;
+  margin: 10px auto;
   justify-content: center;
   align-items: flex-start;
-  padding: 2px;
-  box-sizing: border-box;
+  padding-top: 100%;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .detail-title {
-  display: block;
-  margin-bottom: 5px;
-  line-height: 30px;
+  text-align: left;
+  margin: 10px 0 0 10px;
+  margin-top: -160px;
+  line-height: 40px;
   font-weight: 600;
   color: var(--title-color);
-  font-size: 23px;
-  margin-top: 290px;
-  text-align: left;
-  margin-left: -20px;
+  font-size: 30px;
 }
 
 .detail-tags {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   border-radius: 0;
+  align-items: center;
   text-align: center;
   cursor: pointer;
   justify-content: flex-start;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: -20px;
+  margin-left: 10px;
+  margin-top: -40px;
 }
 
 .detail-tags ul {
@@ -769,7 +751,6 @@ textarea {
   padding: 0;
   margin-top: 10px;
   margin-bottom: 3px;
-  margin-left: -50px;
 }
 
 .detail-tags li {
@@ -785,6 +766,7 @@ textarea {
 
 .detail-content {
   font-weight: 400;
+  font-size: 12px;
 }
 
 .detail-summary {
@@ -792,15 +774,12 @@ textarea {
   flex-direction: column;
   align-items: flex-start;
   margin-top: -30px;
-  margin-left: -20px;
-  margin-bottom: 20px;
-  line-height: 24px;
-  color: #344563;
 }
 
 .detail-summary p {
   text-align: left;
   margin-left: 10px;
+  margin-top: 3px;
   font-size: 13px;
   margin-bottom: 2px;
   color: var(--paragraph-color);
@@ -809,13 +788,8 @@ textarea {
 .detail-btn-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: -20px;
-  flex-wrap: nowrap;
-  gap: 50px;
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 30px;
+  margin-top: -30px;
+  margin-left: 10px;
 }
 
 .detail-btn {
@@ -825,39 +799,19 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
-  padding: 4px 12px;
   display: flex;
   align-items: center;
-  font-size: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  margin-bottom: 20px;
+  padding: 3px 3px;
+  margin-right: 10px;
+  margin-top: 2px;
 }
 
-.detail-btn svg {
-  margin-right: 5px;
-}
-
-.detail-btn + .detail-btn {
-  margin-left: 10px;
+.detail-btn:last-child {
+  margin-right: 0;
 }
 
 .desktop-close {
   display: none;
-}
-
-.blur-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(4px);
-  pointer-events: none;
-  z-index: 9998;
-  background-color: rgba(193, 199, 208, 0.8);
 }
 
 /* detail view mobile END */
@@ -1047,16 +1001,15 @@ textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 50%;
     background-color: var(--white-color);
     z-index: 9999;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: calc(100vh - 80px);
-    padding: 20px;
+    height: calc(100vh - 60px);
+    padding: 40px;
     box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
     overflow-y: auto;
-    backdrop-filter: blur(80px);
-    overflow-x: hidden;
   }
 
   .detail-view-container {
@@ -1065,61 +1018,55 @@ textarea {
     left: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     width: 100%;
     height: 100px;
-    align-content: space-between;
-    max-width: 920px;
   }
 
   .detail-close-btn {
     position: absolute;
-    top: 0;
+    top: 10px;
+    margin: 10px;
     right: 13px;
     z-index: 20;
     display: flex;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     justify-content: flex-end;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
     background: url("./assets/icons/desktop-close-icon.png");
-    background-repeat: no-repeat;
   }
 
   .image-container {
-    position: absolute;
     background-image: url(./assets/images/desktop/detail-view-desktop.png);
-    top: 60px;
-    margin: 0 20px;
-    height: 400px;
-    width: 100%;
-    width: calc(100% - 40px);
+    margin-top: 50px;
   }
 
   .detail-title {
-    display: flex;
-    justify-content: flex-start;
     text-align: left;
-    margin-top: 980px;
-    margin-left: -30px;
-    line-height: 50px;
+    margin: 10px 0 0 10px;
+    margin-top: -250px;
+    margin-left: 25px;
+    line-height: 40px;
     font-weight: 600;
-    font-size: 25px;
-    width: 90%;
-    margin-bottom: 20px;
-    white-space: pre-line;
+    font-size: 30px;
+    display: inline-block;
   }
 
   .detail-tags {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     border-radius: 0;
     align-items: center;
     text-align: center;
     cursor: pointer;
     justify-content: flex-start;
-    margin-left: -70px;
-    margin-top: -50px;
+    margin-left: 10px;
+    margin-top: -40px;
   }
 
   .detail-tags ul {
@@ -1148,13 +1095,15 @@ textarea {
   }
 
   .detail-summary {
-    text-align: left;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -30px;
   }
 
   .detail-summary p {
     text-align: left;
-    margin-left: -30px;
+    margin-left: 10px;
     margin-top: 3px;
     font-size: 14px;
     margin-bottom: 2px;
@@ -1164,36 +1113,31 @@ textarea {
   .detail-btn-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
     align-items: center;
     margin-top: -290px;
-    gap: 10px;
-    margin-left: 60%;
-    width: 30%;
+    margin-left: 400px;
   }
 
   .detail-btn {
-    margin-top: -150px;
-    padding: 2px 6px;
-    font-size: 12px;
-    width: 50%;
-  }
-
-  .detail-btn svg {
-    margin-right: 5px;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 3px 3px;
+    margin-right: 10px;
+    margin-top: 2px;
   }
 
   .detail-btn span {
     margin-right: 5px;
   }
 
-  .detail-btn:first-child {
-    margin-left: 0;
-  }
-
   .detail-btn:last-child {
-    margin-right: -20px;
+    margin-right: 0;
   }
 
   .desktop-close {
@@ -1210,8 +1154,6 @@ textarea {
     border: 1px solid var(--close-btn-border);
     cursor: pointer;
   }
-
-  /* DetailView Desktop END  */
 
   /* Other desktop media query elements END */
 
