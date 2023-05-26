@@ -663,7 +663,9 @@ textarea {
   height: calc(100vh - 80px);
   padding: 20px;
   box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
+  overflow-y: scroll;
 }
+
 .detail-view-container {
   position: fixed;
   top: 0;
@@ -674,6 +676,7 @@ textarea {
   width: 100%;
   max-width: 920px;
 }
+
 .detail-close-btn {
   position: absolute;
   top: 0;
