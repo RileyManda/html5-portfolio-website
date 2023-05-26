@@ -47,13 +47,10 @@ body {
 
   /* detailview colors */
   --detail-title-color: #172b4d;
-
   --detail-title-text: #344563;
-
 
   /* validation colors */
   --validation-error-color: #ff6163;
-
 }
 
 /* Header Section */
