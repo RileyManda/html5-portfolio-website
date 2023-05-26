@@ -47,6 +47,7 @@ body {
 
   /* detailview colors */
   --detail-title-color: #172b4d;
+  --detail-title-text: #344563;
 
   /* validation colors */
   --validation-error-color: #ff6163;
@@ -507,9 +508,6 @@ textarea {
 /* global section-style END */
 
 /* CSS selectors */
-.detail-btn span {
-  margin-right: 5px;
-}
 
 .supporting-text p {
   font-size: 16px;
@@ -623,16 +621,6 @@ textarea {
   height: 100px;
 }
 
-.close-btn {
-  position: absolute;
-  margin: 10px;
-  top: 30px;
-  right: 40px;
-  display: flex;
-  justify-content: flex-end;
-  color: var(--close-btn-color);
-}
-
 .mobile-menu-list {
   display: flex;
   flex-direction: column;
@@ -658,108 +646,104 @@ textarea {
 
 /* Mobile Menu END */
 
-/* Mobile Detail  */
+/* DetailView Mobile */
 
-/* DetailView Mobile  */
 .detail-view {
   position: fixed;
-  background-color: var(--white-color);
   z-index: 9999;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  overflow: hidden;
   height: calc(100vh - 50px);
-  top: 50%;
-  transform: translate(0, -50%);
   padding: 40px;
+  overflow: hidden;
+  background-color: var(--white-color);
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
   max-width: 920px;
   left: 32px;
   right: 32px;
+  top: 50%;
+  transform: translate(0, -50%);
   overflow-x: hidden;
 }
 
 .detail-view::after {
   content: "";
   position: fixed;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
 }
 
 .detail-view-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   width: 100%;
   height: 100%;
-  align-items: center;
-  justify-content: center;
 }
 
+/* Close Button */
 .detail-close-btn {
   position: absolute;
-  top: 10px;
-  margin: 10px;
-  right: 13px;
   z-index: 20;
+  top: 10px;
+  right: 13px;
   display: flex;
   width: 30px;
   height: 30px;
   justify-content: flex-end;
-  border: none;
   padding: 10px 20px;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
   background-color: transparent;
 }
 
+/* Image Container */
 .image-container {
   position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  top: 20px;
+  width: 90%;
+  height: 220px;
+  margin: 0 10px;
+  padding: 2px;
   background-image: url(./assets/images/mobile/detail-view-mobile.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 90%;
-  margin-right: 10px;
-  margin-left: 10px;
-  top: 20px;
-  height: 220px;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2px;
-  box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
 }
 
+/* Title */
 .detail-title {
   display: block;
+  margin-top: 290px;
   margin-bottom: 5px;
   line-height: 30px;
   font-weight: 600;
-  color: var(--title-color);
   font-size: 23px;
-  margin-top: 290px;
+  color: var(--title-color);
   text-align: left;
   margin-left: -20px;
 }
 
+/* Tags */
 .detail-tags {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 20px;
-  border-radius: 0;
-  text-align: center;
-  cursor: pointer;
   justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: -20px;
   margin-left: 0;
   margin-right: 0;
-  margin-top: -20px;
 }
 
 .detail-tags ul {
@@ -783,10 +767,12 @@ textarea {
   font-weight: 600;
 }
 
+/* Content */
 .detail-content {
   font-weight: 400;
 }
 
+/* Summary */
 .detail-summary {
   display: flex;
   flex-direction: column;
@@ -795,7 +781,7 @@ textarea {
   margin-left: -20px;
   margin-bottom: 20px;
   line-height: 24px;
-  color: #344563;
+  color: var(--detail-title-text);
 }
 
 .detail-summary p {
@@ -806,34 +792,36 @@ textarea {
   color: var(--paragraph-color);
 }
 
+/* Button Container */
 .detail-btn-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   margin-top: -20px;
-  flex-wrap: nowrap;
-  gap: 50px;
-  margin-right: 0;
-  margin-left: 0;
   margin-bottom: 30px;
+  gap: 50px;
+  flex-wrap: nowrap;
+  margin-left: 0;
+  margin-right: 0;
 }
 
+/* Button */
 .detail-btn {
+  width: 100%;
+  margin-bottom: 20px;
   background-color: var(--green-color);
   color: var(--white-color);
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
+  font-size: 16px;
   padding: 4px 12px;
   display: flex;
   align-items: center;
-  font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
-  margin-bottom: 20px;
 }
 
 .detail-btn svg {
@@ -844,25 +832,23 @@ textarea {
   margin-left: 10px;
 }
 
+/* Close Button for Desktop */
 .desktop-close {
   display: none;
 }
 
+/* Blur Overlay */
 .blur-overlay {
   position: fixed;
+  z-index: 9998;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   backdrop-filter: blur(4px);
+  background-color: rgba(193, 199, 208, 0.7);
   pointer-events: none;
-  z-index: 9998;
-  background-color: rgba(193, 199, 208, 0.8);
 }
-
-/* detail view mobile END */
-
-/* Mobile Detail END */
 
 /* Desktop Media Queries */
 
@@ -1074,8 +1060,8 @@ textarea {
 
   .detail-close-btn {
     position: absolute;
-    top: 0;
-    right: 13px;
+    top: 12px;
+    right: 20px;
     z-index: 20;
     display: flex;
     height: 50px;
@@ -1099,7 +1085,7 @@ textarea {
     display: flex;
     justify-content: flex-start;
     text-align: left;
-    margin-top: 980px;
+    margin-top: 965px;
     margin-left: -30px;
     line-height: 50px;
     font-weight: 600;
@@ -1157,7 +1143,7 @@ textarea {
     margin-left: -30px;
     margin-top: 3px;
     font-size: 14px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     color: var(--paragraph-color);
   }
 
@@ -1167,21 +1153,21 @@ textarea {
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: -290px;
-    gap: 10px;
-    margin-left: 60%;
+    margin-top: -240px;
+    gap: 5px;
+    margin-left: 55%;
     width: 30%;
   }
 
   .detail-btn {
-    margin-top: -150px;
-    padding: 2px 6px;
     font-size: 12px;
     width: 50%;
+    margin-top: -150px;
+    align-items: center;
   }
 
   .detail-btn svg {
-    margin-right: 5px;
+    margin-right: 4px;
   }
 
   .detail-btn span {
@@ -1189,15 +1175,18 @@ textarea {
   }
 
   .detail-btn:first-child {
+    padding: 4px 6px;
     margin-left: 0;
   }
 
   .detail-btn:last-child {
-    margin-right: -20px;
+    margin-right: -30px;
+    padding: 6px 5px;
   }
 
   .desktop-close {
     display: block;
+    width: 10px;
   }
 
   .close-btn {
@@ -1438,6 +1427,10 @@ textarea {
     font-size: 20px;
     text-align: center;
     align-items: center;
+  }
+
+  .detail-btn span {
+    margin-right: 5px;
   }
 
   .header-title h1 span {

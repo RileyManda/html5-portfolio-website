@@ -26,7 +26,7 @@ const generateDetailView = (data) => {
   title.classList.add('detail-title');
   title.id = 'detail-title';
 
-  if (window.innerWidth > 768) {
+  if (window.innerWidth >= 768) {
     const titleText = 'Keeping track of hundreds of<br>components';
     title.innerHTML = titleText;
   } else {
@@ -63,7 +63,12 @@ const generateDetailView = (data) => {
 
   const summary = document.createElement('div');
   summary.classList.add('detail-summary');
-  summary.innerHTML = `${data.summary}<br>`;
+
+  if (window.innerWidth > 768) {
+    summary.innerHTML = `${data.desktopsummary}<br>`;
+  } else {
+    summary.innerHTML = `${data.summary}<br>`;
+  }
 
   const sourceButton1 = document.createElement('button');
   sourceButton1.classList.add('detail-btn');
