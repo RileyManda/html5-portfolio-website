@@ -4,11 +4,16 @@ const openNav = function openNavHandler() {
 
 const closeView = function closeNavHandler() {
   document.querySelector('.mobile-menu').style.display = 'none';
-  document.querySelector('.detail-view').style.display = 'none';
 };
 
 const openDetailView = function openDetailHandler() {
-  document.querySelector('.detail-view').style.display = 'block';
+  const detailView = document.querySelector('.detail-view');
+  const blurOverlay = document.createElement('div');
+  blurOverlay.classList.add('blur-overlay');
+  document.body.appendChild(blurOverlay);
+
+  detailView.style.display = 'block';
+  document.body.classList.add('modal-open');
 };
 
 document.querySelector('#open-nav').addEventListener('click', openNav);

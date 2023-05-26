@@ -47,6 +47,9 @@ body {
 
   /* detailview colors */
   --detail-title-color: #172b4d;
+
+  /* validation colors */
+  --validation-error-color: #ff6163;
 }
 
 /* Header Section */
@@ -408,6 +411,12 @@ textarea {
   color: var(--white-color);
 }
 
+/* Validation contact form */
+#error-msg {
+  color: var(--validation-error-color);
+  font-size: 16px;
+}
+
 /* contact section- END */
 
 /* Global Section Styles */
@@ -667,6 +676,7 @@ textarea {
   max-width: 920px;
   left: 32px;
   right: 32px;
+  overflow-x: hidden;
 }
 
 .detail-view::after {
@@ -682,7 +692,7 @@ textarea {
 .detail-view-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -707,43 +717,49 @@ textarea {
 }
 
 .image-container {
-  height: auto;
-  position: relative;
+  position: absolute;
   display: flex;
   background-image: url(./assets/images/mobile/detail-view-mobile.png);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 90%;
-  margin: 10px auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  top: 20px;
+  height: 220px;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 100%;
+  padding: 2px;
+  box-sizing: border-box;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .detail-title {
-  text-align: left;
-  margin: 10px 0 0 10px;
-  margin-top: -160px;
-  line-height: 40px;
+  display: block;
+  margin-bottom: 5px;
+  line-height: 30px;
   font-weight: 600;
   color: var(--title-color);
-  font-size: 30px;
+  font-size: 23px;
+  margin-top: 290px;
+  text-align: left;
+  margin-left: -20px;
 }
 
 .detail-tags {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
   border-radius: 0;
-  align-items: center;
   text-align: center;
   cursor: pointer;
   justify-content: flex-start;
-  margin-left: 10px;
-  margin-top: -40px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -20px;
 }
 
 .detail-tags ul {
@@ -753,6 +769,7 @@ textarea {
   padding: 0;
   margin-top: 10px;
   margin-bottom: 3px;
+  margin-left: -50px;
 }
 
 .detail-tags li {
@@ -768,7 +785,6 @@ textarea {
 
 .detail-content {
   font-weight: 400;
-  font-size: 12px;
 }
 
 .detail-summary {
@@ -776,12 +792,15 @@ textarea {
   flex-direction: column;
   align-items: flex-start;
   margin-top: -30px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .detail-summary p {
   text-align: left;
   margin-left: 10px;
-  margin-top: 3px;
   font-size: 13px;
   margin-bottom: 2px;
   color: var(--paragraph-color);
@@ -790,9 +809,13 @@ textarea {
 .detail-btn-container {
   display: flex;
   flex-direction: row;
-  margin-top: -30px;
-  margin-left: 10px;
   justify-content: space-between;
+  margin-top: -20px;
+  flex-wrap: nowrap;
+  gap: 50px;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 30px;
 }
 
 .detail-btn {
@@ -802,23 +825,39 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
+  padding: 4px 12px;
   display: flex;
   align-items: center;
-  padding: 6px 6px;
-  margin-right: 10px;
-  margin-top: 2px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.detail-btn:first-child {
-  margin-right: 10px;
+.detail-btn svg {
+  margin-right: 5px;
 }
 
-.detail-btn:last-child {
+.detail-btn + .detail-btn {
   margin-left: 10px;
 }
 
 .desktop-close {
   display: none;
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  z-index: 9998;
+  background-color: rgba(193, 199, 208, 0.8);
 }
 
 /* detail view mobile END */
@@ -1012,11 +1051,12 @@ textarea {
     z-index: 9999;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    height: calc(100vh - 60px);
-    padding: 40px;
+    height: calc(100vh - 80px);
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
     overflow-y: auto;
-    max-width: 920px;
+    backdrop-filter: blur(80px);
+    overflow-x: hidden;
   }
 
   .detail-view-container {
@@ -1025,55 +1065,61 @@ textarea {
     left: 0;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
     height: 100px;
+    align-content: space-between;
+    max-width: 920px;
   }
 
   .detail-close-btn {
     position: absolute;
-    top: 10px;
-    margin: 10px;
+    top: 0;
     right: 13px;
     z-index: 20;
     display: flex;
-    width: 30px;
-    height: 30px;
+    height: 50px;
     justify-content: flex-end;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
     cursor: pointer;
     background: url("./assets/icons/desktop-close-icon.png");
+    background-repeat: no-repeat;
   }
 
   .image-container {
+    position: absolute;
     background-image: url(./assets/images/desktop/detail-view-desktop.png);
-    margin-top: 50px;
+    top: 60px;
+    margin: 0 20px;
+    height: 400px;
+    width: 100%;
+    width: calc(100% - 40px);
   }
 
   .detail-title {
+    display: flex;
+    justify-content: flex-start;
     text-align: left;
-    margin: 10px 0 0 10px;
-    margin-top: -250px;
-    margin-left: 25px;
-    line-height: 40px;
+    margin-top: 980px;
+    margin-left: -30px;
+    line-height: 50px;
     font-weight: 600;
-    font-size: 30px;
-    display: inline-block;
+    font-size: 25px;
+    width: 90%;
+    margin-bottom: 20px;
+    white-space: pre-line;
   }
 
   .detail-tags {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
     border-radius: 0;
     align-items: center;
     text-align: center;
     cursor: pointer;
     justify-content: flex-start;
-    margin-left: 5px;
-    margin-top: 10px;
+    margin-left: -70px;
+    margin-top: -50px;
   }
 
   .detail-tags ul {
@@ -1102,15 +1148,13 @@ textarea {
   }
 
   .detail-summary {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: -30px;
+    text-align: left;
+    margin-left: 20px;
   }
 
   .detail-summary p {
     text-align: left;
-    margin-left: 10px;
+    margin-left: -30px;
     margin-top: 3px;
     font-size: 14px;
     margin-bottom: 2px;
@@ -1120,31 +1164,36 @@ textarea {
   .detail-btn-container {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: -290px;
-    margin-left: 400px;
+    gap: 10px;
+    margin-left: 60%;
+    width: 30%;
   }
 
   .detail-btn {
-    background-color: var(--green-color);
-    color: var(--white-color);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    padding: 3px 3px;
-    margin-right: 10px;
-    margin-top: 2px;
+    margin-top: -150px;
+    padding: 2px 6px;
+    font-size: 12px;
+    width: 50%;
+  }
+
+  .detail-btn svg {
+    margin-right: 5px;
   }
 
   .detail-btn span {
     margin-right: 5px;
   }
 
+  .detail-btn:first-child {
+    margin-left: 0;
+  }
+
   .detail-btn:last-child {
-    margin-right: 0;
+    margin-right: -20px;
   }
 
   .desktop-close {
@@ -1161,6 +1210,8 @@ textarea {
     border: 1px solid var(--close-btn-border);
     cursor: pointer;
   }
+
+  /* DetailView Desktop END  */
 
   /* Other desktop media query elements END */
 

@@ -1,8 +1,10 @@
 import { detailscontent } from './data.js';
 
 const closeView = function closeNavHandler() {
+  const blurOverlay = document.querySelector('.blur-overlay');
   document.querySelector('.mobile-menu').style.display = 'none';
   document.querySelector('.detail-view').style.display = 'none';
+  blurOverlay.remove();
 };
 
 const generateDetailView = (data) => {
@@ -20,16 +22,39 @@ const generateDetailView = (data) => {
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('image-container');
 
-  const title = document.createElement('h2');
+  const title = document.createElement('h3');
   title.classList.add('detail-title');
   title.id = 'detail-title';
-  title.textContent = data.title;
+
+  if (window.innerWidth > 768) {
+    const titleText = 'Keeping track of hundreds of<br>components';
+    title.innerHTML = titleText;
+  } else {
+    title.textContent = 'Keeping track of hundreds of components';
+  }
 
   const tagList = document.createElement('ul');
+  const allowedTags = [];
+
+  if (window.innerWidth >= 768) {
+    allowedTags.push(
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+    );
+  } else {
+    allowedTags.push('Ruby on Rails', 'CSS', 'Javascript');
+  }
+
   data.tags.forEach((tag) => {
-    const tagItem = document.createElement('li');
-    tagItem.textContent = tag;
-    tagList.appendChild(tagItem);
+    if (allowedTags.includes(tag)) {
+      const tagItem = document.createElement('li');
+      tagItem.textContent = tag;
+      tagList.appendChild(tagItem);
+    }
   });
 
   const tags = document.createElement('div');
@@ -38,13 +63,16 @@ const generateDetailView = (data) => {
 
   const summary = document.createElement('div');
   summary.classList.add('detail-summary');
-  summary.textContent = data.summary;
+  summary.innerHTML = `${data.summary}<br>`;
 
   const sourceButton1 = document.createElement('button');
   sourceButton1.classList.add('detail-btn');
-  sourceButton1.textContent = 'See Live';
+  sourceButton1.textContent = 'See live';
+  sourceButton1.addEventListener('click', () => {
+    window.open(data.liveLink, '_blank');
+  });
   const sourceLink1 = document.createElement('a');
-  sourceLink1.href = data.sourceLink;
+  sourceLink1.href = data.liveLink;
   const sourceIcon1 = document.createElement('img');
   sourceIcon1.src = './assets/icons/live-icon.svg';
   sourceIcon1.alt = 'Live icon';
@@ -53,7 +81,10 @@ const generateDetailView = (data) => {
 
   const sourceButton2 = document.createElement('button');
   sourceButton2.classList.add('detail-btn');
-  sourceButton2.textContent = 'See Source';
+  sourceButton2.textContent = 'See source';
+  sourceButton2.addEventListener('click', () => {
+    window.open(data.sourceLink, '_blank');
+  });
   const sourceLink2 = document.createElement('a');
   sourceLink2.href = data.sourceLink;
   const sourceIcon2 = document.createElement('img');
