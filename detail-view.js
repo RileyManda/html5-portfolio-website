@@ -26,7 +26,7 @@ const generateDetailView = (data) => {
   title.classList.add('detail-title');
   title.id = 'detail-title';
 
-  if (window.innerWidth > 768) {
+  if (window.innerWidth >= 768) {
     const titleText = 'Keeping track of hundreds of<br>components';
     title.innerHTML = titleText;
   } else {
