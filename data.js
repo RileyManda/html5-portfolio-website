@@ -58,21 +58,7 @@ export const aboutcards = [
       'Web Development',
       'API Design',
     ],
-  },
-  {
-    html: `
-      <div class="about-title">
-        <h2>About Me</h2>
-        <p class="supporting-text">
-          I can help you build a product,<br> feature or website. Look through some of my work and
-          experience!<br>
-          If you like what you see and have <br>a project you need coded, <span>don't hesitate to contact
-          me.</span>
-        </p>
-        <button id="project-btn" class="project-btn">Get my resume</button>
-      </div>
-    `,
-  },
+  }
 ];
 
 export const detailscontent = [
