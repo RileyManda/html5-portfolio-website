@@ -42,11 +42,12 @@ body {
   --mobile-items-color: #3a4a42;
   --active-menu-line-color: #1e488f;
   --close-btn-border: #ebecf0;
-
+  
   /* mobile menu  END */
-
+  
   /* detailview colors */
   --detail-title-color: #172b4d;
+  --detail-title-text: #344563;
 }
 
 /* Header Section */
@@ -1010,8 +1011,8 @@ textarea {
 
   .detail-close-btn {
     position: absolute;
-    top: 0;
-    right: 13px;
+    top: 12px;
+    right: 20px;
     z-index: 20;
     display: flex;
     height: 50px;
