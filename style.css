@@ -1076,7 +1076,7 @@ textarea {
     display: flex;
     justify-content: flex-start;
     text-align: left;
-    margin-top: 980px;
+    margin-top: 965px;
     margin-left: -30px;
     line-height: 50px;
     font-weight: 600;
@@ -1144,7 +1144,7 @@ textarea {
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: -290px;
+    margin-top: -240px;
     gap: 5px;
     margin-left: 55%;
     width: 30%;
@@ -1177,6 +1177,7 @@ textarea {
 
   .desktop-close {
     display: block;
+    width: 10px;
   }
 
   .close-btn {
