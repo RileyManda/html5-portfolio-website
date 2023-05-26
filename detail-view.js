@@ -36,7 +36,7 @@ const generateDetailView = (data) => {
   const tagList = document.createElement('ul');
   const allowedTags = [];
 
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth > 768) {
     allowedTags.push(
       'Codekit',
       'GitHub',
