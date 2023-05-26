@@ -662,8 +662,10 @@ textarea {
   right: 32px;
   top: 50%;
   transform: translate(0, -50%);
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
+
+/* TODO:Update view to prevent scrolling when modal is open */
 
 .detail-view::after {
   content: "";
@@ -799,7 +801,7 @@ textarea {
   align-items: center;
   margin-top: -20px;
   margin-bottom: 30px;
-  gap: 50px;
+  gap: 20px;
   flex-wrap: nowrap;
   margin-left: 0;
   margin-right: 0;
