@@ -194,7 +194,10 @@ If you think that change is necessary - open a Pull Request in this repository a
       The site will be updated(Desktop Version) to utilize media queries for responsivenes to create a Desktop version.   
 
 - [ ] **[Mobile Menu Details]**
-      This feature will comprise of a detail view popup menu of each section of the portfolio.    
+      This feature will comprise of a detail view popup menu of each section of the portfolio. 
+
+ - [ ] **[Project Bugs Hide and Seek Branch]**
+      This project contains a bugs hide and seek feature branch for debugging purposes.      
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
