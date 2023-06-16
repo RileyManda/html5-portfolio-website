@@ -4,36 +4,42 @@ export const workcards = [
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     detailview: '',
+    image: './assets/images/screenshots/portfolio-screenshot1.jpg',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     detailview: '',
+    image: './assets/images/screenshots/portfolio-screenshot1.jpg',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     detailview: '',
+    image: './assets/images/screenshots/portfolio-screenshot1.jpg',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     detailview: '',
+    image: './assets/images/screenshots/portfolio-screenshot1.jpg',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     detailview: '',
+    image: './assets/images/screenshots/portfolio-screenshot1.jpg',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     detailview: '',
+    image: './assets/images/screenshots/portfolio-screenshot1.jpg',
   },
 ];
 
