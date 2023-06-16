@@ -1,10 +1,10 @@
 import { workcards } from './data.js';
 
 const generateworkCardHTML = (workCard) => {
-  const { title, subtitle, tags } = workCard;
+  const { title, subtitle, tags, image } = workCard;
   const tagsHTML = tags.map((tag) => `<li>${tag}</li>`).join('');
   const cardHTML = `
-    <div class="works-card">
+    <div class="works-card" style="background-image: url('${image}')">
       <div class="works-card-content">
         <h3 class="works-card-title">${title}<span><br>${subtitle}</span></h3>
         <div class="works-tags">
@@ -22,7 +22,6 @@ const generateworkCardHTML = (workCard) => {
 
 const displayWorksCards = () => {
   const workCardsContainer = document.getElementById('works-cards-container');
-  // itirate through the data
   workcards.forEach((workCard) => {
     const cardHTML = generateworkCardHTML(workCard);
     workCardsContainer.insertAdjacentHTML('beforeend', cardHTML);

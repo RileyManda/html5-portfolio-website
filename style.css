@@ -149,8 +149,8 @@ body {
 }
 
 .works-card {
-  background-image: url(./assets/images/mobile/img-placeholder.png);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   position: relative;
   flex-direction: column;
