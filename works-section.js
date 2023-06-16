@@ -1,7 +1,10 @@
 import { workcards } from './data.js';
+import { displayDetailView } from './detail-view.js';
 
-const generateworkCardHTML = (workCard) => {
-  const { title, subtitle, tags, image } = workCard;
+let selectedCardId = null;
+
+const generateworkCardHTML = (workCard, cardId) => {
+  const { title, subtitle, tags, image } = workCard; // Add 'image' to destructuring assignment
   const tagsHTML = tags.map((tag) => `<li>${tag}</li>`).join('');
   const cardHTML = `
     <div class="works-card" style="background-image: url('${image}')">
@@ -12,7 +15,7 @@ const generateworkCardHTML = (workCard) => {
             ${tagsHTML}
           </ul>
         </div>
-        <button class="project-btn" onclick="openDetailView()">See Project</button>
+        <button class="project-btn" onclick="openDetailView(${cardId}, '${image}')">See Project</button> 
       </div>
     </div>
   `;
@@ -20,10 +23,17 @@ const generateworkCardHTML = (workCard) => {
   return cardHTML;
 };
 
+const openDetailView = (cardId, detailViewImage) => {
+  // Add 'detailViewImage' as a parameter
+  selectedCardId = cardId;
+  const card = document.getElementById(`card-${cardId}`);
+  card.style.backgroundImage = `url('${detailViewImage}')`;
+};
+
 const displayWorksCards = () => {
   const workCardsContainer = document.getElementById('works-cards-container');
-  workcards.forEach((workCard) => {
-    const cardHTML = generateworkCardHTML(workCard);
+  workcards.forEach((workCard, index) => {
+    const cardHTML = generateworkCardHTML(workCard, index);
     workCardsContainer.insertAdjacentHTML('beforeend', cardHTML);
   });
 };

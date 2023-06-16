@@ -1,3 +1,4 @@
+import { workcards } from './data.js';
 import { detailscontent } from './data.js';
 
 const closeView = function closeNavHandler() {
@@ -7,20 +8,25 @@ const closeView = function closeNavHandler() {
   blurOverlay.remove();
 };
 
-const generateDetailView = (data) => {
+const generateDetailView = (data, index, detailViewImage) => {
   const detailView = document.createElement('div');
   detailView.classList.add('detail-view', 'hidden');
-  detailView.id = 'detail-view';
+  detailView.id = `detail-view-${index}`;
 
   const detailViewContainer = document.createElement('div');
   detailViewContainer.classList.add('detail-view-container');
 
   const closeButton = document.createElement('button');
   closeButton.classList.add('detail-close-btn');
-  closeButton.id = 'close-view';
+  closeButton.id = `close-view-${index}`;
 
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('image-container');
+
+  const image = document.createElement('img');
+  image.src = detailViewImage;
+  image.alt = 'Project Image';
+  imageContainer.appendChild(image);
 
   const title = document.createElement('h3');
   title.classList.add('detail-title');
@@ -43,7 +49,7 @@ const generateDetailView = (data) => {
       'JavaScript',
       'Bootstrap',
       'Terminal',
-      'Codepen',
+      'Codepen'
     );
   } else {
     allowedTags.push('Ruby on Rails', 'CSS', 'Javascript');
@@ -115,15 +121,20 @@ const generateDetailView = (data) => {
   return detailView;
 };
 
-const displayDetailView = () => {
+export const displayDetailView = () => {
   const detailViewContainer = document.getElementById('detail-view-container');
 
-  detailscontent.forEach((data) => {
-    const detailView = generateDetailView(data);
-    detailView
-      .querySelector('#close-view')
-      .addEventListener('click', closeView);
+  workcards.forEach((workcard, index) => {
+    const detailViewImage = workcard.image;
+    const detailView = generateDetailView(
+      detailscontent[index],
+      index,
+      detailViewImage
+    );
+    const closeButton = detailView.querySelector(`#close-view-${index}`);
+    closeButton.addEventListener('click', closeView);
     detailViewContainer.appendChild(detailView);
   });
 };
+
 displayDetailView();

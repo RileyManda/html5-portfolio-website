@@ -151,7 +151,7 @@ body {
 .works-card {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   position: relative;
   flex-direction: column;
   display: flex;
@@ -162,6 +162,20 @@ body {
   box-sizing: border-box;
   height: 400px;
   width: 100%;
+  transition: transform 0.3s;
+}
+
+.works-card .background-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.works-card:hover {
+  transform: scale(1.1);
 }
 
 .works-card-title {
@@ -713,7 +727,6 @@ textarea {
   height: 220px;
   margin: 0 10px;
   padding: 2px;
-  background-image: url(./assets/images/mobile/detail-view-mobile.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1073,7 +1086,6 @@ textarea {
 
   .image-container {
     position: absolute;
-    background-image: url(./assets/images/desktop/detail-view-desktop.png);
     top: 60px;
     margin: 0 20px;
     height: 400px;
