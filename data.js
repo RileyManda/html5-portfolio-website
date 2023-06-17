@@ -3,37 +3,37 @@ export const workcards = [
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    detailview: '',
+    image: './assets/icons/languages.svg',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    detailview: '',
+    image: './assets/icons/frameworks.svg',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    detailview: '',
+    image: './assets/icons/skills.svg',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    detailview: '',
+    image: './assets/icons/frameworks.svg',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    detailview: '',
+    image: './assets/icons/frameworks.svg',
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    detailview: '',
+    image: './assets/icons/frameworks.svg',
   },
 ];
 
