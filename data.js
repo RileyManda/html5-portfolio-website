@@ -3,37 +3,37 @@ export const workcards = [
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    image: './assets/icons/languages.svg',
+    image: './assets/images/mobile/img-placeholder.png'
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    image: './assets/icons/frameworks.svg',
+    image: './assets/images/mobile/img-placeholder.png'
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    image: './assets/icons/skills.svg',
+    image: './assets/images/mobile/img-placeholder.png'
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    image: './assets/icons/frameworks.svg',
+    image: './assets/images/mobile/img-placeholder.png'
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    image: './assets/icons/frameworks.svg',
+    image: './assets/images/mobile/img-placeholder.png'
   },
   {
     title: 'Multi-Post Stories',
     subtitle: 'Gain+Glory',
     tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    image: './assets/icons/frameworks.svg',
+    image: './assets/images/mobile/img-placeholder.png'
   },
 ];
 
