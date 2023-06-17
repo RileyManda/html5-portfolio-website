@@ -1,4 +1,4 @@
-import { workcards } from './data.js';
+import { workcards } from './data/data.js';
 
 export const generateWorkCardHTML = (workCard, index) => {
   const { title, subtitle, tags, image } = workCard; // Destructure the image property
@@ -19,4 +19,3 @@ export const generateWorkCardHTML = (workCard, index) => {
 
   return cardHTML;
 };
-

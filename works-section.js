@@ -1,4 +1,4 @@
-import { workcards } from './data.js';
+import { workcards } from './data/data.js';
 import { generateWorkCardHTML } from './workCardsUtils.js';
 import { openDetailView } from './detailViewUtils.js';
 
