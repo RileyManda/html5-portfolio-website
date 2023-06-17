@@ -1,4 +1,4 @@
-import { detailscontent } from './data/data.js';
+import { detailscontent } from './data.js';
 
 export const openDetailView = (index) => {
   const card = document.getElementById(`card-${index}`);

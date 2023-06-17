@@ -1,4 +1,4 @@
-import { aboutcards } from './data/data.js';
+import { aboutcards } from './data.js';
 import { generateAboutCardHTML } from './aboutCardUtils.js';
 
 const displayAboutCards = () => {
