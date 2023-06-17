@@ -149,9 +149,9 @@ body {
 }
 
 .works-card {
+  background-image: url(./assets/images/mobile/img-placeholder.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   position: relative;
   flex-direction: column;
   display: flex;
@@ -162,20 +162,6 @@ body {
   box-sizing: border-box;
   height: 400px;
   width: 100%;
-  transition: transform 0.3s;
-}
-
-.works-card .background-wrapper {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 30px;
-  height: 100%;
-  width: 100%;
-}
-
-.works-card:hover {
-  transform: scale(1.1);
 }
 
 .works-card-title {

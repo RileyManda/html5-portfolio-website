@@ -1,14 +1,23 @@
 import { workcards } from './data.js';
 import { detailscontent } from './data.js';
 
-const closeView = function closeNavHandler() {
+const closeView = () => {
   const blurOverlay = document.querySelector('.blur-overlay');
   document.querySelector('.mobile-menu').style.display = 'none';
   document.querySelector('.detail-view').style.display = 'none';
   blurOverlay.remove();
 };
 
-const generateDetailView = (data, index, detailViewImage) => {
+const generateDetailView = (index) => {
+  const {
+    title,
+    tags,
+    summary,
+    desktopsummary,
+    liveLink,
+    sourceLink,
+    detailimage,
+  } = detailscontent[index];
   const detailView = document.createElement('div');
   detailView.classList.add('detail-view', 'hidden');
   detailView.id = `detail-view-${index}`;
@@ -23,20 +32,20 @@ const generateDetailView = (data, index, detailViewImage) => {
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('image-container');
 
-  const image = document.createElement('img');
-  image.src = detailViewImage;
-  image.alt = 'Project Image';
-  imageContainer.appendChild(image);
+const image = document.createElement('img');
+image.src = detailimage;
+image.alt = 'Project Image';
+imageContainer.appendChild(image);
 
-  const title = document.createElement('h3');
-  title.classList.add('detail-title');
-  title.id = 'detail-title';
+  const detailTitle = document.createElement('h3');
+  detailTitle.classList.add('detail-title');
+  detailTitle.id = 'detail-title';
 
   if (window.innerWidth >= 768) {
     const titleText = 'Keeping track of hundreds of<br>components';
-    title.innerHTML = titleText;
+    detailTitle.innerHTML = titleText;
   } else {
-    title.textContent = 'Keeping track of hundreds of components';
+    detailTitle.textContent = 'Keeping track of hundreds of components';
   }
 
   const tagList = document.createElement('ul');
@@ -55,7 +64,7 @@ const generateDetailView = (data, index, detailViewImage) => {
     allowedTags.push('Ruby on Rails', 'CSS', 'Javascript');
   }
 
-  data.tags.forEach((tag) => {
+  tags.forEach((tag) => {
     if (allowedTags.includes(tag)) {
       const tagItem = document.createElement('li');
       tagItem.textContent = tag;
@@ -63,27 +72,27 @@ const generateDetailView = (data, index, detailViewImage) => {
     }
   });
 
-  const tags = document.createElement('div');
-  tags.classList.add('detail-tags');
-  tags.appendChild(tagList);
+  const detailTags = document.createElement('div');
+  detailTags.classList.add('detail-tags');
+  detailTags.appendChild(tagList);
 
-  const summary = document.createElement('div');
-  summary.classList.add('detail-summary');
+  const detailSummary = document.createElement('div');
+  detailSummary.classList.add('detail-summary');
 
   if (window.innerWidth > 768) {
-    summary.innerHTML = `${data.desktopsummary}<br>`;
+    detailSummary.innerHTML = `${desktopsummary}<br>`;
   } else {
-    summary.innerHTML = `${data.summary}<br>`;
+    detailSummary.innerHTML = `${summary}<br>`;
   }
 
   const sourceButton1 = document.createElement('button');
   sourceButton1.classList.add('detail-btn');
   sourceButton1.textContent = 'See live';
   sourceButton1.addEventListener('click', () => {
-    window.open(data.liveLink, '_blank');
+    window.open(liveLink, '_blank');
   });
   const sourceLink1 = document.createElement('a');
-  sourceLink1.href = data.liveLink;
+  sourceLink1.href = liveLink;
   const sourceIcon1 = document.createElement('img');
   sourceIcon1.src = './assets/icons/live-icon.svg';
   sourceIcon1.alt = 'Live icon';
@@ -94,10 +103,10 @@ const generateDetailView = (data, index, detailViewImage) => {
   sourceButton2.classList.add('detail-btn');
   sourceButton2.textContent = 'See source';
   sourceButton2.addEventListener('click', () => {
-    window.open(data.sourceLink, '_blank');
+    window.open(sourceLink, '_blank');
   });
   const sourceLink2 = document.createElement('a');
-  sourceLink2.href = data.sourceLink;
+  sourceLink2.href = sourceLink;
   const sourceIcon2 = document.createElement('img');
   sourceIcon2.src = './assets/icons/github-light.svg';
   sourceIcon2.alt = 'GitHub icon';
@@ -111,9 +120,9 @@ const generateDetailView = (data, index, detailViewImage) => {
 
   detailViewContainer.appendChild(closeButton);
   detailViewContainer.appendChild(imageContainer);
-  detailViewContainer.appendChild(title);
-  detailViewContainer.appendChild(tags);
-  detailViewContainer.appendChild(summary);
+  detailViewContainer.appendChild(detailTitle);
+  detailViewContainer.appendChild(detailTags);
+  detailViewContainer.appendChild(detailSummary);
   detailViewContainer.appendChild(buttonContainer);
 
   detailView.appendChild(detailViewContainer);
@@ -124,13 +133,9 @@ const generateDetailView = (data, index, detailViewImage) => {
 export const displayDetailView = () => {
   const detailViewContainer = document.getElementById('detail-view-container');
 
-  workcards.forEach((workcard, index) => {
-    const detailViewImage = workcard.image;
-    const detailView = generateDetailView(
-      detailscontent[index],
-      index,
-      detailViewImage
-    );
+  detailscontent.forEach((data, index) => {
+    const detailViewImage = detailscontent[index].detailimage;
+    const detailView = generateDetailView(index);
     const closeButton = detailView.querySelector(`#close-view-${index}`);
     closeButton.addEventListener('click', closeView);
     detailViewContainer.appendChild(detailView);
