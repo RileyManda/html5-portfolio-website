@@ -21,7 +21,7 @@
 
 # 📖 [Portfolio-website] <a name="Portfolio-website"></a>
 
-**[Portfolio-website]** Microverse project designed to equip me with the tools i required to become a successful developer by utilizing the correct html css semantics,gitflow,setup of linters and code reviews and PR,aswell as working with feature branches in a collbarotaion environment.The portfolio is a translation of a UX design provided with stipulated requirement testing my attention to detail,ability to parse figma design and the use of grid layout and flex box for responsive web design.The portfolio was deeveloped with a mobile first approach and RWD was implemented to support desktop with media queries and grid layout.
+**[Portfolio-website]** Portfolio project built to showcase my skills and experience with HTML CSS semantics, git-flow, setup of linters, and code reviews and PR, as well as working with feature branches in a collaboration environment. The portfolio is a translation of a Figma UX design provided with stipulated requirements testing my attention to detail, ability to parse Figma design, and the use of grid layout and flexbox for responsive web design. The portfolio was developed with a mobile-first approach and RWD was implemented to support desktop with media queries and grid layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
