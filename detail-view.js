@@ -22,6 +22,12 @@ const generateDetailView = (data) => {
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('image-container');
 
+  const image = document.createElement('img');
+  image.src = data.detailimage;
+  image.alt = 'Detail Image';
+  imageContainer.appendChild(image);
+
+
   const title = document.createElement('h3');
   title.classList.add('detail-title');
   title.id = 'detail-title';
@@ -120,8 +126,7 @@ const displayDetailView = () => {
 
   detailscontent.forEach((data) => {
     const detailView = generateDetailView(data);
-    detailView
-      .querySelector('#close-view')
+    detailView.querySelector('#close-view')
       .addEventListener('click', closeView);
     detailViewContainer.appendChild(detailView);
   });
