@@ -1,9 +1,9 @@
 export const workcards = [
   {
-    title: 'Multi-Post Stories',
+    title: 'Website Portfolio',
     subtitle: 'Gain+Glory',
-    tags: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-    image: './assets/images/mobile/img-placeholder.png'
+    tags: ['CSS', 'JavaScript', 'HTML'],
+    image: './assets/images/projects/portfolio-website.png'
   },
   {
     title: 'Multi-Post Stories',
