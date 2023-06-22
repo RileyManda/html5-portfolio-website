@@ -72,7 +72,7 @@ body {
   padding: 2px;
   background-size: cover;
   position: relative;
-  top: -90px;
+  top: -200px;
 }
 
 .header {
@@ -719,7 +719,6 @@ textarea {
   height: 220px;
   margin: 0 10px;
   padding: 2px;
-  background-image: url(./assets/images/mobile/detail-view-mobile.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1079,7 +1078,6 @@ textarea {
 
   .image-container {
     position: absolute;
-    background-image: url(./assets/images/desktop/detail-view-desktop.png);
     top: 60px;
     margin: 0 20px;
     height: 400px;
