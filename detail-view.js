@@ -1,10 +1,14 @@
 import { detailscontent } from './data.js';
 
-const closeView = function closeNavHandler() {
-  const blurOverlay = document.querySelector('.blur-overlay');
+const closeView = () => {
+  const blurOverlays = document.querySelectorAll('.blur-overlay');
+  blurOverlays.forEach((overlay) => overlay.remove());
+
   document.querySelector('.mobile-menu').style.display = 'none';
-  document.querySelector('.detail-view').style.display = 'none';
-  blurOverlay.remove();
+  const detailViews = document.querySelectorAll('.detail-view');
+  detailViews.forEach((view) => (view.style.display = 'none'));
+
+  document.body.classList.remove('modal-open');
 };
 
 const generateDetailView = (data) => {
@@ -31,6 +35,7 @@ const generateDetailView = (data) => {
   const title = document.createElement('h3');
   title.classList.add('detail-title');
   title.id = 'detail-title';
+  title.textContent = data.detailtitle;
 
   if (window.innerWidth >= 768) {
     const titleText = 'Keeping track of hundreds of<br>components';
@@ -125,10 +130,13 @@ const displayDetailView = () => {
   const detailViewContainer = document.getElementById('detail-view-container');
 
   detailscontent.forEach((data) => {
+    
     const detailView = generateDetailView(data);
-    detailView.querySelector('#close-view')
+    detailView
+      .querySelector('#close-view')
       .addEventListener('click', closeView);
     detailViewContainer.appendChild(detailView);
   });
 };
+
 displayDetailView();
