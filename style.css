@@ -715,8 +715,8 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  top: -50px;
-  width: 90%;
+  top: 30px;
+  width: 100%;
   height: 300px;
   margin: 0 10px;
   margin-bottom: 20px;
