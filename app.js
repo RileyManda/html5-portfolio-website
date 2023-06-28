@@ -6,8 +6,10 @@ const closeView = () => {
   document.querySelector('.mobile-menu').style.display = 'none';
 };
 
-const openDetailView = () => {
-  const detailView = document.querySelector('.detail-view');
+const openDetailView = (index) => {
+  const detailViews = document.querySelectorAll('.detail-view');
+  const detailView = detailViews[index];
+
   const blurOverlay = document.createElement('div');
   blurOverlay.classList.add('blur-overlay');
   document.body.appendChild(blurOverlay);

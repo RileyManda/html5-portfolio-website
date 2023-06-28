@@ -1,10 +1,14 @@
 import { detailscontent } from './data.js';
 
-const closeView = function closeNavHandler() {
-  const blurOverlay = document.querySelector('.blur-overlay');
+const closeView = () => {
+  const blurOverlays = document.querySelectorAll('.blur-overlay');
+  blurOverlays.forEach((overlay) => overlay.remove());
+
   document.querySelector('.mobile-menu').style.display = 'none';
-  document.querySelector('.detail-view').style.display = 'none';
-  blurOverlay.remove();
+  const detailViews = document.querySelectorAll('.detail-view');
+  detailViews.forEach((view) => (view.style.display = 'none'));
+
+  document.body.classList.remove('modal-open');
 };
 
 const generateDetailView = (data) => {
@@ -126,9 +130,11 @@ const displayDetailView = () => {
 
   detailscontent.forEach((data) => {
     const detailView = generateDetailView(data);
-    detailView.querySelector('#close-view')
+    detailView
+      .querySelector('#close-view')
       .addEventListener('click', closeView);
     detailViewContainer.appendChild(detailView);
   });
 };
+
 displayDetailView();
