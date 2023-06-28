@@ -40,7 +40,7 @@ export const workcards = [
 
 export const detailscontent = [
   {
-    title: 'Keeping track of hundreds of components',
+    detailtitle: 'Keeping data change test',
     tags: [
       'Codekit',
       'GitHub',
@@ -58,10 +58,94 @@ export const detailscontent = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveLink: 'https://rileymanda.github.io/portfolio-website/',
     sourceLink: 'https://github.com/RileyManda/portfolio-website',
-    detailimage: './assets/images/projects/portfolio-website-card.png',
+    detailimage: './assets/images/projects/portfolio-desktop.png',
   },
   {
     title: 'Keeping track of hundreds of components',
+    tags: [
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+      'Ruby on Rails',
+      'CSS',
+      'Javascript',
+    ],
+    summary: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.<br><br>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.`,
+    desktopsummary:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    liveLink: 'https://rileymanda.github.io/conference-website/',
+    sourceLink: 'https://github.com/RileyManda/conference-website',
+    detailimage: '/assets/images/projects/conference-desktop.png',
+  },
+  {
+    detailtitle: 'Keeping track of hundreds of components',
+    tags: [
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+      'Ruby on Rails',
+      'CSS',
+      'Javascript',
+    ],
+    summary: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.<br><br>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.`,
+    desktopsummary:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    liveLink: 'https://rileymanda.github.io/conference-website/',
+    sourceLink: 'https://github.com/RileyManda/conference-website',
+    detailimage: '/assets/images/projects/conference-website-project.png',
+  },
+  {
+    detailtitle: 'Keeping track of hundreds of components',
+    tags: [
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+      'Ruby on Rails',
+      'CSS',
+      'Javascript',
+    ],
+    summary: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.<br><br>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.`,
+    desktopsummary:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    liveLink: 'https://rileymanda.github.io/conference-website/',
+    sourceLink: 'https://github.com/RileyManda/conference-website',
+    detailimage: '/assets/images/projects/conference-website-project.png',
+  },
+  {
+    detailtitle: 'Keeping track of hundreds of components',
+    tags: [
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
+      'Ruby on Rails',
+      'CSS',
+      'Javascript',
+    ],
+    summary: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.<br><br>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.`,
+    desktopsummary:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    liveLink: 'https://rileymanda.github.io/conference-website/',
+    sourceLink: 'https://github.com/RileyManda/conference-website',
+    detailimage: '/assets/images/projects/conference-website-project.png',
+  },
+  {
+    detailtitle: 'Keeping track of hundreds of components',
     tags: [
       'Codekit',
       'GitHub',

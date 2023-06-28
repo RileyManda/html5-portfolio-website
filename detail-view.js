@@ -35,6 +35,7 @@ const generateDetailView = (data) => {
   const title = document.createElement('h3');
   title.classList.add('detail-title');
   title.id = 'detail-title';
+  title.textContent = data.detailtitle;
 
   if (window.innerWidth >= 768) {
     const titleText = 'Keeping track of hundreds of<br>components';
@@ -129,6 +130,7 @@ const displayDetailView = () => {
   const detailViewContainer = document.getElementById('detail-view-container');
 
   detailscontent.forEach((data) => {
+    
     const detailView = generateDetailView(data);
     detailView
       .querySelector('#close-view')
