@@ -2,57 +2,202 @@
 <html lang="en">
 
 <head>
-    <title>Portfolio</title>
+    <title>Riley's Portfolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/fonts/Inter">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Toolbar section -->
     <header class="toolbar">
         <div class="toolbar-menu">
             <nav class="nav-bar">
-                <div class="hamburger">
+                <div class="hamburger" id="open-nav" onclick="openNav()">
                     <i class="fa fa-bars"></i>
                 </div>
+                <ul class="menu-list" id="menu-lists">
+                    <li><a href="#works-section" class="menu-item">Portfolio</a></li>
+                    <li><a href="#about-section" class="menu-item">About</a></li>
+                    <li><a href="#contact-section" class="menu-item">Contact</a></li>
+                </ul>
             </nav>
-
         </div>
     </header>
-    <section>
-        <div class="header">
-            <div class="header-content">
-                <h1 class="header-title">Hey there. <br>I am Alex.</h1>
-                <p class="header-sub-title">I'm a software developer</p>
+
+
+    <!-- mobile-menu -->
+    <div class="mobile-menu hidden">
+        <div class="mobile-menu-container">
+            <div onclick="closeView()" class="close-btn" id="close-nav">
+                <i class="fas fa-times"></i>
+            </div>
+            <!-- Content of the mobile menu -->
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#works-section">Portfolio</a></li>
+                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#about-section">About</a></li>
+                <li class="mobile-menu-list-items" onclick="closeView()"><a href="#contact-section">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- mobile-menu END-->
+    <!-- Details view -->
+    <div id="detail-view-container"></div>
+    <!--  Details END -->
+
+<!--  Details END -->
+    <!--  Details END -->
+    <main>
+        <!-- Header section -->
+        <section id="header-section">
+            <div class="header">
+                <div class="header-title">
+                    <h1>Hey there.<span>I'm Riley.</span></h1>
+                    <h2>I'm a software <span></span>developer</h2>
+
+                </div>
                 <p class="supporting-text">
-                    I can help you build a product,<br>feature or website Look through <br> some of my work and
-                    experience! <br> If you
-                    like what you see and have <br> a project you need coded,<br>
-                    don’t hesitate to contact me.
+                    I can help you build a product,<br> feature or website. Look through some of my work and
+                    experience!<br>
+
+                    If you like what you see and have <br>a project you need coded, <span>don't hesitate to contact
+                        me.</span>
                 </p>
+
+
+
                 <ul class="social-icons">
-                    <li><a href="#"><img src="./assets/icons/twitter.svg" alt="Twitter icon"></a></li>
-                    <li><a href="#"><img src="./assets/icons/linkedin.svg" alt="LinkedIn icon"></a></li>
-                    <li><a href="#"><img src="./assets/icons/medium.svg" alt="Medium icon"></a></li>
-                    <li><a href="#"><img src="./assets/icons/github.svg" alt="GitHub icon"></a></li>
-                    <li><a href="#"><img src="./assets/icons/angellist.svg" alt="AngelList icon"></a></li>
-
-
+                    <li><a href="https://twitter.com/rilecodez"><img src="./assets/icons/twitter.svg"
+                                alt="Twitter icon"></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/rileymanda/"><img src="./assets/icons/linkedin.svg"
+                                alt="LinkedIn icon"></a></li>
+                    <li><a href="https://rileymanda.medium.com/"><img src="./assets/icons/medium.svg"
+                                alt="Medium icon"></a>
+                    </li>
+                    <li><a href="https://github.com/RileyManda/"><img src="./assets/icons/github.svg"
+                                alt="GitHub icon"></a>
+                    </li>
+                    <li><a href="https://www.angellist.com/"><img src="./assets/icons/angellist.svg"
+                                alt="AngelList icon"></a>
+                    </li>
                 </ul>
                 <div class="chevron-icon">
                     <a href="#"><img src="./assets/icons/chevron.svg" alt="Chevron icon"></a>
                 </div>
+
+
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <!-- Works section -->
+        <section id="works-section">
+            <div class="section-container">
+                <div class="section-title">
+                    <h3>My Recent<br> Works</h3>
+                    <div class="section-indicator"></div>
+                </div>
+                <div class="card-container" id="works-cards-container"></div>
+            </div>
+        </section>
+
+        <!-- About  section -->
+        <section id="about-section">
+            <div class="section-container">
+                <div class="about-title">
+                    <h2>About Me</h2>
+                    <p class="supporting-text">
+                        I can help you build a product,<br> feature or website. Look through some of my work and
+                        experience!<br>
+
+                        If you like what you see and have <br>a project you need coded, <span>don't hesitate to contact
+                            me.</span>
+                    </p>
+
+                    <button id="project-btn" class="project-btn">Get my resume</button>
+                </div>
+
+
+                <div class="card-container" id="about-cards-container"></div>
+            </div>
+        </section>
+
+        <!-- Contact me section -->
+        <section id="contact-section">
+            <div class="contact-container">
+                <div class="grid-container">
+                    <h2 class="contact-text grid-item">I'm always interested in hearing about new projects, so if
+                        you'dlike to chat please get in touch.</h2>
+                    <div class="form-container grid-item">
+                        <form class="contact-form" action="https://formspree.io/f/mvonlebo" method="POST">
+                            <div class="form-group">
+                                <label for="full-name"></label>
+                                <input type="text" id="full-name" name="firstname" placeholder="Full Name"
+                                    maxlength="30" required>
+                            </div>
+                            <span id="error-msg"></span>
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" placeholder="Email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message"></label>
+                                <textarea id="message" name="message"
+                                    placeholder="Hey, I'd like to connect with you about..." maxlength="500"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Get in touch" class="contact-btn">
+                            </div>
+                        </form>
+                        <div class="email-container">
+                            <p class="email-text">rileymanda0@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-image"></div>
+                </div>
 
 
 
+            </div>
+            <div class="footer-line">
+                <hr>
+            </div>
+            <div class="social-section">
+                <ul class="social-icons">
+                    <li><a href="https://twitter.com/rilecodez"><img src="./assets/icons/twitter.svg"
+                                alt="Twitter icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/rileymanda/"><img src="./assets/icons/linkedin.svg"
+                                alt="LinkedIn icon"></a></li>
+                    <li><a href="https://rileymanda.medium.com/"><img src="./assets/icons/medium.svg"
+                                alt="Medium icon"></a>
+                    </li>
+                    <li><a href="https://github.com/RileyManda/"><img src="./assets/icons/github.svg"
+                                alt="GitHub icon"></a>
+                    </li>
+                    <li><a href="https://www.angellist.com/"><img src="./assets/icons/angellist.svg"
+                                alt="AngelList icon"></a></li>
+                </ul>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+    <script src="validate.js"></script>
+
+    <script src="localstorage.js"></script>
+
+    <script type="module" src="data.js"></script>
+    <script type="module" src="about-section.js"></script>
+    <script type="module" src="works-section.js"></script>
+    <script type="module" src="detail-view.js"></script>
 
 </body>
 

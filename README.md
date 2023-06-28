@@ -8,6 +8,10 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+- [🔑 Key features](#key-features)
+- [🛢 Live Demo](#live-demo)
+- [🎥 Project Presentation](#project-presentation)
+
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -17,7 +21,7 @@
 
 # 📖 [Portfolio-website] <a name="Portfolio-website"></a>
 
-**[Portfolio-website]** this was mini-projects that upkill to create a feature branch and test linters in order to have professional-looking code.
+**[Portfolio-website]** Portfolio project built to showcase my skills and experience with HTML CSS semantics, git-flow, setup of linters, and code reviews and PR, as well as working with feature branches in a collaboration environment. The portfolio is a translation of a Figma UX design provided with stipulated requirements testing my attention to detail, ability to parse Figma design, and the use of grid layout and flexbox for responsive web design. The portfolio was developed with a mobile-first approach and RWD was implemented to support desktop with media queries and grid layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -32,8 +36,37 @@
   <ul>
     <li><a href="github.com">Git Hub</a></li>
   </ul>
-</details
 
+  <summary>Github Pages</summary>
+  <ul>
+    <li><a href="https://pages.github.com/">Github Pages</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[Responsive Website]**
+- **[Works Section]**
+- **[About Section]**
+- **[Contact Section]**
+- **[Mobile Menu]**
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://rileymanda.github.io/portfolio-website/)
+
+## 🚀 Project Presentation <a name="project-presentation"></a>
+
+- [Project Presentation](https://www.loom.com/share/e96865e13e3b4e0883dc48cd1c7e7d62)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -57,6 +90,10 @@ In order to run this project you need:
 ### Setup
 
 Clone this repository to your desired folder:<br>
+```sh
+  cd my-folder
+  git clone git@github.com:RileyManda/portfolio-website.git
+```
 Advantages of Linters:<br>
 
 1: improves readability-it will be easy to read and make adjustment if required easily.<br>
@@ -144,10 +181,20 @@ If you think that change is necessary - open a Pull Request in this repository a
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+- [ ] **[Works Section]**
+      Works section: This section will consist of a card gallery featuring work project.
 
-- [ ] **[new_feature_1]**
-      This project will not have any additional features.
+- [ ] **[About me Section]**
+      This feature will contain more details about me and the tech stack i am familiar with.
+
+- [ ] **[Contact Section]**
+      This feature will comprise of a contact information.
+
+- [ ] **[RWD]**
+      The site will be updated(Desktop Version) to utilize media queries for responsivenes to create a Desktop version.   
+
+- [ ] **[Mobile Menu Details]**
+      This feature will comprise of a detail view popup menu of each section of the portfolio.    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,7 +212,15 @@ If you like this project, kindly leave a comment below and share it with someone
 
 ## 🙏 Acknowledgments <a name="Microverse Inc."></a>
 
-I'm grateful to microverse for giving me every opportunity to grow into my full potential
+I'm grateful to microverse for giving me this opportunity to grow into my full potential through continuous learning and practical challenges.
+Much appreciation to my Pair Coding partners for their contributions:
+
+**Contributions:**
+- Pi1998: [@Pi1998](https://github.com/Pi1998):
+    -Animation Transitions
+- DanielAD10: [@DanielAD10](https://github.com/DanielAD10):
+    -Javascript click events contribution
+
 
 <!-- FAQ (optional) -->
 
