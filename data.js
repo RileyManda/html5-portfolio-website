@@ -77,7 +77,7 @@ export const detailscontent = [
       ' A responsive conference website concept based on the original theme design by Cindy Shin and customized for the Sapien-Ai conference.',
     liveLink: 'https://rileymanda.github.io/conference-website/',
     sourceLink: 'https://github.com/RileyManda/conference-website',
-    detailimage: '/assets/images/projects/conference-detail-img.png',
+    detailimage: './assets/images/projects/conference-detail-img.png',
   },
   {
     detailtitle: 'Keeping track of hundreds of components',
@@ -98,7 +98,7 @@ export const detailscontent = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveLink: 'https://rileymanda.github.io/conference-website/',
     sourceLink: 'https://github.com/RileyManda/conference-website',
-    detailimage: '/assets/images/projects/conference-detail-img.png',
+    detailimage: './assets/images/projects/conference-detail-img.png',
   },
   {
     detailtitle: 'Keeping track of hundreds of components',
@@ -119,7 +119,7 @@ export const detailscontent = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveLink: 'https://rileymanda.github.io/conference-website/',
     sourceLink: 'https://github.com/RileyManda/conference-website',
-    detailimage: '/assets/images/projects/conference-detail-img.png',
+    detailimage: './assets/images/projects/conference-detail-img.png',
   },
   {
     detailtitle: 'Keeping track of hundreds of components',
@@ -140,7 +140,7 @@ export const detailscontent = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveLink: 'https://rileymanda.github.io/conference-website/',
     sourceLink: 'https://github.com/RileyManda/conference-website',
-    detailimage: '/assets/images/projects/conference-detail-img.png',
+    detailimage: './assets/images/projects/conference-detail-img.png',
   },
   {
     detailtitle: 'Keeping track of hundreds of components',
@@ -161,7 +161,7 @@ export const detailscontent = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     liveLink: 'https://rileymanda.github.io/conference-website/',
     sourceLink: 'https://github.com/RileyManda/conference-website',
-    detailimage: '/assets/images/projects/conference-detail-img.png',
+    detailimage: './assets/images/projects/conference-detail-img.png',
   },
 ];
 
