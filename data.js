@@ -40,7 +40,7 @@ export const workcards = [
 
 export const detailscontent = [
   {
-    detailtitle: 'Keeping data change test',
+    detailtitle: 'Single Page application Responsive Portfolio Website',
     tags: [
       'Codekit',
       'GitHub',
@@ -52,16 +52,15 @@ export const detailscontent = [
       'CSS',
       'Javascript',
     ],
-    summary: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.<br><br>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.`,
+    summary: `Portfolio website project built with Javacsript,HTML5 and CSS with a mobile first responsive design approach that utilizes media queries,ES6 modules,and follows the recommended css,html5 and Javascript semantics.`,
     desktopsummary:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      'Portfolio website project built with Javacsript,HTML% and CSS with a mobile first responsive design approach that utilizes media queries,ES6 modules,and follows the recommended css,html5 and Javascript semantics',
     liveLink: 'https://rileymanda.github.io/portfolio-website/',
     sourceLink: 'https://github.com/RileyManda/portfolio-website',
     detailimage: './assets/images/projects/portfolio-detail-img.png',
   },
   {
-    title: 'Keeping track of hundreds of components',
+    detailtitle: 'Responsive Conference Website',
     tags: [
       'Codekit',
       'GitHub',
@@ -73,13 +72,12 @@ export const detailscontent = [
       'CSS',
       'Javascript',
     ],
-    summary: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.<br><br>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.`,
+    summary: ` A responsive conference website concept based on the original theme design by Cindy Shin and customized for the Sapien-Ai conference.`,
     desktopsummary:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      ' A responsive conference website concept based on the original theme design by Cindy Shin and customized for the Sapien-Ai conference.',
     liveLink: 'https://rileymanda.github.io/conference-website/',
     sourceLink: 'https://github.com/RileyManda/conference-website',
-    detailimage: './assets/images/projects/portfolio-detail-img.png',
+    detailimage: '/assets/images/projects/conference-detail-img.png',
   },
   {
     detailtitle: 'Keeping track of hundreds of components',
