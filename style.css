@@ -663,7 +663,7 @@ textarea {
   background-color: var(--white-color);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(37, 47, 137, 0.08);
-  max-width: 920px;
+  width: auto;
   left: 32px;
   right: 32px;
   top: 50%;
