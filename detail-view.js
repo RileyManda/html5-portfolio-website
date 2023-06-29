@@ -38,10 +38,10 @@ const generateDetailView = (data) => {
   title.textContent = data.detailtitle;
 
   if (window.innerWidth >= 768) {
-    const titleText = 'Keeping track of hundreds of<br>components';
+    const titleText = data.detailtitle;
     title.innerHTML = titleText;
   } else {
-    title.textContent = 'Keeping track of hundreds of components';
+    title.textContent = data.detailtitle;;
   }
 
   const tagList = document.createElement('ul');

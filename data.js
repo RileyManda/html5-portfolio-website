@@ -53,7 +53,7 @@ export const detailscontent = [
     ],
     summary: `Portfolio website project built with Javacsript,HTML5 and CSS with a mobile first responsive design approach that utilizes media queries,ES6 modules,and follows the recommended css,html5 and Javascript semantics.`,
     desktopsummary:
-      'Portfolio website project built with Javacsript,HTML% and CSS with a mobile first responsive design approach that utilizes media queries,ES6 modules,and follows the recommended css,html5 and Javascript semantics',
+      'Portfolio website project built with Javacsript,HTML5 and CSS with a mobile first responsive design approach that utilizes media queries,ES6 modules,and follows the recommended css,html5 and Javascript semantics',
     liveLink: 'https://rileymanda.github.io/portfolio-website/',
     sourceLink: 'https://github.com/RileyManda/portfolio-website',
     detailimage: './assets/images/projects/portfolio-detail-img.png',
